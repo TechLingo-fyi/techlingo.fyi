@@ -1,0 +1,64 @@
+---
+import '@/styles/globals.css'
+import { getCollection } from 'astro:content';
+import type { Lingo } from "@/TypeLingo"
+import LingoDetail from "../../components/LingoDetail";
+export async function getStaticPaths() {
+
+
+  const lingos = (await getCollection('lingos')).map((lingo) => {
+  return lingo.data as Lingo
+})
+  
+  const list = lingos.map((lingo) => {
+    const languages = new Array();
+    lingo.definitions.forEach((element) => {
+      languages.push(element.language);
+    });
+
+    return languages.map((language) => {
+      return {
+        params: {
+          lingo: lingo.term,
+          language: language,
+        },
+        props: {
+          data: lingo,
+        },
+      };
+    });
+  });
+
+  // Flatten the list
+  const paths = list.flat();
+  return paths;
+}
+
+const { lingo, language } = Astro.params;
+const { data } = Astro.props;
+const l = data as Lingo;
+
+
+const dscription = l.definitions.filter((definition) => {
+  return definition.language === language;
+})[0].definition;
+
+
+const path = `${lingo}/${language}`;
+
+const shareableText = `${dscription} https://techlingo.fyi/${path}`
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+    <LingoDetail client:only  data={data} shareableText={shareableText} viewingLanguage={language} slug={lingo} />
+
+</body>
+</html>
