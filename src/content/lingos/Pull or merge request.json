@@ -1,0 +1,17 @@
+{
+    "definitions": [
+        {
+            "definition": "A request by a developer to merge their code changes into a shared repository. It is often accompanied by a code review process.",
+            "expanded": "Pull or Merge Request",
+            "language": "en",
+            "term_usage_example": "After implementing the new feature, the developer created a pull request to merge their branch into the main codebase."
+        },
+        {
+            "definition": "Una solicitud de un desarrollador para integrar sus cambios de c\u00f3digo en un repositorio compartido. A menudo va acompa\u00f1ada de un proceso de revisi\u00f3n de c\u00f3digo.",
+            "expanded": "Solicitud de Extracci\u00f3n o Fusi\u00f3n",
+            "language": "es",
+            "term_usage_example": "Tras implementar la nueva caracter\u00edstica, el desarrollador cre\u00f3 una solicitud de extracci\u00f3n para fusionar su rama en el c\u00f3digo principal."
+        }
+    ],
+    "term": "Pull or Merge Request"
+}

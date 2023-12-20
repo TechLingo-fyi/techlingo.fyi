@@ -1,0 +1,17 @@
+{
+    "definitions": [
+        {
+            "definition": "A stack in the context of software development refers to the set of technologies, including programming languages, tools, and frameworks, used to build and run a software project.",
+            "expanded": "Not Applicable",
+            "language": "en",
+            "term_usage_example": "Our project uses a LAMP stack, which includes Linux, Apache, MySQL, and PHP."
+        },
+        {
+            "definition": "Un stack en el contexto del desarrollo de software se refiere al conjunto de tecnolog\u00edas, incluyendo lenguajes de programaci\u00f3n, herramientas y marcos de trabajo, utilizados para construir y ejecutar un proyecto de software.",
+            "expanded": "No Aplicable",
+            "language": "es",
+            "term_usage_example": "Nuestro proyecto utiliza un stack LAMP, que incluye Linux, Apache, MySQL y PHP."
+        }
+    ],
+    "term": "Stack"
+}

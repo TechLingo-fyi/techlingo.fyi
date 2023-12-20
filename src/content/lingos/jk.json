@@ -1,0 +1,17 @@
+{
+    "definitions": [
+        {
+            "definition": "A shorthand notation often used in messaging to indicate that the previous statement was a joke or not to be taken seriously.",
+            "expanded": "Just kidding",
+            "language": "en",
+            "term_usage_example": "I'm going to quit my job and become an astronaut... jk!"
+        },
+        {
+            "definition": "Una notaci\u00f3n abreviada que se usa a menudo en mensajes para indicar que la declaraci\u00f3n anterior fue una broma o que no debe tomarse en serio.",
+            "expanded": "Es broma",
+            "language": "es",
+            "term_usage_example": "Voy a dejar mi trabajo y convertirme en astronauta... \u00a1jk!"
+        }
+    ],
+    "term": "jk"
+}

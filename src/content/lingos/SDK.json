@@ -1,0 +1,17 @@
+{
+    "definitions": [
+        {
+            "definition": "A collection of software tools and libraries that developers use to create applications for specific platforms or frameworks.",
+            "expanded": "Software Development Kit",
+            "language": "en",
+            "term_usage_example": "To develop an Android app, you will likely use the Android SDK provided by Google."
+        },
+        {
+            "definition": "Una colecci\u00f3n de herramientas y bibliotecas de software que los desarrolladores usan para crear aplicaciones para plataformas o marcos espec\u00edficos.",
+            "expanded": "Kit de Desarrollo de Software",
+            "language": "es",
+            "term_usage_example": "Para desarrollar una aplicaci\u00f3n de Android, probablemente usar\u00e1s el SDK de Android proporcionado por Google."
+        }
+    ],
+    "term": "SDK"
+}

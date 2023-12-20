@@ -1,0 +1,17 @@
+{
+    "definitions": [
+        {
+            "definition": "A security process in which the user provides two different authentication factors to verify themselves.",
+            "expanded": "Two-factor Authentication",
+            "language": "en",
+            "term_usage_example": "For enhanced security, our platform requires 2FA before giving access to sensitive account settings."
+        },
+        {
+            "definition": "Un proceso de seguridad en el que el usuario proporciona dos factores de autenticaci\u00f3n diferentes para verificarse.",
+            "expanded": "Autenticaci\u00f3n de Dos Factores",
+            "language": "es",
+            "term_usage_example": "Para mayor seguridad, nuestra plataforma requiere 2FA antes de dar acceso a la configuraci\u00f3n sensible de la cuenta."
+        }
+    ],
+    "term": "2FA"
+}

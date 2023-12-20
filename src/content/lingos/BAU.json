@@ -1,0 +1,17 @@
+{
+    "definitions": [
+        {
+            "definition": "BAU refers to the normal execution of standard functional operations within an organization or project.",
+            "expanded": "Business as Usual",
+            "language": "en",
+            "term_usage_example": "Despite the recent system upgrade, it's important that we maintain BAU to ensure consistent service delivery."
+        },
+        {
+            "definition": "BAU se refiere a la ejecuci\u00f3n normal de las operaciones funcionales est\u00e1ndar dentro de una organizaci\u00f3n o proyecto.",
+            "expanded": "Negocios Como Siempre",
+            "language": "es",
+            "term_usage_example": "A pesar de la reciente actualizaci\u00f3n del sistema, es importante que mantengamos BAU para asegurar una entrega de servicios consistente."
+        }
+    ],
+    "term": "BAU"
+}

@@ -1,0 +1,17 @@
+{
+    "definitions": [
+        {
+            "definition": "A collaborative event where programmers and other professionals involved in software development work intensively on software projects.",
+            "expanded": "Hackathon",
+            "language": "en",
+            "term_usage_example": "They developed a prototype for a new app during the weekend hackathon."
+        },
+        {
+            "definition": "Un evento colaborativo donde programadores y otros profesionales involucrados en el desarrollo de software trabajan intensivamente en proyectos de software.",
+            "expanded": "Hackathon",
+            "language": "es",
+            "term_usage_example": "Desarrollaron un prototipo para una nueva aplicaci\u00f3n durante el hackathon de fin de semana."
+        }
+    ],
+    "term": "Hackathon"
+}

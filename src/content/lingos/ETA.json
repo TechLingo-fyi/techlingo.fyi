@@ -1,0 +1,17 @@
+{
+    "definitions": [
+        {
+            "definition": "An estimate of when a given process, task, or item is expected to arrive or be completed.",
+            "expanded": "Estimated Time of Arrival",
+            "language": "en",
+            "term_usage_example": "The project manager asked for the ETA on the new feature deployment."
+        },
+        {
+            "definition": "Una estimaci\u00f3n de cu\u00e1ndo se espera que llegue o se complete un proceso, tarea o elemento dado.",
+            "expanded": "Tiempo Estimado de Llegada",
+            "language": "es",
+            "term_usage_example": "El gerente del proyecto pidi\u00f3 la ETA para el despliegue de la nueva caracter\u00edstica."
+        }
+    ],
+    "term": "ETA"
+}

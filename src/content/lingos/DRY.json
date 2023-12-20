@@ -1,0 +1,17 @@
+{
+    "definitions": [
+        {
+            "definition": "A principle in software development aimed at reducing repetition of software patterns, replacing them with abstractions or using data normalization to avoid redundancy.",
+            "expanded": "Don't Repeat Yourself",
+            "language": "en",
+            "term_usage_example": "By using functions, we adhere to the DRY principle and avoid writing the same code multiple times."
+        },
+        {
+            "definition": "Un principio en el desarrollo de software que tiene como objetivo reducir la repetici\u00f3n de patrones de software, reemplaz\u00e1ndolos con abstracciones o utilizando la normalizaci\u00f3n de datos para evitar la redundancia.",
+            "expanded": "No te Repitas",
+            "language": "es",
+            "term_usage_example": "Mediante el uso de funciones, nos adherimos al principio DRY y evitamos escribir el mismo c\u00f3digo varias veces."
+        }
+    ],
+    "term": "DRY"
+}

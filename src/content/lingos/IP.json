@@ -1,0 +1,17 @@
+{
+    "definitions": [
+        {
+            "definition": "It refers to creations of the mind, such as inventions; literary and artistic works; designs; and symbols, names, and images used in commerce.",
+            "expanded": "Intellectual Property",
+            "language": "en",
+            "term_usage_example": "The company holds the IP rights for the software they've developed."
+        },
+        {
+            "definition": "Se refiere a las creaciones de la mente, tales como invenciones; obras literarias y art\u00edsticas; dise\u00f1os; y s\u00edmbolos, nombres e im\u00e1genes utilizados en el comercio.",
+            "expanded": "Propiedad Intelectual",
+            "language": "es",
+            "term_usage_example": "La empresa posee los derechos de PI del software que han desarrollado."
+        }
+    ],
+    "term": "IP"
+}

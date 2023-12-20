@@ -1,0 +1,17 @@
+{
+    "definitions": [
+        {
+            "definition": "A decision-making process where an organization evaluates the costs and benefits of creating a solution internally (build) versus purchasing it from an external provider (buy).",
+            "expanded": "Build versus Buy",
+            "language": "en",
+            "term_usage_example": "The company is assessing the build vs. buy scenario for their new customer relationship management system."
+        },
+        {
+            "definition": "Un proceso de toma de decisiones donde una organizaci\u00f3n eval\u00faa los costos y beneficios de crear una soluci\u00f3n internamente (construir) versus comprarla a un proveedor externo (comprar).",
+            "expanded": "Construir versus Comprar",
+            "language": "es",
+            "term_usage_example": "La empresa est\u00e1 evaluando el escenario de construir vs. comprar para su nuevo sistema de gesti\u00f3n de relaciones con los clientes."
+        }
+    ],
+    "term": "Build vs. Buy"
+}

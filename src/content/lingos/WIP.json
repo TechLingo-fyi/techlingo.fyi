@@ -1,0 +1,17 @@
+{
+    "definitions": [
+        {
+            "definition": "A term used to describe a project or task that is currently being worked on and is not yet complete.",
+            "expanded": "Work in Progress",
+            "language": "en",
+            "term_usage_example": "The new feature is still a WIP, but we'll have a demo ready by next week."
+        },
+        {
+            "definition": "Un t\u00e9rmino utilizado para describir un proyecto o tarea que actualmente est\u00e1 en desarrollo y a\u00fan no est\u00e1 completo.",
+            "expanded": "Trabajo en Proceso",
+            "language": "es",
+            "term_usage_example": "La nueva caracter\u00edstica todav\u00eda es un WIP, pero tendremos una demostraci\u00f3n lista para la pr\u00f3xima semana."
+        }
+    ],
+    "term": "WIP"
+}

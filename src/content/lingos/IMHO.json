@@ -1,0 +1,17 @@
+{
+    "definitions": [
+        {
+            "definition": "It is an internet slang acronym used to express one's opinion while signaling that it is offered modestly.",
+            "expanded": "In My Humble Opinion",
+            "language": "en",
+            "term_usage_example": "IMHO, the user interface could be more intuitive."
+        },
+        {
+            "definition": "Es una abreviatura de jerga de internet utilizada para expresar la opini\u00f3n de uno mismo se\u00f1alando que se ofrece de manera modesta.",
+            "expanded": "En Mi Humilde Opini\u00f3n",
+            "language": "es",
+            "term_usage_example": "IMHO, la interfaz de usuario podr\u00eda ser m\u00e1s intuitiva."
+        }
+    ],
+    "term": "IMHO"
+}

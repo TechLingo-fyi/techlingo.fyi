@@ -1,0 +1,17 @@
+{
+    "definitions": [
+        {
+            "definition": "A proof of concept is a demonstration to verify that certain concepts or theories have the potential for real-world application.",
+            "expanded": "Proof of Concept",
+            "language": "en",
+            "term_usage_example": "The developers created a POC to show how the new algorithm could speed up data processing."
+        },
+        {
+            "definition": "Una prueba de concepto es una demostraci\u00f3n para verificar que ciertos conceptos o teor\u00edas tienen el potencial para aplicaciones en el mundo real.",
+            "expanded": "Prueba de Concepto",
+            "language": "es",
+            "term_usage_example": "Los desarrolladores crearon un POC para mostrar c\u00f3mo el nuevo algoritmo podr\u00eda acelerar el procesamiento de datos."
+        }
+    ],
+    "term": "POC"
+}

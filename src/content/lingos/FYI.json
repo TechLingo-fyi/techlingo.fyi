@@ -1,0 +1,17 @@
+{
+    "definitions": [
+        {
+            "definition": "A shorthand often used in emails and messages to indicate that the information provided is for the recipient's knowledge, without requiring immediate action.",
+            "expanded": "For Your Information",
+            "language": "en",
+            "term_usage_example": "FYI, the server maintenance is scheduled for 9 PM tonight."
+        },
+        {
+            "definition": "Una abreviatura com\u00fanmente utilizada en correos electr\u00f3nicos y mensajes para indicar que la informaci\u00f3n proporcionada es para el conocimiento del destinatario, sin requerir acci\u00f3n inmediata.",
+            "expanded": "Para Tu Informaci\u00f3n",
+            "language": "es",
+            "term_usage_example": "FYI, el mantenimiento del servidor est\u00e1 programado para las 9 PM de esta noche."
+        }
+    ],
+    "term": "FYI"
+}

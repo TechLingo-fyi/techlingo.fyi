@@ -1,0 +1,17 @@
+{
+    "definitions": [
+        {
+            "definition": "A colloquial term often used in business and project management to describe actions taken to protect oneself from potential blame or criticism.",
+            "expanded": "Cover Your Ass",
+            "language": "en",
+            "term_usage_example": "Make sure to document all the decisions you make on this project for CYA purposes."
+        },
+        {
+            "definition": "Un t\u00e9rmino coloquial utilizado a menudo en negocios y gesti\u00f3n de proyectos para describir acciones realizadas para protegerse de posibles culpas o cr\u00edticas.",
+            "expanded": "C\u00fabrete las Espaldas",
+            "language": "es",
+            "term_usage_example": "Aseg\u00farate de documentar todas las decisiones que tomes en este proyecto para prop\u00f3sitos de CYA."
+        }
+    ],
+    "term": "CYA"
+}

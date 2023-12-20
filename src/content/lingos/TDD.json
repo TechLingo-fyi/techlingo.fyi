@@ -1,0 +1,17 @@
+{
+    "definitions": [
+        {
+            "definition": "A software development process that relies on the repetition of a very short development cycle: requirements are turned into very specific test cases, then the software is improved to pass the new tests.",
+            "expanded": "Test-Driven Development",
+            "language": "en",
+            "term_usage_example": "By adopting TDD, we can ensure that our code is thoroughly tested before it is deployed."
+        },
+        {
+            "definition": "Un proceso de desarrollo de software que se basa en la repetici\u00f3n de un ciclo de desarrollo muy corto: los requisitos se convierten en casos de prueba muy espec\u00edficos, luego el software se mejora para pasar las nuevas pruebas.",
+            "expanded": "Desarrollo Dirigido por Pruebas",
+            "language": "es",
+            "term_usage_example": "Al adoptar TDD, podemos asegurarnos de que nuestro c\u00f3digo est\u00e9 completamente probado antes de ser desplegado."
+        }
+    ],
+    "term": "TDD"
+}

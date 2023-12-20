@@ -1,0 +1,17 @@
+{
+    "definitions": [
+        {
+            "definition": "It is an acknowledgement that results can differ from one person to another, often used when providing advice or information that may not apply equally to everyone.",
+            "expanded": "Your mileage may vary",
+            "language": "en",
+            "term_usage_example": "I find this programming language easy to learn, but YMMV depending on your experience."
+        },
+        {
+            "definition": "Es un reconocimiento de que los resultados pueden variar de una persona a otra, a menudo utilizado al proporcionar consejos o informaci\u00f3n que puede no aplicarse de igual manera a todos.",
+            "expanded": "Tu experiencia puede variar",
+            "language": "es",
+            "term_usage_example": "Encuentro que este lenguaje de programaci\u00f3n es f\u00e1cil de aprender, pero YMMV dependiendo de tu experiencia."
+        }
+    ],
+    "term": "YMMV"
+}

@@ -1,0 +1,17 @@
+{
+    "definitions": [
+        {
+            "definition": "Pertaining to a data compression algorithm that reduces the size of data by removing some of it, which can result in a loss of quality.",
+            "expanded": "Lossy Compression",
+            "language": "en",
+            "term_usage_example": "JPEG is a common lossy compression format for images."
+        },
+        {
+            "definition": "Pertenece a un algoritmo de compresi\u00f3n de datos que reduce el tama\u00f1o de los datos eliminando parte de ellos, lo que puede resultar en una p\u00e9rdida de calidad.",
+            "expanded": "Compresi\u00f3n con P\u00e9rdida",
+            "language": "es",
+            "term_usage_example": "JPEG es un formato com\u00fan de compresi\u00f3n lossy para im\u00e1genes."
+        }
+    ],
+    "term": "Lossy"
+}

@@ -1,0 +1,17 @@
+{
+    "definitions": [
+        {
+            "definition": "It is an acronym used in online communication to indicate that a person will be away from their computer or device for a short period but will return shortly.",
+            "expanded": "Be Right Back",
+            "language": "en",
+            "term_usage_example": "I have to answer the door, BRB."
+        },
+        {
+            "definition": "Es un acr\u00f3nimo utilizado en la comunicaci\u00f3n en l\u00ednea para indicar que una persona estar\u00e1 ausente de su computadora o dispositivo por un corto per\u00edodo, pero regresar\u00e1 pronto.",
+            "expanded": "Vuelvo Enseguida",
+            "language": "es",
+            "term_usage_example": "Tengo que contestar la puerta, BRB."
+        }
+    ],
+    "term": "BRB"
+}

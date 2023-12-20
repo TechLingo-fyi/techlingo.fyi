@@ -1,0 +1,17 @@
+{
+    "definitions": [
+        {
+            "definition": "A principle in software development that states a programmer should not add functionality until it is necessary.",
+            "expanded": "You Aren't Gonna Need It",
+            "language": "en",
+            "term_usage_example": "When deciding whether to implement a feature, our team often adheres to the YAGNI principle."
+        },
+        {
+            "definition": "Un principio en el desarrollo de software que indica que un programador no debe agregar funcionalidad hasta que sea necesaria.",
+            "expanded": "No Vas a Necesitarlo",
+            "language": "es",
+            "term_usage_example": "Al decidir si implementar una caracter\u00edstica, nuestro equipo a menudo se adhiere al principio YAGNI."
+        }
+    ],
+    "term": "YAGNI"
+}

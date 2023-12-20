@@ -1,0 +1,17 @@
+{
+    "definitions": [
+        {
+            "definition": "AFK is an acronym that stands for 'Away from Keyboard.' It's used to indicate that a person is not present at their computer or is temporarily unable to respond.",
+            "expanded": "Away from Keyboard",
+            "language": "en",
+            "term_usage_example": "Sorry, I didn't respond to your messages earlier, I was AFK for lunch."
+        },
+        {
+            "definition": "AFK es un acr\u00f3nimo que significa 'Away from Keyboard' (Lejos del teclado). Se usa para indicar que una persona no est\u00e1 presente en su computadora o est\u00e1 temporalmente indisponible para responder.",
+            "expanded": "Away from Keyboard",
+            "language": "es",
+            "term_usage_example": "Lo siento, no respond\u00ed a tus mensajes antes, estaba AFK almorzando."
+        }
+    ],
+    "term": "AFK"
+}
