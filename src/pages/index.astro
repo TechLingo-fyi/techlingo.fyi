@@ -1,6 +1,12 @@
 ---
 import '@/styles/globals.css'
 import { MainComponent } from "@/components/ui/main"
+import { getCollection } from 'astro:content';
+import type { Lingo } from "@/TypeLingo"
+
+const lingos = (await getCollection('lingos')).map((lingo) => {
+  return lingo.data as Lingo
+})
 ---
 
 <html lang="en">
@@ -13,7 +19,7 @@ import { MainComponent } from "@/components/ui/main"
 	</head>
 	<body>
 
-<MainComponent />
+<MainComponent lingos={lingos} />
 
 		
 	</body>
