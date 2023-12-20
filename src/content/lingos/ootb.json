@@ -1,17 +1,17 @@
 {
-    "definitions": [
-        {
-            "definition": "Refers to software that is ready to use immediately after installation without requiring configuration or modification.",
-            "expanded": "Out of the Box",
-            "language": "en",
-            "term_usage_example": "The software offers great OOTB functionality, allowing users to get started right away."
-        },
-        {
-            "definition": "Se refiere al software que est\u00e1 listo para usarse inmediatamente despu\u00e9s de la instalaci\u00f3n sin requerir configuraci\u00f3n o modificaci\u00f3n.",
-            "expanded": "Fuera de la Caja",
-            "language": "es",
-            "term_usage_example": "El software ofrece una excelente funcionalidad OOTB, permitiendo a los usuarios comenzar a trabajar de inmediato."
-        }
-    ],
-    "term": "OOTB"
+  "definitions": [
+    {
+      "definition": "Refers to software that is ready to use immediately after installation without requiring configuration or modification.",
+      "expanded": "Out of the Box",
+      "language": "en",
+      "term_usage_example": "The software offers great OOTB functionality, allowing users to get started right away."
+    },
+    {
+      "definition": "Se refiere al software que est\u00e1 listo para usarse inmediatamente despu\u00e9s de la instalaci\u00f3n sin requerir configuraci\u00f3n o modificaci\u00f3n.",
+      "expanded": "Fuera de la Caja",
+      "language": "es",
+      "term_usage_example": "El software ofrece una excelente funcionalidad OOTB, permitiendo a los usuarios comenzar a trabajar de inmediato."
+    }
+  ],
+  "term": "OOTB"
 }

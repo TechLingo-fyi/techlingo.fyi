@@ -1,17 +1,17 @@
 {
-    "definitions": [
-        {
-            "definition": "Out of the office, is often used to indicate that someone is not present in their work environment and cannot be reached for the time being.",
-            "expanded": "Out of the Office",
-            "language": "en",
-            "term_usage_example": "Please note that I will be OOTO next week for a conference."
-        },
-        {
-            "definition": "Fuera de la oficina (OOTO), se usa a menudo para indicar que alguien no est\u00e1 presente en su entorno de trabajo y no puede ser contactado por el momento.",
-            "expanded": "Fuera de la Oficina",
-            "language": "es",
-            "term_usage_example": "Tenga en cuenta que estar\u00e9 OOTO la pr\u00f3xima semana por una conferencia."
-        }
-    ],
-    "term": "OOTO"
+  "definitions": [
+    {
+      "definition": "Out of the office, is often used to indicate that someone is not present in their work environment and cannot be reached for the time being.",
+      "expanded": "Out of the Office",
+      "language": "en",
+      "term_usage_example": "Please note that I will be OOTO next week for a conference."
+    },
+    {
+      "definition": "Fuera de la oficina (OOTO), se usa a menudo para indicar que alguien no est\u00e1 presente en su entorno de trabajo y no puede ser contactado por el momento.",
+      "expanded": "Fuera de la Oficina",
+      "language": "es",
+      "term_usage_example": "Tenga en cuenta que estar\u00e9 OOTO la pr\u00f3xima semana por una conferencia."
+    }
+  ],
+  "term": "OOTO"
 }

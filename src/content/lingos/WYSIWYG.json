@@ -1,17 +1,17 @@
 {
-    "definitions": [
-        {
-            "definition": "Refers to a system in which content displayed during editing appears very similar to the final output.",
-            "expanded": "What You See Is What You Get",
-            "language": "en",
-            "term_usage_example": "This WYSIWYG editor makes it easy for non-technical users to create formatted text."
-        },
-        {
-            "definition": "Se refiere a un sistema en el cual el contenido mostrado durante la edici\u00f3n se parece mucho al resultado final.",
-            "expanded": "Lo Que Ves Es Lo Que Obtienes",
-            "language": "es",
-            "term_usage_example": "Este editor WYSIWYG facilita a los usuarios no t\u00e9cnicos la creaci\u00f3n de texto formateado."
-        }
-    ],
-    "term": "WYSIWYG"
+  "definitions": [
+    {
+      "definition": "Refers to a system in which content displayed during editing appears very similar to the final output.",
+      "expanded": "What You See Is What You Get",
+      "language": "en",
+      "term_usage_example": "This WYSIWYG editor makes it easy for non-technical users to create formatted text."
+    },
+    {
+      "definition": "Se refiere a un sistema en el cual el contenido mostrado durante la edici\u00f3n se parece mucho al resultado final.",
+      "expanded": "Lo Que Ves Es Lo Que Obtienes",
+      "language": "es",
+      "term_usage_example": "Este editor WYSIWYG facilita a los usuarios no t\u00e9cnicos la creaci\u00f3n de texto formateado."
+    }
+  ],
+  "term": "WYSIWYG"
 }

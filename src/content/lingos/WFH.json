@@ -1,17 +1,17 @@
 {
-    "definitions": [
-        {
-            "definition": "WFH refers to the concept of working remotely from home, rather than commuting to an office environment.",
-            "expanded": "Work From Home",
-            "language": "en",
-            "term_usage_example": "Since the pandemic, many companies have adopted WFH policies to allow their employees to work remotely."
-        },
-        {
-            "definition": "WFH se refiere al concepto de trabajar de forma remota desde casa, en lugar de trasladarse a un entorno de oficina.",
-            "expanded": "Trabajo Desde Casa",
-            "language": "es",
-            "term_usage_example": "Desde la pandemia, muchas empresas han adoptado pol\u00edticas de WFH para permitir que sus empleados trabajen de forma remota."
-        }
-    ],
-    "term": "WFH"
+  "definitions": [
+    {
+      "definition": "WFH refers to the concept of working remotely from home, rather than commuting to an office environment.",
+      "expanded": "Work From Home",
+      "language": "en",
+      "term_usage_example": "Since the pandemic, many companies have adopted WFH policies to allow their employees to work remotely."
+    },
+    {
+      "definition": "WFH se refiere al concepto de trabajar de forma remota desde casa, en lugar de trasladarse a un entorno de oficina.",
+      "expanded": "Trabajo Desde Casa",
+      "language": "es",
+      "term_usage_example": "Desde la pandemia, muchas empresas han adoptado pol\u00edticas de WFH para permitir que sus empleados trabajen de forma remota."
+    }
+  ],
+  "term": "WFH"
 }

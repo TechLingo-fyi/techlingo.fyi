@@ -1,17 +1,17 @@
 {
-    "definitions": [
-        {
-            "definition": "A term used to describe a software library or framework that comes with a wide range of features and tools, intended to help developers have everything they need to get started without needing to find additional plugins or write extra code.",
-            "expanded": "Not applicable",
-            "language": "en",
-            "term_usage_example": "Python is known for being a 'batteries included' language due to its comprehensive standard library."
-        },
-        {
-            "definition": "Un t\u00e9rmino utilizado para describir una biblioteca de software o framework que viene con una amplia gama de caracter\u00edsticas y herramientas, con la intenci\u00f3n de ayudar a los desarrolladores a tener todo lo que necesitan para comenzar sin necesidad de buscar plugins adicionales o escribir c\u00f3digo extra.",
-            "expanded": "No aplicable",
-            "language": "es",
-            "term_usage_example": "Python es conocido por ser un lenguaje 'con bater\u00edas incluidas' debido a su amplia biblioteca est\u00e1ndar."
-        }
-    ],
-    "term": "Batteries included"
+  "definitions": [
+    {
+      "definition": "A term used to describe a software library or framework that comes with a wide range of features and tools, intended to help developers have everything they need to get started without needing to find additional plugins or write extra code.",
+      "expanded": "Not applicable",
+      "language": "en",
+      "term_usage_example": "Python is known for being a 'batteries included' language due to its comprehensive standard library."
+    },
+    {
+      "definition": "Un t\u00e9rmino utilizado para describir una biblioteca de software o framework que viene con una amplia gama de caracter\u00edsticas y herramientas, con la intenci\u00f3n de ayudar a los desarrolladores a tener todo lo que necesitan para comenzar sin necesidad de buscar plugins adicionales o escribir c\u00f3digo extra.",
+      "expanded": "No aplicable",
+      "language": "es",
+      "term_usage_example": "Python es conocido por ser un lenguaje 'con bater\u00edas incluidas' debido a su amplia biblioteca est\u00e1ndar."
+    }
+  ],
+  "term": "Batteries included"
 }

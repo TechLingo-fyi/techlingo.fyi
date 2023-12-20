@@ -1,17 +1,17 @@
 {
-    "definitions": [
-        {
-            "definition": "An architectural style for designing networked applications, where web services are viewed as resources and can be identified by their URLs.",
-            "expanded": "Representational State Transfer",
-            "language": "en",
-            "term_usage_example": "The new web service follows REST principles, allowing for simple integration with other systems via HTTP."
-        },
-        {
-            "definition": "Un estilo arquitect\u00f3nico para dise\u00f1ar aplicaciones en red, donde los servicios web se ven como recursos y pueden ser identificados por sus URLs.",
-            "expanded": "Transferencia de Estado Representacional",
-            "language": "es",
-            "term_usage_example": "El nuevo servicio web sigue los principios de REST, permitiendo una integraci\u00f3n simple con otros sistemas a trav\u00e9s de HTTP."
-        }
-    ],
-    "term": "REST"
+  "definitions": [
+    {
+      "definition": "An architectural style for designing networked applications, where web services are viewed as resources and can be identified by their URLs.",
+      "expanded": "Representational State Transfer",
+      "language": "en",
+      "term_usage_example": "The new web service follows REST principles, allowing for simple integration with other systems via HTTP."
+    },
+    {
+      "definition": "Un estilo arquitect\u00f3nico para dise\u00f1ar aplicaciones en red, donde los servicios web se ven como recursos y pueden ser identificados por sus URLs.",
+      "expanded": "Transferencia de Estado Representacional",
+      "language": "es",
+      "term_usage_example": "El nuevo servicio web sigue los principios de REST, permitiendo una integraci\u00f3n simple con otros sistemas a trav\u00e9s de HTTP."
+    }
+  ],
+  "term": "REST"
 }

@@ -1,17 +1,17 @@
 {
-    "definitions": [
-        {
-            "definition": "A geographically distributed network of proxy servers and their data centers that work together to provide high availability and performance by distributing the service spatially relative to end-users.",
-            "expanded": "Content Delivery Network",
-            "language": "en",
-            "term_usage_example": "Our website's load time has improved significantly since we started using a CDN for our static assets."
-        },
-        {
-            "definition": "Una red distribuida geogr\u00e1ficamente de servidores proxy y sus centros de datos que trabajan juntos para proporcionar alta disponibilidad y rendimiento al distribuir el servicio espacialmente en relaci\u00f3n con los usuarios finales.",
-            "expanded": "Red de Entrega de Contenidos",
-            "language": "es",
-            "term_usage_example": "El tiempo de carga de nuestro sitio web ha mejorado significativamente desde que comenzamos a usar una CDN para nuestros activos est\u00e1ticos."
-        }
-    ],
-    "term": "CDN"
+  "definitions": [
+    {
+      "definition": "A geographically distributed network of proxy servers and their data centers that work together to provide high availability and performance by distributing the service spatially relative to end-users.",
+      "expanded": "Content Delivery Network",
+      "language": "en",
+      "term_usage_example": "Our website's load time has improved significantly since we started using a CDN for our static assets."
+    },
+    {
+      "definition": "Una red distribuida geogr\u00e1ficamente de servidores proxy y sus centros de datos que trabajan juntos para proporcionar alta disponibilidad y rendimiento al distribuir el servicio espacialmente en relaci\u00f3n con los usuarios finales.",
+      "expanded": "Red de Entrega de Contenidos",
+      "language": "es",
+      "term_usage_example": "El tiempo de carga de nuestro sitio web ha mejorado significativamente desde que comenzamos a usar una CDN para nuestros activos est\u00e1ticos."
+    }
+  ],
+  "term": "CDN"
 }

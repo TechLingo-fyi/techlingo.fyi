@@ -1,17 +1,17 @@
 {
-    "definitions": [
-        {
-            "definition": "A component of software configuration management, VCS is responsible for managing changes to computer programs, documents, large web sites, or other collections of information.",
-            "expanded": "Version Control System",
-            "language": "en",
-            "term_usage_example": "Git is a widely used VCS for tracking changes in source code during software development."
-        },
-        {
-            "definition": "Un componente de la gesti\u00f3n de configuraci\u00f3n de software, el VCS es responsable de gestionar los cambios en programas inform\u00e1ticos, documentos, grandes sitios web u otras colecciones de informaci\u00f3n.",
-            "expanded": "Sistema de Control de Versiones",
-            "language": "es",
-            "term_usage_example": "Git es un VCS ampliamente utilizado para rastrear cambios en el c\u00f3digo fuente durante el desarrollo de software."
-        }
-    ],
-    "term": "VCS"
+  "definitions": [
+    {
+      "definition": "A component of software configuration management, VCS is responsible for managing changes to computer programs, documents, large web sites, or other collections of information.",
+      "expanded": "Version Control System",
+      "language": "en",
+      "term_usage_example": "Git is a widely used VCS for tracking changes in source code during software development."
+    },
+    {
+      "definition": "Un componente de la gesti\u00f3n de configuraci\u00f3n de software, el VCS es responsable de gestionar los cambios en programas inform\u00e1ticos, documentos, grandes sitios web u otras colecciones de informaci\u00f3n.",
+      "expanded": "Sistema de Control de Versiones",
+      "language": "es",
+      "term_usage_example": "Git es un VCS ampliamente utilizado para rastrear cambios en el c\u00f3digo fuente durante el desarrollo de software."
+    }
+  ],
+  "term": "VCS"
 }

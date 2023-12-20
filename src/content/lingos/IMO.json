@@ -1,17 +1,17 @@
 {
-    "definitions": [
-        {
-            "definition": "An abbreviation used to express a person's view or belief without asserting it as an absolute truth.",
-            "expanded": "In My Opinion",
-            "language": "en",
-            "term_usage_example": "IMO, Python is a great language for beginners to learn programming."
-        },
-        {
-            "definition": "Una abreviatura utilizada para expresar el punto de vista o creencia de una persona sin presentarlo como una verdad absoluta.",
-            "expanded": "En Mi Opini\u00f3n",
-            "language": "es",
-            "term_usage_example": "IMO, Python es un gran lenguaje para que los principiantes aprendan a programar."
-        }
-    ],
-    "term": "IMO"
+  "definitions": [
+    {
+      "definition": "An abbreviation used to express a person's view or belief without asserting it as an absolute truth.",
+      "expanded": "In My Opinion",
+      "language": "en",
+      "term_usage_example": "IMO, Python is a great language for beginners to learn programming."
+    },
+    {
+      "definition": "Una abreviatura utilizada para expresar el punto de vista o creencia de una persona sin presentarlo como una verdad absoluta.",
+      "expanded": "En Mi Opini\u00f3n",
+      "language": "es",
+      "term_usage_example": "IMO, Python es un gran lenguaje para que los principiantes aprendan a programar."
+    }
+  ],
+  "term": "IMO"
 }

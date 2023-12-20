@@ -1,17 +1,17 @@
 {
-    "definitions": [
-        {
-            "definition": "A software application or set of related programs used to create and manage digital content.",
-            "expanded": "Content Management System",
-            "language": "en",
-            "term_usage_example": "WordPress is one of the most popular CMS platforms for blogging and website creation."
-        },
-        {
-            "definition": "Una aplicaci\u00f3n de software o conjunto de programas relacionados utilizados para crear y administrar contenido digital.",
-            "expanded": "Sistema de Gesti\u00f3n de Contenidos",
-            "language": "es",
-            "term_usage_example": "WordPress es una de las plataformas CMS m\u00e1s populares para blogs y creaci\u00f3n de sitios web."
-        }
-    ],
-    "term": "CMS"
+  "definitions": [
+    {
+      "definition": "A software application or set of related programs used to create and manage digital content.",
+      "expanded": "Content Management System",
+      "language": "en",
+      "term_usage_example": "WordPress is one of the most popular CMS platforms for blogging and website creation."
+    },
+    {
+      "definition": "Una aplicaci\u00f3n de software o conjunto de programas relacionados utilizados para crear y administrar contenido digital.",
+      "expanded": "Sistema de Gesti\u00f3n de Contenidos",
+      "language": "es",
+      "term_usage_example": "WordPress es una de las plataformas CMS m\u00e1s populares para blogs y creaci\u00f3n de sitios web."
+    }
+  ],
+  "term": "CMS"
 }

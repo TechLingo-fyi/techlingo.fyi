@@ -1,17 +1,17 @@
 {
-    "definitions": [
-        {
-            "definition": "The highest-ranking executive in a company, responsible for making major corporate decisions, managing the overall operations and resources, and acting as the main point of communication between the board of directors and corporate operations.",
-            "expanded": "Chief Executive Officer",
-            "language": "en",
-            "term_usage_example": "Our CEO will address the recent changes in the company at the next meeting."
-        },
-        {
-            "definition": "El ejecutivo de mayor rango en una empresa, responsable de tomar decisiones corporativas importantes, gestionar las operaciones y recursos generales, y actuar como el principal punto de comunicaci\u00f3n entre el consejo de administraci\u00f3n y las operaciones corporativas.",
-            "expanded": "Director Ejecutivo",
-            "language": "es",
-            "term_usage_example": "Nuestro CEO abordar\u00e1 los cambios recientes en la empresa en la pr\u00f3xima reuni\u00f3n."
-        }
-    ],
-    "term": "CEO"
+  "definitions": [
+    {
+      "definition": "The highest-ranking executive in a company, responsible for making major corporate decisions, managing the overall operations and resources, and acting as the main point of communication between the board of directors and corporate operations.",
+      "expanded": "Chief Executive Officer",
+      "language": "en",
+      "term_usage_example": "Our CEO will address the recent changes in the company at the next meeting."
+    },
+    {
+      "definition": "El ejecutivo de mayor rango en una empresa, responsable de tomar decisiones corporativas importantes, gestionar las operaciones y recursos generales, y actuar como el principal punto de comunicaci\u00f3n entre el consejo de administraci\u00f3n y las operaciones corporativas.",
+      "expanded": "Director Ejecutivo",
+      "language": "es",
+      "term_usage_example": "Nuestro CEO abordar\u00e1 los cambios recientes en la empresa en la pr\u00f3xima reuni\u00f3n."
+    }
+  ],
+  "term": "CEO"
 }

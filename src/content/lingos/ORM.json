@@ -1,17 +1,17 @@
 {
-    "definitions": [
-        {
-            "definition": "A programming technique used to convert data between incompatible type systems in object-oriented programming languages.",
-            "expanded": "Object-Relational Mapping",
-            "language": "en",
-            "term_usage_example": "By using an ORM framework, we can easily manage database operations without writing raw SQL queries."
-        },
-        {
-            "definition": "Una t\u00e9cnica de programaci\u00f3n utilizada para convertir datos entre sistemas de tipos incompatibles en lenguajes de programaci\u00f3n orientados a objetos.",
-            "expanded": "Mapeo Objeto-Relacional",
-            "language": "es",
-            "term_usage_example": "Al utilizar un framework ORM, podemos gestionar f\u00e1cilmente las operaciones de la base de datos sin escribir consultas SQL directas."
-        }
-    ],
-    "term": "ORM"
+  "definitions": [
+    {
+      "definition": "A programming technique used to convert data between incompatible type systems in object-oriented programming languages.",
+      "expanded": "Object-Relational Mapping",
+      "language": "en",
+      "term_usage_example": "By using an ORM framework, we can easily manage database operations without writing raw SQL queries."
+    },
+    {
+      "definition": "Una t\u00e9cnica de programaci\u00f3n utilizada para convertir datos entre sistemas de tipos incompatibles en lenguajes de programaci\u00f3n orientados a objetos.",
+      "expanded": "Mapeo Objeto-Relacional",
+      "language": "es",
+      "term_usage_example": "Al utilizar un framework ORM, podemos gestionar f\u00e1cilmente las operaciones de la base de datos sin escribir consultas SQL directas."
+    }
+  ],
+  "term": "ORM"
 }

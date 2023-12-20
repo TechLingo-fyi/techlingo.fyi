@@ -1,17 +1,17 @@
 {
-    "definitions": [
-        {
-            "definition": "An integrated development environment (IDE) is a software application that provides comprehensive facilities to computer programmers for software development.",
-            "expanded": "Integrated Development Environment",
-            "language": "en",
-            "term_usage_example": "Eclipse is a popular IDE among Java developers."
-        },
-        {
-            "definition": "Un entorno de desarrollo integrado (IDE) es una aplicaci\u00f3n de software que proporciona instalaciones completas a los programadores inform\u00e1ticos para el desarrollo de software.",
-            "expanded": "Entorno de Desarrollo Integrado",
-            "language": "es",
-            "term_usage_example": "Eclipse es un IDE popular entre los desarrolladores de Java."
-        }
-    ],
-    "term": "IDE"
+  "definitions": [
+    {
+      "definition": "An integrated development environment (IDE) is a software application that provides comprehensive facilities to computer programmers for software development.",
+      "expanded": "Integrated Development Environment",
+      "language": "en",
+      "term_usage_example": "Eclipse is a popular IDE among Java developers."
+    },
+    {
+      "definition": "Un entorno de desarrollo integrado (IDE) es una aplicaci\u00f3n de software que proporciona instalaciones completas a los programadores inform\u00e1ticos para el desarrollo de software.",
+      "expanded": "Entorno de Desarrollo Integrado",
+      "language": "es",
+      "term_usage_example": "Eclipse es un IDE popular entre los desarrolladores de Java."
+    }
+  ],
+  "term": "IDE"
 }

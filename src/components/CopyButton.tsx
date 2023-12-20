@@ -4,7 +4,7 @@ const CopyButton = ({
   slug,
   lang,
   className,
-  text
+  text,
 }: {
   slug: string;
   lang: string;
@@ -16,7 +16,7 @@ const CopyButton = ({
     const { slug, lang } = event.currentTarget.dataset;
     const text =
       "https://techlingo.fyi/" + slug + (lang !== undefined ? "/" + lang : "");
-      console.log(text)
+    console.log(text);
     try {
       await navigator.clipboard.writeText(text);
       // toast.success("Link copied to clipboard!");
@@ -31,7 +31,9 @@ const CopyButton = ({
       data-lang={lang}
       onClick={copyToClipBoard}
       className={className}
-    >{text}</a>
+    >
+      {text}
+    </a>
   );
 };
 export default CopyButton;

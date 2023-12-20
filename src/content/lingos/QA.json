@@ -1,17 +1,17 @@
 {
-    "definitions": [
-        {
-            "definition": "It refers to the systematic process of checking whether a product or service being developed meets specified requirements.",
-            "expanded": "Quality Assurance",
-            "language": "en",
-            "term_usage_example": "The QA team is responsible for running tests to ensure the software is free of defects."
-        },
-        {
-            "definition": "Se refiere al proceso sistem\u00e1tico de verificar si un producto o servicio en desarrollo cumple con los requisitos especificados.",
-            "expanded": "Aseguramiento de la Calidad",
-            "language": "es",
-            "term_usage_example": "El equipo de QA es responsable de realizar pruebas para asegurar que el software est\u00e9 libre de defectos."
-        }
-    ],
-    "term": "QA"
+  "definitions": [
+    {
+      "definition": "It refers to the systematic process of checking whether a product or service being developed meets specified requirements.",
+      "expanded": "Quality Assurance",
+      "language": "en",
+      "term_usage_example": "The QA team is responsible for running tests to ensure the software is free of defects."
+    },
+    {
+      "definition": "Se refiere al proceso sistem\u00e1tico de verificar si un producto o servicio en desarrollo cumple con los requisitos especificados.",
+      "expanded": "Aseguramiento de la Calidad",
+      "language": "es",
+      "term_usage_example": "El equipo de QA es responsable de realizar pruebas para asegurar que el software est\u00e9 libre de defectos."
+    }
+  ],
+  "term": "QA"
 }

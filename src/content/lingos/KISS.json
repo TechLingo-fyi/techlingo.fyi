@@ -1,17 +1,17 @@
 {
-    "definitions": [
-        {
-            "definition": "A design principle that suggests simplicity should be a key goal and that unnecessary complexity should be avoided.",
-            "expanded": "Keep it simple, stupid!",
-            "language": "en",
-            "term_usage_example": "When implementing the new feature, remember the KISS principle to keep the system user-friendly."
-        },
-        {
-            "definition": "Un principio de dise\u00f1o que sugiere que la simplicidad debe ser un objetivo clave y que se debe evitar la complejidad innecesaria.",
-            "expanded": "\u00a1Mantenlo simple, est\u00fapido!",
-            "language": "es",
-            "term_usage_example": "Al implementar la nueva caracter\u00edstica, recuerda el principio KISS para mantener el sistema f\u00e1cil de usar."
-        }
-    ],
-    "term": "KISS"
+  "definitions": [
+    {
+      "definition": "A design principle that suggests simplicity should be a key goal and that unnecessary complexity should be avoided.",
+      "expanded": "Keep it simple, stupid!",
+      "language": "en",
+      "term_usage_example": "When implementing the new feature, remember the KISS principle to keep the system user-friendly."
+    },
+    {
+      "definition": "Un principio de dise\u00f1o que sugiere que la simplicidad debe ser un objetivo clave y que se debe evitar la complejidad innecesaria.",
+      "expanded": "\u00a1Mantenlo simple, est\u00fapido!",
+      "language": "es",
+      "term_usage_example": "Al implementar la nueva caracter\u00edstica, recuerda el principio KISS para mantener el sistema f\u00e1cil de usar."
+    }
+  ],
+  "term": "KISS"
 }

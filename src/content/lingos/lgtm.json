@@ -1,17 +1,17 @@
 {
-    "definitions": [
-        {
-            "definition": "An acronym often used in code reviews meaning that the reviewer has checked the code and approves it without further changes.",
-            "expanded": "Looks Good To Me",
-            "language": "en",
-            "term_usage_example": "I've finished reviewing the pull request, everything seems fine, LGTM."
-        },
-        {
-            "definition": "Un acr\u00f3nimo utilizado a menudo en revisiones de c\u00f3digo que significa que el revisor ha verificado el c\u00f3digo y lo aprueba sin cambios adicionales.",
-            "expanded": "Se Ve Bien Para M\u00ed",
-            "language": "es",
-            "term_usage_example": "He terminado de revisar la solicitud de extracci\u00f3n, todo parece estar bien, LGTM."
-        }
-    ],
-    "term": "LGTM"
+  "definitions": [
+    {
+      "definition": "An acronym often used in code reviews meaning that the reviewer has checked the code and approves it without further changes.",
+      "expanded": "Looks Good To Me",
+      "language": "en",
+      "term_usage_example": "I've finished reviewing the pull request, everything seems fine, LGTM."
+    },
+    {
+      "definition": "Un acr\u00f3nimo utilizado a menudo en revisiones de c\u00f3digo que significa que el revisor ha verificado el c\u00f3digo y lo aprueba sin cambios adicionales.",
+      "expanded": "Se Ve Bien Para M\u00ed",
+      "language": "es",
+      "term_usage_example": "He terminado de revisar la solicitud de extracci\u00f3n, todo parece estar bien, LGTM."
+    }
+  ],
+  "term": "LGTM"
 }

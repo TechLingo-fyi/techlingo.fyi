@@ -1,17 +1,17 @@
 {
-    "definitions": [
-        {
-            "definition": "It refers to the process of generating the basic structure of a project to facilitate rapid development.",
-            "expanded": "Not Applicable",
-            "language": "en",
-            "term_usage_example": "By using scaffolding, we quickly set up the basic CRUD operations for our model."
-        },
-        {
-            "definition": "Se refiere al proceso de generar la estructura b\u00e1sica de un proyecto para facilitar el desarrollo r\u00e1pido.",
-            "expanded": "No Aplicable",
-            "language": "es",
-            "term_usage_example": "Utilizando scaffolding, configuramos r\u00e1pidamente las operaciones CRUD b\u00e1sicas para nuestro modelo."
-        }
-    ],
-    "term": "Scaffolding"
+  "definitions": [
+    {
+      "definition": "It refers to the process of generating the basic structure of a project to facilitate rapid development.",
+      "expanded": "Not Applicable",
+      "language": "en",
+      "term_usage_example": "By using scaffolding, we quickly set up the basic CRUD operations for our model."
+    },
+    {
+      "definition": "Se refiere al proceso de generar la estructura b\u00e1sica de un proyecto para facilitar el desarrollo r\u00e1pido.",
+      "expanded": "No Aplicable",
+      "language": "es",
+      "term_usage_example": "Utilizando scaffolding, configuramos r\u00e1pidamente las operaciones CRUD b\u00e1sicas para nuestro modelo."
+    }
+  ],
+  "term": "Scaffolding"
 }

@@ -1,7 +1,5 @@
-
 import type { Lingo } from "../../entities/Lingo";
 import { useTranslations } from "../../l18n/ui";
-
 
 const expandedStyle = [
   "mb-1",
@@ -27,9 +25,7 @@ const ExpandedTerm = ({
     for (const character of lingo.expanded) {
       if (character == character.toUpperCase() && lingo.acronym) {
         termExpansion.push(<span className="font-bold">{character}</span>);
-      }
-      else 
-      {
+      } else {
         termExpansion.push(character);
       }
     }
@@ -46,7 +42,9 @@ const ExpandedTerm = ({
     additionalText = t("lingo.numeronymFor");
   }
   return (
-    <h4 className={expandedStyle.join(" ")} >{additionalText} {termExpansion}</h4>
+    <h4 className={expandedStyle.join(" ")}>
+      {additionalText} {termExpansion}
+    </h4>
   );
 };
 export default ExpandedTerm;

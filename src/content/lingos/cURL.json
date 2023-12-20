@@ -1,17 +1,17 @@
 {
-    "definitions": [
-        {
-            "definition": "cURL is a command-line tool for transferring data using various network protocols.",
-            "expanded": "Client URL",
-            "language": "en",
-            "term_usage_example": "To download a file from the internet, you can use the cURL command with the appropriate URL."
-        },
-        {
-            "definition": "cURL es una herramienta de l\u00ednea de comandos para transferir datos utilizando varios protocolos de red.",
-            "expanded": "Cliente URL",
-            "language": "es",
-            "term_usage_example": "Para descargar un archivo de Internet, puedes usar el comando cURL con la URL apropiada."
-        }
-    ],
-    "term": "cURL"
+  "definitions": [
+    {
+      "definition": "cURL is a command-line tool for transferring data using various network protocols.",
+      "expanded": "Client URL",
+      "language": "en",
+      "term_usage_example": "To download a file from the internet, you can use the cURL command with the appropriate URL."
+    },
+    {
+      "definition": "cURL es una herramienta de l\u00ednea de comandos para transferir datos utilizando varios protocolos de red.",
+      "expanded": "Cliente URL",
+      "language": "es",
+      "term_usage_example": "Para descargar un archivo de Internet, puedes usar el comando cURL con la URL apropiada."
+    }
+  ],
+  "term": "cURL"
 }

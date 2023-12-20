@@ -1,17 +1,17 @@
 {
-    "definitions": [
-        {
-            "definition": "PTO refers to the time that employees are allowed to be away from work while still receiving their regular pay.",
-            "expanded": "Paid Time Off",
-            "language": "en",
-            "term_usage_example": "Susan is planning to use some of her PTO days for a family vacation."
-        },
-        {
-            "definition": "PTO se refiere al tiempo que los empleados pueden estar ausentes del trabajo mientras siguen recibiendo su sueldo habitual.",
-            "expanded": "Tiempo Libre Remunerado",
-            "language": "es",
-            "term_usage_example": "Susan est\u00e1 planeando usar algunos de sus d\u00edas PTO para unas vacaciones familiares."
-        }
-    ],
-    "term": "PTO"
+  "definitions": [
+    {
+      "definition": "PTO refers to the time that employees are allowed to be away from work while still receiving their regular pay.",
+      "expanded": "Paid Time Off",
+      "language": "en",
+      "term_usage_example": "Susan is planning to use some of her PTO days for a family vacation."
+    },
+    {
+      "definition": "PTO se refiere al tiempo que los empleados pueden estar ausentes del trabajo mientras siguen recibiendo su sueldo habitual.",
+      "expanded": "Tiempo Libre Remunerado",
+      "language": "es",
+      "term_usage_example": "Susan est\u00e1 planeando usar algunos de sus d\u00edas PTO para unas vacaciones familiares."
+    }
+  ],
+  "term": "PTO"
 }

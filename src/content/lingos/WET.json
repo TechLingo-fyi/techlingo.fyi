@@ -1,17 +1,17 @@
 {
-    "definitions": [
-        {
-            "definition": "An anti-pattern in coding where the same information or logic is repeated, violating the DRY (Don't Repeat Yourself) principle.",
-            "expanded": "Write Everything Twice",
-            "language": "en",
-            "term_usage_example": "If you notice you're writing WET code, you should consider refactoring to improve maintainability."
-        },
-        {
-            "definition": "Un anti-patr\u00f3n en la programaci\u00f3n donde la misma informaci\u00f3n o l\u00f3gica se repite, violando el principio DRY (Don't Repeat Yourself - No te repitas).",
-            "expanded": "Escribe Todo Dos Veces",
-            "language": "es",
-            "term_usage_example": "Si notas que est\u00e1s escribiendo c\u00f3digo WET, deber\u00edas considerar refactorizar para mejorar la mantenibilidad."
-        }
-    ],
-    "term": "WET"
+  "definitions": [
+    {
+      "definition": "An anti-pattern in coding where the same information or logic is repeated, violating the DRY (Don't Repeat Yourself) principle.",
+      "expanded": "Write Everything Twice",
+      "language": "en",
+      "term_usage_example": "If you notice you're writing WET code, you should consider refactoring to improve maintainability."
+    },
+    {
+      "definition": "Un anti-patr\u00f3n en la programaci\u00f3n donde la misma informaci\u00f3n o l\u00f3gica se repite, violando el principio DRY (Don't Repeat Yourself - No te repitas).",
+      "expanded": "Escribe Todo Dos Veces",
+      "language": "es",
+      "term_usage_example": "Si notas que est\u00e1s escribiendo c\u00f3digo WET, deber\u00edas considerar refactorizar para mejorar la mantenibilidad."
+    }
+  ],
+  "term": "WET"
 }

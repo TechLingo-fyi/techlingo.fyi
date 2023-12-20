@@ -1,17 +1,17 @@
 {
-    "definitions": [
-        {
-            "definition": "A practice where a company uses its own products to test and promote the product's quality and reliability.",
-            "expanded": "Eating your own dog food",
-            "language": "en",
-            "term_usage_example": "By dogfooding their new app, the developers were able to identify bugs before it was released to the public."
-        },
-        {
-            "definition": "Una pr\u00e1ctica donde una empresa utiliza sus propios productos para probar y promover la calidad y fiabilidad del producto.",
-            "expanded": "Comer tu propia comida para perros",
-            "language": "es",
-            "term_usage_example": "Al practicar dogfooding con su nueva aplicaci\u00f3n, los desarrolladores pudieron identificar errores antes de que se lanzara al p\u00fablico."
-        }
-    ],
-    "term": "Dogfooding"
+  "definitions": [
+    {
+      "definition": "A practice where a company uses its own products to test and promote the product's quality and reliability.",
+      "expanded": "Eating your own dog food",
+      "language": "en",
+      "term_usage_example": "By dogfooding their new app, the developers were able to identify bugs before it was released to the public."
+    },
+    {
+      "definition": "Una pr\u00e1ctica donde una empresa utiliza sus propios productos para probar y promover la calidad y fiabilidad del producto.",
+      "expanded": "Comer tu propia comida para perros",
+      "language": "es",
+      "term_usage_example": "Al practicar dogfooding con su nueva aplicaci\u00f3n, los desarrolladores pudieron identificar errores antes de que se lanzara al p\u00fablico."
+    }
+  ],
+  "term": "Dogfooding"
 }

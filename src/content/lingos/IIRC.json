@@ -1,17 +1,17 @@
 {
-    "definitions": [
-        {
-            "definition": "An acronym used in online conversations to convey that the speaker is not entirely sure about the information being provided, but they believe it to be accurate based on their memory.",
-            "expanded": "If I Recall Correctly",
-            "language": "en",
-            "term_usage_example": "IIRC, the last update to the application was made two months ago."
-        },
-        {
-            "definition": "Un acr\u00f3nimo utilizado en conversaciones en l\u00ednea para indicar que la persona que habla no est\u00e1 completamente segura de la informaci\u00f3n proporcionada, pero cree que es precisa basada en su memoria.",
-            "expanded": "Si Recuerdo Correctamente",
-            "language": "es",
-            "term_usage_example": "IIRC, la \u00faltima actualizaci\u00f3n de la aplicaci\u00f3n se hizo hace dos meses."
-        }
-    ],
-    "term": "IIRC"
+  "definitions": [
+    {
+      "definition": "An acronym used in online conversations to convey that the speaker is not entirely sure about the information being provided, but they believe it to be accurate based on their memory.",
+      "expanded": "If I Recall Correctly",
+      "language": "en",
+      "term_usage_example": "IIRC, the last update to the application was made two months ago."
+    },
+    {
+      "definition": "Un acr\u00f3nimo utilizado en conversaciones en l\u00ednea para indicar que la persona que habla no est\u00e1 completamente segura de la informaci\u00f3n proporcionada, pero cree que es precisa basada en su memoria.",
+      "expanded": "Si Recuerdo Correctamente",
+      "language": "es",
+      "term_usage_example": "IIRC, la \u00faltima actualizaci\u00f3n de la aplicaci\u00f3n se hizo hace dos meses."
+    }
+  ],
+  "term": "IIRC"
 }

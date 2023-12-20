@@ -4,7 +4,6 @@ import ContextLinks from "./detail/ContextLinks";
 import OtherLanguageLinks from "./detail/OtherLanguageLinks";
 import type { Lingo } from "@/TypeLingo";
 
-
 const cardStyle = [
   "max-w-3xl",
   "min-w-3xl",
@@ -61,7 +60,6 @@ const LanguageSpecificDefinition = ({
 
   dtClasses.push("collapse hidden");
 
-
   return (
     <div key={language} className="flex group flex-col pb-3 pt-3">
       <dt
@@ -86,12 +84,11 @@ const LingoDetail = ({
   slug: string;
   shareableText: string;
 }) => {
-
   const definitionsMap = new Map<string, string>();
   data.definitions.forEach(
     (definition: { language: string; definition: string }) => {
       definitionsMap.set(definition.language, definition.definition);
-    }
+    },
   );
   const englishDefinition = definitionsMap.get("en");
   const currentLanguageDefinition = definitionsMap.get(viewingLanguage);
@@ -106,12 +103,12 @@ const LingoDetail = ({
       <ExpandedTerm lingo={data} viewingLanguage={viewingLanguage} />
       <div>
         <dl className="text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
-            <LanguageSpecificDefinition
-              key={viewingLanguage}
-              language={viewingLanguage}
-              definition={currentLanguageDefinition}
-              currentLanguage={true}
-            />
+          <LanguageSpecificDefinition
+            key={viewingLanguage}
+            language={viewingLanguage}
+            definition={currentLanguageDefinition}
+            currentLanguage={true}
+          />
           {viewingLanguage != "en" && (
             <LanguageSpecificDefinition
               key={"en"}
@@ -125,7 +122,11 @@ const LingoDetail = ({
           <OtherLanguageLinks lingo={data} viewingLanguage={viewingLanguage} />
         </div>
       </div>
-      <ContextLinks shareableText={shareableText} slug={slug} viewingLanguage={viewingLanguage} />
+      <ContextLinks
+        shareableText={shareableText}
+        slug={slug}
+        viewingLanguage={viewingLanguage}
+      />
     </div>
   );
 };

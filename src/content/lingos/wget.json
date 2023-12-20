@@ -1,17 +1,17 @@
 {
-    "definitions": [
-        {
-            "definition": "A non-interactive network downloader which supports downloading via HTTP, HTTPS, and FTP protocols.",
-            "expanded": "World Wide Web get",
-            "language": "en",
-            "term_usage_example": "To download a file from the internet, you can use the command 'wget http://example.com/file.txt'."
-        },
-        {
-            "definition": "Un descargador de red no interactivo que admite la descarga a trav\u00e9s de los protocolos HTTP, HTTPS y FTP.",
-            "expanded": "World Wide Web get",
-            "language": "es",
-            "term_usage_example": "Para descargar un archivo de internet, puedes usar el comando 'wget http://example.com/file.txt'."
-        }
-    ],
-    "term": "wget"
+  "definitions": [
+    {
+      "definition": "A non-interactive network downloader which supports downloading via HTTP, HTTPS, and FTP protocols.",
+      "expanded": "World Wide Web get",
+      "language": "en",
+      "term_usage_example": "To download a file from the internet, you can use the command 'wget http://example.com/file.txt'."
+    },
+    {
+      "definition": "Un descargador de red no interactivo que admite la descarga a trav\u00e9s de los protocolos HTTP, HTTPS y FTP.",
+      "expanded": "World Wide Web get",
+      "language": "es",
+      "term_usage_example": "Para descargar un archivo de internet, puedes usar el comando 'wget http://example.com/file.txt'."
+    }
+  ],
+  "term": "wget"
 }

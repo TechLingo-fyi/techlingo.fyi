@@ -1,17 +1,17 @@
 {
-    "definitions": [
-        {
-            "definition": "MVC is an architectural pattern that separates an application into three main logical components: the model, the view, and the controller. Each of these components is built to handle specific development aspects of an application.",
-            "expanded": "Model-View-Controller",
-            "language": "en",
-            "term_usage_example": "The MVC pattern helps in separating the business logic from the user interface, making it easier to manage and test."
-        },
-        {
-            "definition": "MVC es un patr\u00f3n arquitect\u00f3nico que separa una aplicaci\u00f3n en tres componentes l\u00f3gicos principales: el modelo, la vista y el controlador. Cada uno de estos componentes est\u00e1 construido para manejar aspectos espec\u00edficos del desarrollo de una aplicaci\u00f3n.",
-            "expanded": "Modelo-Vista-Controlador",
-            "language": "es",
-            "term_usage_example": "El patr\u00f3n MVC ayuda a separar la l\u00f3gica de negocio de la interfaz de usuario, facilitando su gesti\u00f3n y prueba."
-        }
-    ],
-    "term": "MVC"
+  "definitions": [
+    {
+      "definition": "MVC is an architectural pattern that separates an application into three main logical components: the model, the view, and the controller. Each of these components is built to handle specific development aspects of an application.",
+      "expanded": "Model-View-Controller",
+      "language": "en",
+      "term_usage_example": "The MVC pattern helps in separating the business logic from the user interface, making it easier to manage and test."
+    },
+    {
+      "definition": "MVC es un patr\u00f3n arquitect\u00f3nico que separa una aplicaci\u00f3n en tres componentes l\u00f3gicos principales: el modelo, la vista y el controlador. Cada uno de estos componentes est\u00e1 construido para manejar aspectos espec\u00edficos del desarrollo de una aplicaci\u00f3n.",
+      "expanded": "Modelo-Vista-Controlador",
+      "language": "es",
+      "term_usage_example": "El patr\u00f3n MVC ayuda a separar la l\u00f3gica de negocio de la interfaz de usuario, facilitando su gesti\u00f3n y prueba."
+    }
+  ],
+  "term": "MVC"
 }

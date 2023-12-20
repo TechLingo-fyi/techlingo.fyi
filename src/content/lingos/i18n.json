@@ -1,17 +1,17 @@
 {
-    "definitions": [
-        {
-            "definition": "It refers to the practice of designing a software application so that it can be easily adapted to various languages and regions without engineering changes.",
-            "expanded": "Internationalization",
-            "language": "en",
-            "term_usage_example": "By focusing on i18n early in the development process, we can ensure our application appeals to a global audience."
-        },
-        {
-            "definition": "Se refiere a la pr\u00e1ctica de dise\u00f1ar una aplicaci\u00f3n de software de tal manera que se pueda adaptar f\u00e1cilmente a varios idiomas y regiones sin cambios de ingenier\u00eda.",
-            "expanded": "Internacionalizaci\u00f3n",
-            "language": "es",
-            "term_usage_example": "Al enfocarnos en i18n desde el inicio del proceso de desarrollo, podemos asegurar que nuestra aplicaci\u00f3n sea atractiva para una audiencia global."
-        }
-    ],
-    "term": "i18n"
+  "definitions": [
+    {
+      "definition": "It refers to the practice of designing a software application so that it can be easily adapted to various languages and regions without engineering changes.",
+      "expanded": "Internationalization",
+      "language": "en",
+      "term_usage_example": "By focusing on i18n early in the development process, we can ensure our application appeals to a global audience."
+    },
+    {
+      "definition": "Se refiere a la pr\u00e1ctica de dise\u00f1ar una aplicaci\u00f3n de software de tal manera que se pueda adaptar f\u00e1cilmente a varios idiomas y regiones sin cambios de ingenier\u00eda.",
+      "expanded": "Internacionalizaci\u00f3n",
+      "language": "es",
+      "term_usage_example": "Al enfocarnos en i18n desde el inicio del proceso de desarrollo, podemos asegurar que nuestra aplicaci\u00f3n sea atractiva para una audiencia global."
+    }
+  ],
+  "term": "i18n"
 }

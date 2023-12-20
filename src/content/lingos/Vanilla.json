@@ -1,17 +1,17 @@
 {
-    "definitions": [
-        {
-            "definition": "In programming, 'Vanilla' refers to plain, unmodified code or software that does not use any frameworks, plugins, or third-party libraries.",
-            "expanded": "Not applicable",
-            "language": "en",
-            "term_usage_example": "Although many developers use frameworks, sometimes using Vanilla JavaScript is the best option for simple tasks."
-        },
-        {
-            "definition": "En programaci\u00f3n, 'Vanilla' se refiere a c\u00f3digo o software simple, sin modificaciones, que no utiliza frameworks, plugins ni bibliotecas de terceros.",
-            "expanded": "No aplicable",
-            "language": "es",
-            "term_usage_example": "Aunque muchos desarrolladores utilizan frameworks, a veces usar JavaScript Vanilla es la mejor opci\u00f3n para tareas sencillas."
-        }
-    ],
-    "term": "Vanilla"
+  "definitions": [
+    {
+      "definition": "In programming, 'Vanilla' refers to plain, unmodified code or software that does not use any frameworks, plugins, or third-party libraries.",
+      "expanded": "Not applicable",
+      "language": "en",
+      "term_usage_example": "Although many developers use frameworks, sometimes using Vanilla JavaScript is the best option for simple tasks."
+    },
+    {
+      "definition": "En programaci\u00f3n, 'Vanilla' se refiere a c\u00f3digo o software simple, sin modificaciones, que no utiliza frameworks, plugins ni bibliotecas de terceros.",
+      "expanded": "No aplicable",
+      "language": "es",
+      "term_usage_example": "Aunque muchos desarrolladores utilizan frameworks, a veces usar JavaScript Vanilla es la mejor opci\u00f3n para tareas sencillas."
+    }
+  ],
+  "term": "Vanilla"
 }

@@ -1,17 +1,17 @@
 {
-    "definitions": [
-        {
-            "definition": "The minimum viable product is the most basic version of a product that can be released to the market with enough features to satisfy early adopters and to provide feedback for future development.",
-            "expanded": "Minimum Viable Product",
-            "language": "en",
-            "term_usage_example": "The startup focused on quickly launching an MVP to test their business concept."
-        },
-        {
-            "definition": "El producto m\u00ednimo viable es la versi\u00f3n m\u00e1s b\u00e1sica de un producto que se puede lanzar al mercado con suficientes caracter\u00edsticas para satisfacer a los primeros adoptantes y proporcionar retroalimentaci\u00f3n para el desarrollo futuro.",
-            "expanded": "Producto M\u00ednimo Viable",
-            "language": "es",
-            "term_usage_example": "La startup se centr\u00f3 en lanzar r\u00e1pidamente un MVP para probar su concepto de negocio."
-        }
-    ],
-    "term": "MVP"
+  "definitions": [
+    {
+      "definition": "The minimum viable product is the most basic version of a product that can be released to the market with enough features to satisfy early adopters and to provide feedback for future development.",
+      "expanded": "Minimum Viable Product",
+      "language": "en",
+      "term_usage_example": "The startup focused on quickly launching an MVP to test their business concept."
+    },
+    {
+      "definition": "El producto m\u00ednimo viable es la versi\u00f3n m\u00e1s b\u00e1sica de un producto que se puede lanzar al mercado con suficientes caracter\u00edsticas para satisfacer a los primeros adoptantes y proporcionar retroalimentaci\u00f3n para el desarrollo futuro.",
+      "expanded": "Producto M\u00ednimo Viable",
+      "language": "es",
+      "term_usage_example": "La startup se centr\u00f3 en lanzar r\u00e1pidamente un MVP para probar su concepto de negocio."
+    }
+  ],
+  "term": "MVP"
 }
