@@ -1,16 +1,19 @@
 ---
-import '@/styles/globals.css'
-import { MainComponent } from "@/components/ui/main"
-import { getCollection } from 'astro:content';
-import type { Lingo } from "@/TypeLingo"
+import "@/styles/globals.css";
+import { MainComponent } from "@/components/ui/main";
+import { getCollection } from "astro:content";
+import type { Lingo } from "@/TypeLingo";
 import Layout from "../layouts/Layout.astro";
 
-const lingos = (await getCollection('lingos')).map((lingo) => {
-  return lingo.data as Lingo
-})
+const lingos = (await getCollection("lingos")).map((lingo) => {
+  return lingo.data as Lingo;
+});
 ---
 
-<Layout title="TechLingo.fyi" description="TechLingo.fyi is a free resource for people who want to learn about the jargon and acronyms used in the tech industry." path="">
-	<MainComponent lingos={lingos} />
+<Layout
+  title="TechLingo.fyi"
+  description="TechLingo.fyi is a free resource for people who want to learn about the jargon and acronyms used in the tech industry."
+  path=""
+>
+  <MainComponent lingos={lingos} />
 </Layout>
-
