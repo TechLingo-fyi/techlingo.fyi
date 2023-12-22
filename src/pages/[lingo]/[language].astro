@@ -3,6 +3,8 @@ import '@/styles/globals.css'
 import { getCollection } from 'astro:content';
 import type { Lingo } from "@/TypeLingo"
 import LingoDetail from "../../components/LingoDetail";
+import Layout from "../../layouts/Layout.astro";
+
 export async function getStaticPaths() {
 
 
@@ -49,16 +51,8 @@ const path = `${lingo}/${language}`;
 const shareableText = `${dscription} https://techlingo.fyi/${path}`
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-    <LingoDetail client:only  data={data} shareableText={shareableText} viewingLanguage={language} slug={lingo} />
-
-</body>
-</html>
+<Layout title="TechLingo.fyi" description="TechLingo.fyi is a free resource for people who want to learn about the jargon and acronyms used in the tech industry." path="">
+  <div class="flex items-center justify-center">
+	  <LingoDetail client:only  data={data} shareableText={shareableText} viewingLanguage={language} slug={lingo} />
+  </div>
+</Layout>

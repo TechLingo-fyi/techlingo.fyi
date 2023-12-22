@@ -31,19 +31,7 @@ const MainComponent = React.forwardRef<HTMLDivElement, MainComponentProps>(
     );
 
     return (
-      <section className="container mx-auto py-8 px-4 md:px-6">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8">
-          <h1 className="text-2xl md:text-4xl font-bold">TechLingo.fyi</h1>
-          <div className="w-full md:w-auto flex items-center gap-4">
-            <Input
-              className="flex-grow"
-              id="search"
-              placeholder="Search for word"
-              type="text"
-            />
-            <Button variant="contained">Search</Button>
-          </div>
-        </div>
+      <section className="container mx-auto pt-0 pb-8 px-4 md:px-6">
         <div className="flex mt-12">
           <aside className="mr-8 mt-2">
             <ul className="sticky top-2 space-y-1">
