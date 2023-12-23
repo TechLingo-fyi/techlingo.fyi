@@ -7,11 +7,12 @@
       "term_usage_example": "I have to answer the door, BRB."
     },
     {
-      "definition": "Es un acr\u00f3nimo utilizado en la comunicaci\u00f3n en l\u00ednea para indicar que una persona estar\u00e1 ausente de su computadora o dispositivo por un corto per\u00edodo, pero regresar\u00e1 pronto.",
+      "definition": "Es un acrónimo utilizado en la comunicación en línea para indicar que una persona estará ausente de su computadora o dispositivo por un corto período, pero regresará pronto.",
       "expanded": "Vuelvo Enseguida",
       "language": "es",
       "term_usage_example": "Tengo que contestar la puerta, BRB."
     }
   ],
-  "term": "BRB"
+  "term": "BRB",
+  "slug": "brb"
 }

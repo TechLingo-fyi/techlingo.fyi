@@ -7,11 +7,12 @@
       "term_usage_example": "Streaming high-definition videos requires a lot of bandwidth."
     },
     {
-      "definition": "En inform\u00e1tica, se refiere a la tasa m\u00e1xima de transferencia de datos de una red o conexi\u00f3n a internet, indicando cu\u00e1ntos datos pueden enviarse a trav\u00e9s de una conexi\u00f3n espec\u00edfica en un tiempo determinado.",
+      "definition": "En informática, se refiere a la tasa máxima de transferencia de datos de una red o conexión a internet, indicando cuántos datos pueden enviarse a través de una conexión específica en un tiempo determinado.",
       "expanded": "Ancho de Banda",
       "language": "es",
-      "term_usage_example": "Transmitir videos en alta definici\u00f3n requiere mucho ancho de banda."
+      "term_usage_example": "Transmitir videos en alta definición requiere mucho ancho de banda."
     }
   ],
-  "term": "Bandwidth"
+  "term": "Bandwidth",
+  "slug": "bandwidth"
 }

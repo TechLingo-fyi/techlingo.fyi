@@ -7,11 +7,12 @@
       "term_usage_example": "IIRC, the last update to the application was made two months ago."
     },
     {
-      "definition": "Un acr\u00f3nimo utilizado en conversaciones en l\u00ednea para indicar que la persona que habla no est\u00e1 completamente segura de la informaci\u00f3n proporcionada, pero cree que es precisa basada en su memoria.",
+      "definition": "Un acrónimo utilizado en conversaciones en línea para indicar que la persona que habla no está completamente segura de la información proporcionada, pero cree que es precisa basada en su memoria.",
       "expanded": "Si Recuerdo Correctamente",
       "language": "es",
-      "term_usage_example": "IIRC, la \u00faltima actualizaci\u00f3n de la aplicaci\u00f3n se hizo hace dos meses."
+      "term_usage_example": "IIRC, la última actualización de la aplicación se hizo hace dos meses."
     }
   ],
-  "term": "IIRC"
+  "term": "IIRC",
+  "slug": "iirc"
 }

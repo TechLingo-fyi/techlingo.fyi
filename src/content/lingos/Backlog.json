@@ -7,11 +7,12 @@
       "term_usage_example": "The project manager updated the backlog to reflect the most urgent features that need development."
     },
     {
-      "definition": "En el contexto de la programaci\u00f3n y la gesti\u00f3n de proyectos, un backlog es una lista priorizada de tareas en las que los equipos necesitan trabajar.",
+      "definition": "En el contexto de la programación y la gestión de proyectos, un backlog es una lista priorizada de tareas en las que los equipos necesitan trabajar.",
       "expanded": "No aplicable",
       "language": "es",
-      "term_usage_example": "El gerente del proyecto actualiz\u00f3 el backlog para reflejar las caracter\u00edsticas m\u00e1s urgentes que necesitan desarrollo."
+      "term_usage_example": "El gerente del proyecto actualizó el backlog para reflejar las características más urgentes que necesitan desarrollo."
     }
   ],
-  "term": "Backlog"
+  "term": "Backlog",
+  "slug": "backlog"
 }

@@ -7,11 +7,12 @@
       "term_usage_example": "To download a file from the internet, you can use the cURL command with the appropriate URL."
     },
     {
-      "definition": "cURL es una herramienta de l\u00ednea de comandos para transferir datos utilizando varios protocolos de red.",
+      "definition": "cURL es una herramienta de línea de comandos para transferir datos utilizando varios protocolos de red.",
       "expanded": "Cliente URL",
       "language": "es",
       "term_usage_example": "Para descargar un archivo de Internet, puedes usar el comando cURL con la URL apropiada."
     }
   ],
-  "term": "cURL"
+  "term": "cURL",
+  "slug": "curl"
 }

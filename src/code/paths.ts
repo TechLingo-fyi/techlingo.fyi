@@ -15,7 +15,7 @@ export async function getLingoPaths() {
     return languages.map((language) => {
       return {
         params: {
-          lingo: lingo.term,
+          lingo: lingo.slug,
           language: language,
         },
         props: {

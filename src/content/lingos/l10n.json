@@ -7,11 +7,12 @@
       "term_usage_example": "Our app's l10n efforts have greatly increased its popularity overseas."
     },
     {
-      "definition": "Se refiere al proceso de adaptar un producto, como software o contenido web, para satisfacer el idioma, cultura y otros requisitos de un mercado objetivo espec\u00edfico.",
-      "expanded": "Localizaci\u00f3n",
+      "definition": "Se refiere al proceso de adaptar un producto, como software o contenido web, para satisfacer el idioma, cultura y otros requisitos de un mercado objetivo específico.",
+      "expanded": "Localización",
       "language": "es",
-      "term_usage_example": "Nuestros esfuerzos de l10n han aumentado enormemente la popularidad de nuestra aplicaci\u00f3n en el extranjero."
+      "term_usage_example": "Nuestros esfuerzos de l10n han aumentado enormemente la popularidad de nuestra aplicación en el extranjero."
     }
   ],
-  "term": "l10n"
+  "term": "l10n",
+  "slug": "l10n"
 }

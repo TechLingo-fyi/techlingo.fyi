@@ -4,6 +4,7 @@ const lingos = defineCollection({
   type: "data",
   schema: z.object({
     term: z.string(),
+    slug: z.string(),
     definitions: z.array(
       z.object({
         language: z.string(),

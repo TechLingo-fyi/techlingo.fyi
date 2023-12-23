@@ -10,8 +10,9 @@
       "definition": "PTO se refiere al tiempo que los empleados pueden estar ausentes del trabajo mientras siguen recibiendo su sueldo habitual.",
       "expanded": "Tiempo Libre Remunerado",
       "language": "es",
-      "term_usage_example": "Susan est\u00e1 planeando usar algunos de sus d\u00edas PTO para unas vacaciones familiares."
+      "term_usage_example": "Susan está planeando usar algunos de sus días PTO para unas vacaciones familiares."
     }
   ],
-  "term": "PTO"
+  "term": "PTO",
+  "slug": "pto"
 }

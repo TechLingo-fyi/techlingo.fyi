@@ -7,11 +7,12 @@
       "term_usage_example": "The MVC pattern helps in separating the business logic from the user interface, making it easier to manage and test."
     },
     {
-      "definition": "MVC es un patr\u00f3n arquitect\u00f3nico que separa una aplicaci\u00f3n en tres componentes l\u00f3gicos principales: el modelo, la vista y el controlador. Cada uno de estos componentes est\u00e1 construido para manejar aspectos espec\u00edficos del desarrollo de una aplicaci\u00f3n.",
+      "definition": "MVC es un patrón arquitectónico que separa una aplicación en tres componentes lógicos principales: el modelo, la vista y el controlador. Cada uno de estos componentes está construido para manejar aspectos específicos del desarrollo de una aplicación.",
       "expanded": "Modelo-Vista-Controlador",
       "language": "es",
-      "term_usage_example": "El patr\u00f3n MVC ayuda a separar la l\u00f3gica de negocio de la interfaz de usuario, facilitando su gesti\u00f3n y prueba."
+      "term_usage_example": "El patrón MVC ayuda a separar la lógica de negocio de la interfaz de usuario, facilitando su gestión y prueba."
     }
   ],
-  "term": "MVC"
+  "term": "MVC",
+  "slug": "mvc"
 }

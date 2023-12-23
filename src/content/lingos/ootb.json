@@ -7,11 +7,12 @@
       "term_usage_example": "The software offers great OOTB functionality, allowing users to get started right away."
     },
     {
-      "definition": "Se refiere al software que est\u00e1 listo para usarse inmediatamente despu\u00e9s de la instalaci\u00f3n sin requerir configuraci\u00f3n o modificaci\u00f3n.",
+      "definition": "Se refiere al software que está listo para usarse inmediatamente después de la instalación sin requerir configuración o modificación.",
       "expanded": "Fuera de la Caja",
       "language": "es",
       "term_usage_example": "El software ofrece una excelente funcionalidad OOTB, permitiendo a los usuarios comenzar a trabajar de inmediato."
     }
   ],
-  "term": "OOTB"
+  "term": "OOTB",
+  "slug": "ootb"
 }

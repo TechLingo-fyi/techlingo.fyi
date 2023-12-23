@@ -7,11 +7,12 @@
       "term_usage_example": "The mobile app uses a weather service API to fetch the latest weather updates."
     },
     {
-      "definition": "Una API, o Interfaz de Programaci\u00f3n de Aplicaciones, es un conjunto de reglas y especificaciones que permite a las aplicaciones de software comunicarse entre s\u00ed. Define m\u00e9todos para solicitar y enviar datos entre diferentes sistemas de software, lo que permite su interoperabilidad.",
-      "expanded": "Interfaz de Programaci\u00f3n de Aplicaciones",
+      "definition": "Una API, o Interfaz de Programación de Aplicaciones, es un conjunto de reglas y especificaciones que permite a las aplicaciones de software comunicarse entre sí. Define métodos para solicitar y enviar datos entre diferentes sistemas de software, lo que permite su interoperabilidad.",
+      "expanded": "Interfaz de Programación de Aplicaciones",
       "language": "es",
-      "term_usage_example": "La aplicaci\u00f3n m\u00f3vil utiliza una API de servicio meteorol\u00f3gico para obtener las \u00faltimas actualizaciones del clima."
+      "term_usage_example": "La aplicación móvil utiliza una API de servicio meteorológico para obtener las últimas actualizaciones del clima."
     }
   ],
-  "term": "API"
+  "term": "API",
+  "slug": "api"
 }

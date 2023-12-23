@@ -6,6 +6,7 @@ export interface Definition {
 }
 
 export interface Lingo {
+  slug: string;
   term: string;
   definitions: Definition[];
 }

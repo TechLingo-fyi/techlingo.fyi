@@ -7,11 +7,12 @@
       "term_usage_example": "The application crashed due to a bug in the authentication module."
     },
     {
-      "definition": "Un bug es un defecto o fallo en un programa inform\u00e1tico que provoca que este produzca un resultado incorrecto o inesperado, o que se comporte de maneras no intencionadas.",
+      "definition": "Un bug es un defecto o fallo en un programa informático que provoca que este produzca un resultado incorrecto o inesperado, o que se comporte de maneras no intencionadas.",
       "expanded": "No Aplicable",
       "language": "es",
-      "term_usage_example": "La aplicaci\u00f3n se cerr\u00f3 debido a un bug en el m\u00f3dulo de autenticaci\u00f3n."
+      "term_usage_example": "La aplicación se cerró debido a un bug en el módulo de autenticación."
     }
   ],
-  "term": "Bug"
+  "term": "Bug",
+  "slug": "bug"
 }

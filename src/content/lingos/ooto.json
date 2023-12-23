@@ -7,11 +7,12 @@
       "term_usage_example": "Please note that I will be OOTO next week for a conference."
     },
     {
-      "definition": "Fuera de la oficina (OOTO), se usa a menudo para indicar que alguien no est\u00e1 presente en su entorno de trabajo y no puede ser contactado por el momento.",
+      "definition": "Fuera de la oficina (OOTO), se usa a menudo para indicar que alguien no está presente en su entorno de trabajo y no puede ser contactado por el momento.",
       "expanded": "Fuera de la Oficina",
       "language": "es",
-      "term_usage_example": "Tenga en cuenta que estar\u00e9 OOTO la pr\u00f3xima semana por una conferencia."
+      "term_usage_example": "Tenga en cuenta que estaré OOTO la próxima semana por una conferencia."
     }
   ],
-  "term": "OOTO"
+  "term": "OOTO",
+  "slug": "ooto"
 }

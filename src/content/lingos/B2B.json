@@ -7,11 +7,12 @@
       "term_usage_example": "Our company specializes in providing B2B solutions for supply chain management."
     },
     {
-      "definition": "Se refiere al intercambio de productos, servicios o informaci\u00f3n entre empresas, en lugar de entre empresas y consumidores.",
+      "definition": "Se refiere al intercambio de productos, servicios o información entre empresas, en lugar de entre empresas y consumidores.",
       "expanded": "Empresa a Empresa",
       "language": "es",
-      "term_usage_example": "Nuestra compa\u00f1\u00eda se especializa en proporcionar soluciones B2B para la gesti\u00f3n de la cadena de suministro."
+      "term_usage_example": "Nuestra compañía se especializa en proporcionar soluciones B2B para la gestión de la cadena de suministro."
     }
   ],
-  "term": "B2B"
+  "term": "B2B",
+  "slug": "b2b"
 }

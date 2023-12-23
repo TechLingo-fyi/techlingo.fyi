@@ -7,11 +7,12 @@
       "term_usage_example": "By applying SOLID principles, the software architect ensured that the system was easy to maintain and extend over time."
     },
     {
-      "definition": "Un acr\u00f3nimo mnemot\u00e9cnico para cinco principios de dise\u00f1o destinados a hacer que los dise\u00f1os de software sean m\u00e1s comprensibles, flexibles y mantenibles en la programaci\u00f3n orientada a objetos.",
-      "expanded": "Responsabilidad \u00danica, Abierto/Cerrado, Sustituci\u00f3n de Liskov, Segregaci\u00f3n de Interfaces, Inversi\u00f3n de Dependencias",
+      "definition": "Un acrónimo mnemotécnico para cinco principios de diseño destinados a hacer que los diseños de software sean más comprensibles, flexibles y mantenibles en la programación orientada a objetos.",
+      "expanded": "Responsabilidad Única, Abierto/Cerrado, Sustitución de Liskov, Segregación de Interfaces, Inversión de Dependencias",
       "language": "es",
-      "term_usage_example": "Al aplicar los principios SOLID, el arquitecto de software se asegur\u00f3 de que el sistema fuera f\u00e1cil de mantener y extender con el tiempo."
+      "term_usage_example": "Al aplicar los principios SOLID, el arquitecto de software se aseguró de que el sistema fuera fácil de mantener y extender con el tiempo."
     }
   ],
-  "term": "SOLID"
+  "term": "SOLID",
+  "slug": "solid"
 }

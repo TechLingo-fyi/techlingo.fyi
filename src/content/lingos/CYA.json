@@ -7,11 +7,12 @@
       "term_usage_example": "Make sure to document all the decisions you make on this project for CYA purposes."
     },
     {
-      "definition": "Un t\u00e9rmino coloquial utilizado a menudo en negocios y gesti\u00f3n de proyectos para describir acciones realizadas para protegerse de posibles culpas o cr\u00edticas.",
-      "expanded": "C\u00fabrete las Espaldas",
+      "definition": "Un término coloquial utilizado a menudo en negocios y gestión de proyectos para describir acciones realizadas para protegerse de posibles culpas o críticas.",
+      "expanded": "Cúbrete las Espaldas",
       "language": "es",
-      "term_usage_example": "Aseg\u00farate de documentar todas las decisiones que tomes en este proyecto para prop\u00f3sitos de CYA."
+      "term_usage_example": "Asegúrate de documentar todas las decisiones que tomes en este proyecto para propósitos de CYA."
     }
   ],
-  "term": "CYA"
+  "term": "CYA",
+  "slug": "cya"
 }

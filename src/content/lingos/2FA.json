@@ -7,11 +7,12 @@
       "term_usage_example": "For enhanced security, our platform requires 2FA before giving access to sensitive account settings."
     },
     {
-      "definition": "Un proceso de seguridad en el que el usuario proporciona dos factores de autenticaci\u00f3n diferentes para verificarse.",
-      "expanded": "Autenticaci\u00f3n de Dos Factores",
+      "definition": "Un proceso de seguridad en el que el usuario proporciona dos factores de autenticación diferentes para verificarse.",
+      "expanded": "Autenticación de Dos Factores",
       "language": "es",
-      "term_usage_example": "Para mayor seguridad, nuestra plataforma requiere 2FA antes de dar acceso a la configuraci\u00f3n sensible de la cuenta."
+      "term_usage_example": "Para mayor seguridad, nuestra plataforma requiere 2FA antes de dar acceso a la configuración sensible de la cuenta."
     }
   ],
-  "term": "2FA"
+  "term": "2FA",
+  "slug": "2fa"
 }

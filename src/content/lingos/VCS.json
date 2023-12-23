@@ -7,11 +7,12 @@
       "term_usage_example": "Git is a widely used VCS for tracking changes in source code during software development."
     },
     {
-      "definition": "Un componente de la gesti\u00f3n de configuraci\u00f3n de software, el VCS es responsable de gestionar los cambios en programas inform\u00e1ticos, documentos, grandes sitios web u otras colecciones de informaci\u00f3n.",
+      "definition": "Un componente de la gestión de configuración de software, el VCS es responsable de gestionar los cambios en programas informáticos, documentos, grandes sitios web u otras colecciones de información.",
       "expanded": "Sistema de Control de Versiones",
       "language": "es",
-      "term_usage_example": "Git es un VCS ampliamente utilizado para rastrear cambios en el c\u00f3digo fuente durante el desarrollo de software."
+      "term_usage_example": "Git es un VCS ampliamente utilizado para rastrear cambios en el código fuente durante el desarrollo de software."
     }
   ],
-  "term": "VCS"
+  "term": "VCS",
+  "slug": "vcs"
 }

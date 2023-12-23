@@ -7,11 +7,12 @@
       "term_usage_example": "The UI of the app is very intuitive and user-friendly."
     },
     {
-      "definition": "Se refiere al espacio donde ocurren las interacciones entre humanos y m\u00e1quinas, involucrando pantallas, p\u00e1ginas y elementos visuales como botones e \u00edconos.",
+      "definition": "Se refiere al espacio donde ocurren las interacciones entre humanos y máquinas, involucrando pantallas, páginas y elementos visuales como botones e íconos.",
       "expanded": "Interfaz de Usuario",
       "language": "es",
-      "term_usage_example": "La UI de la aplicaci\u00f3n es muy intuitiva y f\u00e1cil de usar."
+      "term_usage_example": "La UI de la aplicación es muy intuitiva y fácil de usar."
     }
   ],
-  "term": "UI"
+  "term": "UI",
+  "slug": "ui"
 }

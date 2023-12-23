@@ -7,11 +7,12 @@
       "term_usage_example": "To develop an Android app, you will likely use the Android SDK provided by Google."
     },
     {
-      "definition": "Una colecci\u00f3n de herramientas y bibliotecas de software que los desarrolladores usan para crear aplicaciones para plataformas o marcos espec\u00edficos.",
+      "definition": "Una colección de herramientas y bibliotecas de software que los desarrolladores usan para crear aplicaciones para plataformas o marcos específicos.",
       "expanded": "Kit de Desarrollo de Software",
       "language": "es",
-      "term_usage_example": "Para desarrollar una aplicaci\u00f3n de Android, probablemente usar\u00e1s el SDK de Android proporcionado por Google."
+      "term_usage_example": "Para desarrollar una aplicación de Android, probablemente usarás el SDK de Android proporcionado por Google."
     }
   ],
-  "term": "SDK"
+  "term": "SDK",
+  "slug": "sdk"
 }

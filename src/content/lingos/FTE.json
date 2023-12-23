@@ -13,5 +13,6 @@
       "term_usage_example": "El presupuesto del proyecto contempla 5 FTEs."
     }
   ],
-  "term": "FTE"
+  "term": "FTE",
+  "slug": "fte"
 }

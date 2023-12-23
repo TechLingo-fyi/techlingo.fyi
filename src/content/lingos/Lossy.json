@@ -7,11 +7,12 @@
       "term_usage_example": "JPEG is a common lossy compression format for images."
     },
     {
-      "definition": "Pertenece a un algoritmo de compresi\u00f3n de datos que reduce el tama\u00f1o de los datos eliminando parte de ellos, lo que puede resultar en una p\u00e9rdida de calidad.",
-      "expanded": "Compresi\u00f3n con P\u00e9rdida",
+      "definition": "Pertenece a un algoritmo de compresión de datos que reduce el tamaño de los datos eliminando parte de ellos, lo que puede resultar en una pérdida de calidad.",
+      "expanded": "Compresión con Pérdida",
       "language": "es",
-      "term_usage_example": "JPEG es un formato com\u00fan de compresi\u00f3n lossy para im\u00e1genes."
+      "term_usage_example": "JPEG es un formato común de compresión lossy para imágenes."
     }
   ],
-  "term": "Lossy"
+  "term": "Lossy",
+  "slug": "lossy"
 }

@@ -7,11 +7,12 @@
       "term_usage_example": "The new feature is still a WIP, but we'll have a demo ready by next week."
     },
     {
-      "definition": "Un t\u00e9rmino utilizado para describir un proyecto o tarea que actualmente est\u00e1 en desarrollo y a\u00fan no est\u00e1 completo.",
+      "definition": "Un término utilizado para describir un proyecto o tarea que actualmente está en desarrollo y aún no está completo.",
       "expanded": "Trabajo en Proceso",
       "language": "es",
-      "term_usage_example": "La nueva caracter\u00edstica todav\u00eda es un WIP, pero tendremos una demostraci\u00f3n lista para la pr\u00f3xima semana."
+      "term_usage_example": "La nueva característica todavía es un WIP, pero tendremos una demostración lista para la próxima semana."
     }
   ],
-  "term": "WIP"
+  "term": "WIP",
+  "slug": "wip"
 }

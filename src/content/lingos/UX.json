@@ -7,11 +7,12 @@
       "term_usage_example": "The UX design of the app ensures users can navigate it easily and find what they need without confusion."
     },
     {
-      "definition": "Se refiere a la experiencia general que tiene un usuario al interactuar con un producto o servicio, especialmente en t\u00e9rminos de cu\u00e1n f\u00e1cil o agradable es de usar.",
+      "definition": "Se refiere a la experiencia general que tiene un usuario al interactuar con un producto o servicio, especialmente en términos de cuán fácil o agradable es de usar.",
       "expanded": "Experiencia de Usuario",
       "language": "es",
-      "term_usage_example": "El dise\u00f1o de UX de la aplicaci\u00f3n asegura que los usuarios puedan navegarla f\u00e1cilmente y encontrar lo que necesitan sin confusi\u00f3n."
+      "term_usage_example": "El diseño de UX de la aplicación asegura que los usuarios puedan navegarla fácilmente y encontrar lo que necesitan sin confusión."
     }
   ],
-  "term": "UX"
+  "term": "UX",
+  "slug": "ux"
 }

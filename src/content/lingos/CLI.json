@@ -7,11 +7,12 @@
       "term_usage_example": "You can perform the same operations in the CLI as in the GUI, often with greater precision and automation."
     },
     {
-      "definition": "Una interfaz basada en texto utilizada para introducir comandos a un sistema inform\u00e1tico.",
-      "expanded": "Interfaz de L\u00ednea de Comandos",
+      "definition": "Una interfaz basada en texto utilizada para introducir comandos a un sistema informático.",
+      "expanded": "Interfaz de Línea de Comandos",
       "language": "es",
-      "term_usage_example": "Puedes realizar las mismas operaciones en la CLI que en la GUI, a menudo con mayor precisi\u00f3n y automatizaci\u00f3n."
+      "term_usage_example": "Puedes realizar las mismas operaciones en la CLI que en la GUI, a menudo con mayor precisión y automatización."
     }
   ],
-  "term": "CLI"
+  "term": "CLI",
+  "slug": "cli"
 }

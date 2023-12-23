@@ -7,11 +7,12 @@
       "term_usage_example": "Investors often look at the performance of FANG stocks as a gauge of the tech sector's health."
     },
     {
-      "definition": "Un acr\u00f3nimo que se refiere a las acciones de cuatro de las compa\u00f1\u00edas de tecnolog\u00eda m\u00e1s destacadas y de alto rendimiento: Facebook, Amazon, Netflix y Google.",
+      "definition": "Un acrónimo que se refiere a las acciones de cuatro de las compañías de tecnología más destacadas y de alto rendimiento: Facebook, Amazon, Netflix y Google.",
       "expanded": "Facebook, Amazon, Netflix, Google",
       "language": "es",
-      "term_usage_example": "Los inversores a menudo miran el rendimiento de las acciones FANG como un indicador de la salud del sector tecnol\u00f3gico."
+      "term_usage_example": "Los inversores a menudo miran el rendimiento de las acciones FANG como un indicador de la salud del sector tecnológico."
     }
   ],
-  "term": "FANG"
+  "term": "FANG",
+  "slug": "fang"
 }

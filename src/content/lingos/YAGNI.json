@@ -10,8 +10,9 @@
       "definition": "Un principio en el desarrollo de software que indica que un programador no debe agregar funcionalidad hasta que sea necesaria.",
       "expanded": "No Vas a Necesitarlo",
       "language": "es",
-      "term_usage_example": "Al decidir si implementar una caracter\u00edstica, nuestro equipo a menudo se adhiere al principio YAGNI."
+      "term_usage_example": "Al decidir si implementar una característica, nuestro equipo a menudo se adhiere al principio YAGNI."
     }
   ],
-  "term": "YAGNI"
+  "term": "YAGNI",
+  "slug": "yagni"
 }

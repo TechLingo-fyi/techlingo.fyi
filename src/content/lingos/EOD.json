@@ -7,11 +7,12 @@
       "term_usage_example": "Please make sure all code changes are committed by EOD."
     },
     {
-      "definition": "En programaci\u00f3n, EOD a menudo se refiere a la fecha l\u00edmite para completar o entregar una tarea o proyecto.",
-      "expanded": "Fin del D\u00eda",
+      "definition": "En programación, EOD a menudo se refiere a la fecha límite para completar o entregar una tarea o proyecto.",
+      "expanded": "Fin del Día",
       "language": "es",
-      "term_usage_example": "Aseg\u00farate de que todos los cambios de c\u00f3digo est\u00e9n confirmados para el EOD."
+      "term_usage_example": "Asegúrate de que todos los cambios de código estén confirmados para el EOD."
     }
   ],
-  "term": "EOD"
+  "term": "EOD",
+  "slug": "eod"
 }

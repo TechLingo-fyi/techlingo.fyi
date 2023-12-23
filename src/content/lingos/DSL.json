@@ -7,11 +7,12 @@
       "term_usage_example": "SQL is a DSL for database queries."
     },
     {
-      "definition": "Un lenguaje inform\u00e1tico especializado en un dominio de aplicaci\u00f3n particular.",
-      "expanded": "Lenguaje Espec\u00edfico del Dominio",
+      "definition": "Un lenguaje informático especializado en un dominio de aplicación particular.",
+      "expanded": "Lenguaje Específico del Dominio",
       "language": "es",
       "term_usage_example": "SQL es un DSL para consultas de bases de datos."
     }
   ],
-  "term": "DSL"
+  "term": "DSL",
+  "slug": "dsl"
 }

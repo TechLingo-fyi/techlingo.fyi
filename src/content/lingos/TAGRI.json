@@ -2,16 +2,17 @@
   "definitions": [
     {
       "definition": "TAGRI is an acronym that emphasizes the importance of clarity and brevity in communication, acknowledging that long, overly detailed information is often not read by the intended audience.",
-      "expanded": "They Ain\u2019t Gonna Read It",
+      "expanded": "They Ain’t Gonna Read It",
       "language": "en",
       "term_usage_example": "When documenting the code, remember TAGRI; keep it short and to the point."
     },
     {
-      "definition": "TAGRI es un acr\u00f3nimo que enfatiza la importancia de la claridad y concisi\u00f3n en la comunicaci\u00f3n, reconociendo que la informaci\u00f3n larga y demasiado detallada a menudo no es le\u00edda por el p\u00fablico objetivo.",
-      "expanded": "They Ain\u2019t Gonna Read It",
+      "definition": "TAGRI es un acrónimo que enfatiza la importancia de la claridad y concisión en la comunicación, reconociendo que la información larga y demasiado detallada a menudo no es leída por el público objetivo.",
+      "expanded": "They Ain’t Gonna Read It",
       "language": "es",
-      "term_usage_example": "Al documentar el c\u00f3digo, recuerda TAGRI; hazlo breve y al grano."
+      "term_usage_example": "Al documentar el código, recuerda TAGRI; hazlo breve y al grano."
     }
   ],
-  "term": "TAGRI"
+  "term": "TAGRI",
+  "slug": "tagri"
 }

@@ -2,16 +2,17 @@
   "definitions": [
     {
       "definition": "A shorthand notation indicating that what follows is a concise summary of the previously mentioned content, often used in online discussions or articles.",
-      "expanded": "Too long; didn\u2019t read",
+      "expanded": "Too long; didn’t read",
       "language": "en",
       "term_usage_example": "The document was extensive, so I provided a TL;DR at the end for those who wanted a quick overview."
     },
     {
-      "definition": "Una notaci\u00f3n abreviada que indica que lo que sigue es un resumen conciso del contenido mencionado anteriormente, a menudo utilizado en discusiones en l\u00ednea o art\u00edculos.",
-      "expanded": "Demasiado largo; no lo le\u00ed",
+      "definition": "Una notación abreviada que indica que lo que sigue es un resumen conciso del contenido mencionado anteriormente, a menudo utilizado en discusiones en línea o artículos.",
+      "expanded": "Demasiado largo; no lo leí",
       "language": "es",
-      "term_usage_example": "El documento era extenso, as\u00ed que proporcion\u00e9 un TL;DR al final para aquellos que quer\u00edan un resumen r\u00e1pido."
+      "term_usage_example": "El documento era extenso, así que proporcioné un TL;DR al final para aquellos que querían un resumen rápido."
     }
   ],
-  "term": "TL;DR"
+  "term": "TL;DR",
+  "slug": "tldr"
 }

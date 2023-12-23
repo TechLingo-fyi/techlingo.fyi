@@ -7,11 +7,12 @@
       "term_usage_example": "By using functions, we adhere to the DRY principle and avoid writing the same code multiple times."
     },
     {
-      "definition": "Un principio en el desarrollo de software que tiene como objetivo reducir la repetici\u00f3n de patrones de software, reemplaz\u00e1ndolos con abstracciones o utilizando la normalizaci\u00f3n de datos para evitar la redundancia.",
+      "definition": "Un principio en el desarrollo de software que tiene como objetivo reducir la repetición de patrones de software, reemplazándolos con abstracciones o utilizando la normalización de datos para evitar la redundancia.",
       "expanded": "No te Repitas",
       "language": "es",
-      "term_usage_example": "Mediante el uso de funciones, nos adherimos al principio DRY y evitamos escribir el mismo c\u00f3digo varias veces."
+      "term_usage_example": "Mediante el uso de funciones, nos adherimos al principio DRY y evitamos escribir el mismo código varias veces."
     }
   ],
-  "term": "DRY"
+  "term": "DRY",
+  "slug": "dry"
 }

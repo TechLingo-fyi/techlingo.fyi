@@ -10,8 +10,9 @@
       "definition": "WFH se refiere al concepto de trabajar de forma remota desde casa, en lugar de trasladarse a un entorno de oficina.",
       "expanded": "Trabajo Desde Casa",
       "language": "es",
-      "term_usage_example": "Desde la pandemia, muchas empresas han adoptado pol\u00edticas de WFH para permitir que sus empleados trabajen de forma remota."
+      "term_usage_example": "Desde la pandemia, muchas empresas han adoptado políticas de WFH para permitir que sus empleados trabajen de forma remota."
     }
   ],
-  "term": "WFH"
+  "term": "WFH",
+  "slug": "wfh"
 }

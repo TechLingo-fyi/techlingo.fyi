@@ -8,10 +8,11 @@
     },
     {
       "definition": "Una abreviatura utilizada para expresar el punto de vista o creencia de una persona sin presentarlo como una verdad absoluta.",
-      "expanded": "En Mi Opini\u00f3n",
+      "expanded": "En Mi Opinión",
       "language": "es",
       "term_usage_example": "IMO, Python es un gran lenguaje para que los principiantes aprendan a programar."
     }
   ],
-  "term": "IMO"
+  "term": "IMO",
+  "slug": "imo"
 }

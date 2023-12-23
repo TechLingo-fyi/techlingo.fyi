@@ -7,11 +7,12 @@
       "term_usage_example": "I'm going to quit my job and become an astronaut... jk!"
     },
     {
-      "definition": "Una notaci\u00f3n abreviada que se usa a menudo en mensajes para indicar que la declaraci\u00f3n anterior fue una broma o que no debe tomarse en serio.",
+      "definition": "Una notación abreviada que se usa a menudo en mensajes para indicar que la declaración anterior fue una broma o que no debe tomarse en serio.",
       "expanded": "Es broma",
       "language": "es",
-      "term_usage_example": "Voy a dejar mi trabajo y convertirme en astronauta... \u00a1jk!"
+      "term_usage_example": "Voy a dejar mi trabajo y convertirme en astronauta... ¡jk!"
     }
   ],
-  "term": "jk"
+  "term": "jk",
+  "slug": "jk"
 }

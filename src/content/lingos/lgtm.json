@@ -7,11 +7,12 @@
       "term_usage_example": "I've finished reviewing the pull request, everything seems fine, LGTM."
     },
     {
-      "definition": "Un acr\u00f3nimo utilizado a menudo en revisiones de c\u00f3digo que significa que el revisor ha verificado el c\u00f3digo y lo aprueba sin cambios adicionales.",
-      "expanded": "Se Ve Bien Para M\u00ed",
+      "definition": "Un acrónimo utilizado a menudo en revisiones de código que significa que el revisor ha verificado el código y lo aprueba sin cambios adicionales.",
+      "expanded": "Se Ve Bien Para Mí",
       "language": "es",
-      "term_usage_example": "He terminado de revisar la solicitud de extracci\u00f3n, todo parece estar bien, LGTM."
+      "term_usage_example": "He terminado de revisar la solicitud de extracción, todo parece estar bien, LGTM."
     }
   ],
-  "term": "LGTM"
+  "term": "LGTM",
+  "slug": "lgtm"
 }

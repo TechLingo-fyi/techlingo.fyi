@@ -7,11 +7,12 @@
       "term_usage_example": "The company is assessing the build vs. buy scenario for their new customer relationship management system."
     },
     {
-      "definition": "Un proceso de toma de decisiones donde una organizaci\u00f3n eval\u00faa los costos y beneficios de crear una soluci\u00f3n internamente (construir) versus comprarla a un proveedor externo (comprar).",
+      "definition": "Un proceso de toma de decisiones donde una organización evalúa los costos y beneficios de crear una solución internamente (construir) versus comprarla a un proveedor externo (comprar).",
       "expanded": "Construir versus Comprar",
       "language": "es",
-      "term_usage_example": "La empresa est\u00e1 evaluando el escenario de construir vs. comprar para su nuevo sistema de gesti\u00f3n de relaciones con los clientes."
+      "term_usage_example": "La empresa está evaluando el escenario de construir vs. comprar para su nuevo sistema de gestión de relaciones con los clientes."
     }
   ],
-  "term": "Build vs. Buy"
+  "term": "Build vs. Buy",
+  "slug": "build-vs-buy"
 }

@@ -7,11 +7,12 @@
       "term_usage_example": "The project manager asked for the ETA on the new feature deployment."
     },
     {
-      "definition": "Una estimaci\u00f3n de cu\u00e1ndo se espera que llegue o se complete un proceso, tarea o elemento dado.",
+      "definition": "Una estimación de cuándo se espera que llegue o se complete un proceso, tarea o elemento dado.",
       "expanded": "Tiempo Estimado de Llegada",
       "language": "es",
-      "term_usage_example": "El gerente del proyecto pidi\u00f3 la ETA para el despliegue de la nueva caracter\u00edstica."
+      "term_usage_example": "El gerente del proyecto pidió la ETA para el despliegue de la nueva característica."
     }
   ],
-  "term": "ETA"
+  "term": "ETA",
+  "slug": "eta"
 }
