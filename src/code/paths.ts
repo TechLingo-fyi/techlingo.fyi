@@ -23,8 +23,7 @@ export async function getLingoPaths() {
           relatedLingos: lingos
             .filter((l) => l.term !== lingo.term)
             .sort(() => 0.5 - Math.random())
-            .slice(0, 3)
-            .map((l) => l.term),
+            .slice(0, 3),
         },
       };
     });

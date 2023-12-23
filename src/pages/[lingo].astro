@@ -1,37 +1,47 @@
 ---
 import "@/styles/globals.css";
-import type { Lingo } from "@/TypeLingo";
-import LingoDetail from "../components/LingoDetail";
-import Layout from "../layouts/Layout.astro";
-import { getLingoPaths } from "../code/paths";
+import LingoDetail from "@/components/LingoDetail";
+import Layout from "@/layouts/Layout.astro";
+import { getLingoPaths } from "@/code/paths";
 
 export async function getStaticPaths() {
   return await getLingoPaths();
 }
 
-const { lingo } = Astro.params;
+const { lingo, language } = Astro.params;
 const { data, relatedLingos } = Astro.props;
-const l = data as Lingo;
-
-const dscription = l.definitions.filter((definition) => {
-  return definition.language === "en";
+const viewingLanguage = language ?? "en"
+const lingoDescription = data.definitions.filter((definition) => {
+  return definition.language === viewingLanguage;
 })[0].definition;
 
-const shareableText = `${dscription} https://techlingo.fyi/${lingo}`;
+const shareableText = `${lingoDescription} https://techlingo.fyi/${lingo}`;
 ---
 
 <Layout
   title="TechLingo.fyi"
-  description="TechLingo.fyi is a free resource for people who want to learn about the jargon and acronyms used in the tech industry."
+  description={lingoDescription}
   path=""
 >
   <div class="flex items-center justify-center">
-    <LingoDetail
-      client:only
-      shareableText={shareableText}
-      data={data}
-      viewingLanguage="en"
-      slug={lingo}
-    />
+      <div class="grid grid-cols-3 gap-4 m-10 max-w-3xl min-w-3xl xl:min-w-3xl">
+        <LingoDetail
+          client:only
+          shareableText={shareableText}
+          data={data}
+          viewingLanguage={viewingLanguage}
+          slug={lingo}
+        />
+        <div class="col-span-3 p-4">
+          <h2 class="font-bold">Similar terms</h2>
+        </div>
+        {relatedLingos.map((lingo) => (
+          <a href={`/${lingo.term}`} class="col-span-1 p-4 rounded-lg shadow">
+            <div>
+              <h3 class="font-bold">{lingo.term}</h3>
+            </div>
+          </a>
+        ))}
+    </div>
   </div>
 </Layout>

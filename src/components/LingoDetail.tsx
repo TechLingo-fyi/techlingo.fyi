@@ -5,10 +5,7 @@ import OtherLanguageLinks from "./detail/OtherLanguageLinks";
 import type { Lingo } from "@/TypeLingo";
 
 const cardStyle = [
-  "m-10",
-  "max-w-3xl",
-  "min-w-3xl",
-  "xl:min-w-3xl",
+  "col-span-3",
   "p-8",
   "pb-5",
   "bg-white",
