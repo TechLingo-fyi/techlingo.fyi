@@ -1,6 +1,15 @@
 ---
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import OpenGraphTags from "@/components/OpenGraphTags.astro";
+
+type Props = {
+  title?: string;
+  description: string;
+  path: string;
+};
+
+const { title, description, path } = Astro.props;
 ---
 
 <html lang="en">
@@ -9,7 +18,8 @@ import { Button } from "@/components/ui/button";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <title>{title ? `${title} | ` : ""}TechLingo.fyi</title>
+    <OpenGraphTags title={title} description={description} path={path} />
   </head>
   <body>
     <section class="container mx-auto pt-8 px-4 md:px-6">
