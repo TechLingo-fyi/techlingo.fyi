@@ -49,7 +49,11 @@ const MainComponent = React.forwardRef<HTMLDivElement, MainComponentProps>(
               ([letter, lingos]) => (
                 <>
                   {lingos.map((lingo, idx) => (
-                    <a href={lingo.slug}>
+                    <a
+                      id={`card-${lingo.slug}`}
+                      href={lingo.slug}
+                      className={`card card-${lingo.slug}`}
+                    >
                       <Card
                         className="cursor-pointer hover:bg-gray-50 hover:shadow-lg transition-all duration-200"
                         id={lingo.term}

@@ -37,7 +37,7 @@ const shareableText = `${lingoDescription} ${path}`;
           <h2 class="font-bold">Similar terms</h2>
         </div>
         {relatedLingos.map((lingo) => (
-          <a href={`/${lingo.term}`} class="col-span-1 p-4 rounded-lg shadow">
+          <a href={`/${lingo.slug}`} class="col-span-1 p-4 rounded-lg shadow">
             <div>
               <h3 class="font-bold">{lingo.term}</h3>
             </div>

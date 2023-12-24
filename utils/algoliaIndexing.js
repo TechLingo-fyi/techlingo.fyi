@@ -2,12 +2,12 @@
 import { createRequire } from "module";
 const require = createRequire(import.meta.url);
 import slugify from "slugify";
-const algoliasearch = require('algoliasearch');
+const algoliasearch = require("algoliasearch");
 const fs = require("fs");
 
 const adminKey = process.env.ALGOLIA_ADMIN_KEY;
-const client = algoliasearch('FN1CC8W5LZ', adminKey);
-const index = client.initIndex('search_techlingo');
+const client = algoliasearch("FN1CC8W5LZ", adminKey);
+const index = client.initIndex("search_techlingo");
 
 // read all the json files in the lingos directory
 const lingosDir = "src/content/lingos";
@@ -27,4 +27,4 @@ for (let i = 0; i < jsonFiles.length; i++) {
   });
 }
 
-await index.saveObjects(array)
+await index.saveObjects(array);
