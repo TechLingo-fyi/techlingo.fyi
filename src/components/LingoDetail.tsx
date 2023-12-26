@@ -36,7 +36,7 @@ const LanguageSpecificDefinition = ({
   currentLanguage = false,
 }: {
   language: string;
-  definition: string;
+  definition?: string;
   currentLanguage?: boolean;
 }) => {
   let textSize = "text-md";
@@ -93,7 +93,6 @@ const LingoDetail = ({
   data.definitions.forEach((definition: Definition) => {
     definitionsMap.set(definition.language, definition);
   });
-  const englishDefinition = definitionsMap.get("en");
   const currentLanguageDefinition = definitionsMap.get(viewingLanguage);
   const currentLangSpec = LangMap.get(viewingLanguage) || LangMap.get("en");
   const exampleUsage = `\"${
@@ -120,17 +119,9 @@ const LingoDetail = ({
             currentLanguage={true}
           />
           <blockquote
-            className=" mt-6 indent-10 px-6 font-serif text-xl italic text-gray-900 dark:text-white"
+            className="mt-3 indent-10 px-6 font-serif text-xl italic text-gray-900 dark:text-white"
             dangerouslySetInnerHTML={{ __html: md.render(exampleUsage) }}
           />
-          {viewingLanguage != "en" && (
-            <LanguageSpecificDefinition
-              key={"en"}
-              language={"en"}
-              definition={englishDefinition?.definition}
-              currentLanguage={false}
-            />
-          )}
         </dl>
         <div className="mt-6 text-gray-600">
           <OtherLanguageLinks lingo={data} viewingLanguage={viewingLanguage} />
