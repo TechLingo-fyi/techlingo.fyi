@@ -1,0 +1,18 @@
+{
+  "definitions": [
+    {
+      "definition": "It is an abbreviation often used in technical discussions to specify the topic or subject being referred to.",
+      "expanded": "With respect to",
+      "language": "en",
+      "term_usage_example": "Wrt the database schema changes, we need to update our data models accordingly."
+    },
+    {
+      "definition": "Es una abreviatura que se usa a menudo en discusiones t\u00e9cnicas para especificar el tema o asunto al que se hace referencia.",
+      "expanded": "Con respecto a",
+      "language": "es",
+      "term_usage_example": "Con respecto a los cambios en el esquema de la base de datos, necesitamos actualizar nuestros modelos de datos en consecuencia."
+    }
+  ],
+  "slug": "wrt",
+  "term": "wrt"
+}

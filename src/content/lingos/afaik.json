@@ -1,0 +1,18 @@
+{
+  "definitions": [
+    {
+      "definition": "An acronym used to express that the information being provided is to the best of the speaker's knowledge, but without claiming it's 100% accurate.",
+      "expanded": "As Far As I Know",
+      "language": "en",
+      "term_usage_example": "AFAIK, the function should return a string value."
+    },
+    {
+      "definition": "Un acr\u00f3nimo utilizado para expresar que la informaci\u00f3n proporcionada es lo mejor que el hablante conoce, sin afirmar que es 100% precisa.",
+      "expanded": "Hasta Donde Yo S\u00e9",
+      "language": "es",
+      "term_usage_example": "AFAIK, la funci\u00f3n deber\u00eda devolver un valor de cadena."
+    }
+  ],
+  "slug": "afaik",
+  "term": "AFAIK"
+}
