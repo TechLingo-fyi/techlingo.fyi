@@ -34,20 +34,16 @@ const { title, description, path } = Astro.props;
         </h1>
         <div class="w-full md:w-auto flex items-center gap-4">
           <form class="inline-block" action="/" method="GET">
-
             <div class="relative text-gray-700">
-              <!-- <input class="w-full h-10 pl-3 pr-8 text-base placeholder-gray-600 border rounded-lg focus:shadow-outline" type="text" placeholder="Regular input"/> -->
-              <!-- <button class="absolute inset-y-0 right-0 flex items-center px-4 font-bold text-white bg-indigo-600 rounded-r-lg hover:bg-indigo-500 focus:bg-indigo-700">Search</button> -->
-            <Input
-              id="search"
-              name="search"
-              placeholder="Search for word"
-              type="text"
-              className="w-full h-10 pl-3 pr-8 text-base placeholder-gray-600 border rounded-lg focus:shadow-outline"
-            />
-            <Button id="search" className="absolute inset-y-0 right-0 flex items-center px-4 border font-bold text-black bg-white rounded-r-lg hover:text-white hover:bg-gray-500 focus:bg-gray-700">Search</Button>
-
-          </div>
+              <Input
+                id="search"
+                name="search"
+                placeholder="Search for word"
+                type="text"
+                className="w-full h-10 pl-3 pr-8 text-base placeholder-gray-600 border rounded-lg focus:shadow-outline"
+              />
+              <Button id="search" className="absolute inset-y-0 right-0 flex items-center px-4 border font-bold text-black bg-white rounded-r-lg hover:text-white hover:bg-gray-500 focus:bg-gray-700">Search</Button>
+            </div>
           </form>
         </div>
       </div>

@@ -1,8 +1,12 @@
 import LangMap from "../l18n/Languages";
-import ExpandedTerm from "./detail/ExpandedTerm";
 import ContextLinks from "./detail/ContextLinks";
 import OtherLanguageLinks from "./detail/OtherLanguageLinks";
-import type { Lingo } from "@/TypeLingo";
+import type { Definition, Lingo } from "@/TypeLingo";
+import { useTranslations } from "@/l18n/ui";
+
+import markdownit from "markdown-it";
+const md = markdownit();
+// const result = md.render('# markdown-it rulezz!');
 
 const cardStyle = [
   "col-span-3",
@@ -82,41 +86,53 @@ const LingoDetail = ({
   slug: string;
   shareableText: string;
 }) => {
-  const definitionsMap = new Map<string, string>();
-  data.definitions.forEach(
-    (definition: { language: string; definition: string }) => {
-      definitionsMap.set(definition.language, definition.definition);
-    },
-  );
+  const t = useTranslations(viewingLanguage);
+
+  // const map
+  const definitionsMap = new Map<string, Definition>();
+  data.definitions.forEach((definition: Definition) => {
+    definitionsMap.set(definition.language, definition);
+  });
   const englishDefinition = definitionsMap.get("en");
   const currentLanguageDefinition = definitionsMap.get(viewingLanguage);
   const currentLangSpec = LangMap.get(viewingLanguage) || LangMap.get("en");
+  const exampleUsage = `\"${
+    currentLanguageDefinition?.term_usage_example || ""
+  }\"`;
   if (currentLangSpec === undefined) {
     console.error("No language found for " + viewingLanguage);
   }
 
   return (
     <div className={cardStyle.join(" ")}>
-      <h3 className={termStyle.join(" ")}>{data.term}</h3>
-      <ExpandedTerm lingo={data} viewingLanguage={viewingLanguage} />
+      <h3 className={termStyle.join(" ")}>
+        {data.term}{" "}
+        <small className="text-2xl text-gray-400 font-normal">
+          {currentLanguageDefinition?.expanded}
+        </small>
+      </h3>
       <div>
-        <dl className="text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+        <dl className="text-gray-900 dark:text-white dark:divide-gray-700">
           <LanguageSpecificDefinition
             key={viewingLanguage}
             language={viewingLanguage}
-            definition={currentLanguageDefinition}
+            definition={currentLanguageDefinition?.definition}
             currentLanguage={true}
+          />
+          <blockquote
+            className=" mt-6 indent-10 px-6 font-serif text-xl italic text-gray-900 dark:text-white"
+            dangerouslySetInnerHTML={{ __html: md.render(exampleUsage) }}
           />
           {viewingLanguage != "en" && (
             <LanguageSpecificDefinition
               key={"en"}
               language={"en"}
-              definition={englishDefinition}
+              definition={englishDefinition?.definition}
               currentLanguage={false}
             />
           )}
         </dl>
-        <div className="mt-2 text-gray-600">
+        <div className="mt-6 text-gray-600">
           <OtherLanguageLinks lingo={data} viewingLanguage={viewingLanguage} />
         </div>
       </div>

@@ -13,6 +13,8 @@ const ui = {
     "lingo.suggestEdits": "Suggest edits",
     "lingo.numeronymFor": "Numeronym for",
     "lingo.acronymFor": "Acronym for",
+    "lingo.exampleUsage": "Example usage:",
+    "lingo.relatedTerms": "Similar terms",
   },
   es: {
     "lingo.otherLanguages": "Otros idiomas:",
@@ -21,6 +23,8 @@ const ui = {
     "lingo.suggestEdits": "Sugerir cambios",
     "lingo.numeronymFor": "Numerónimo de",
     "lingo.acronymFor": "Acrónimo de",
+    "lingo.exampleUsage": "Ejemplo de uso:",
+    "lingo.relatedTerms": "Términos similares",
   },
 } as const;
 
@@ -30,10 +34,11 @@ export function getLangFromUrl(url: URL) {
   return defaultLang;
 }
 
-export function useTranslations(lang: keyof typeof ui) {
+export function useTranslations(lang: string) {
+  const langType = lang as keyof typeof ui;
   return function t(key: keyof (typeof ui)[typeof defaultLang]) {
-    if (lang in ui && ui[lang].hasOwnProperty(key)) {
-      return ui[lang][key];
+    if (lang in ui && ui[langType].hasOwnProperty(key)) {
+      return ui[langType][key];
     }
     return ui[defaultLang][key];
   };

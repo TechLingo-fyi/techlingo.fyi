@@ -1,6 +1,6 @@
 import CopyButton from "../CopyButton";
 
-import { useTranslations } from "../../l18n/ui";
+import { useTranslations } from "@/l18n/ui";
 
 const bottomLinkStyle = [
   "hover:underline",
