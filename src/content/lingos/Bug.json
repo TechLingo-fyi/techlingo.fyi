@@ -2,13 +2,11 @@
   "definitions": [
     {
       "definition": "A bug is a flaw or failure in a computer program that causes it to produce an incorrect or unexpected result, or to behave in unintended ways.",
-      "expanded": "Not Applicable",
       "language": "en",
       "term_usage_example": "The application crashed due to a bug in the authentication module."
     },
     {
       "definition": "Un bug es un defecto o fallo en un programa informático que provoca que este produzca un resultado incorrecto o inesperado, o que se comporte de maneras no intencionadas.",
-      "expanded": "No Aplicable",
       "language": "es",
       "term_usage_example": "La aplicación se cerró debido a un bug en el módulo de autenticación."
     }

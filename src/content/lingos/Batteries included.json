@@ -2,13 +2,11 @@
   "definitions": [
     {
       "definition": "A term used to describe a software library or framework that comes with a wide range of features and tools, intended to help developers have everything they need to get started without needing to find additional plugins or write extra code.",
-      "expanded": "Not applicable",
       "language": "en",
       "term_usage_example": "Python is known for being a 'batteries included' language due to its comprehensive standard library."
     },
     {
       "definition": "Un término utilizado para describir una biblioteca de software o framework que viene con una amplia gama de características y herramientas, con la intención de ayudar a los desarrolladores a tener todo lo que necesitan para comenzar sin necesidad de buscar plugins adicionales o escribir código extra.",
-      "expanded": "No aplicable",
       "language": "es",
       "term_usage_example": "Python es conocido por ser un lenguaje 'con baterías incluidas' debido a su amplia biblioteca estándar."
     }

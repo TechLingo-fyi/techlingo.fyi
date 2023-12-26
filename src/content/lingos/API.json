@@ -4,13 +4,13 @@
       "definition": "An API, or Application Programming Interface, is a set of rules and specifications that allows software applications to communicate with each other. It defines methods for requesting and sending data between different software systems, effectively enabling their interoperability.",
       "expanded": "Application Programming Interface",
       "language": "en",
-      "term_usage_example": "The mobile app uses a weather service API to fetch the latest weather updates."
+      "term_usage_example": "The mobile app uses a weather service **API** to fetch the latest weather updates."
     },
     {
       "definition": "Una API, o Interfaz de Programación de Aplicaciones, es un conjunto de reglas y especificaciones que permite a las aplicaciones de software comunicarse entre sí. Define métodos para solicitar y enviar datos entre diferentes sistemas de software, lo que permite su interoperabilidad.",
       "expanded": "Interfaz de Programación de Aplicaciones",
       "language": "es",
-      "term_usage_example": "La aplicación móvil utiliza una API de servicio meteorológico para obtener las últimas actualizaciones del clima."
+      "term_usage_example": "La aplicación móvil utiliza una **API** de servicio meteorológico para obtener las últimas actualizaciones del clima."
     }
   ],
   "term": "API",

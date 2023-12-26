@@ -2,13 +2,11 @@
   "definitions": [
     {
       "definition": "In computing, it refers to the maximum data transfer rate of a network or internet connection, indicating how much data can be sent over a specific connection in a given amount of time.",
-      "expanded": "Bandwidth",
       "language": "en",
       "term_usage_example": "Streaming high-definition videos requires a lot of bandwidth."
     },
     {
       "definition": "En informática, se refiere a la tasa máxima de transferencia de datos de una red o conexión a internet, indicando cuántos datos pueden enviarse a través de una conexión específica en un tiempo determinado.",
-      "expanded": "Ancho de Banda",
       "language": "es",
       "term_usage_example": "Transmitir videos en alta definición requiere mucho ancho de banda."
     }

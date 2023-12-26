@@ -2,13 +2,11 @@
   "definitions": [
     {
       "definition": "In the context of programming and project management, a backlog is a prioritized list of tasks that teams need to work on.",
-      "expanded": "Not applicable",
       "language": "en",
       "term_usage_example": "The project manager updated the backlog to reflect the most urgent features that need development."
     },
     {
       "definition": "En el contexto de la programación y la gestión de proyectos, un backlog es una lista priorizada de tareas en las que los equipos necesitan trabajar.",
-      "expanded": "No aplicable",
       "language": "es",
       "term_usage_example": "El gerente del proyecto actualizó el backlog para reflejar las características más urgentes que necesitan desarrollo."
     }
