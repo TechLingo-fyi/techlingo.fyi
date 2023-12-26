@@ -16,6 +16,18 @@ const { title, description, path } = Astro.props;
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      href="/favicon-light.png"
+      rel="icon"
+      media="(prefers-color-scheme: light)"
+      type="image/png"
+    />
+    <link
+      href="/favicon-dark.png"
+      rel="icon"
+      media="(prefers-color-scheme: dark)"
+      type="image/png"
+    />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <link rel="preconnect" href="https://fonts.googleapis.com">
