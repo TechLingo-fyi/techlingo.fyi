@@ -12,18 +12,17 @@ const CopyButton = ({
   text: string;
   size?: number;
 }) => {
-
   return (
     <>
-    <a
-      title="Copy link to clipboard"
-      data-slug={slug}
-      data-lang={lang}
-      id="copyButton"
-      className={className}
-    >
-      {text}
-    </a>
+      <a
+        title="Copy link to clipboard"
+        data-slug={slug}
+        data-lang={lang}
+        id="copyButton"
+        className={className}
+      >
+        {text}
+      </a>
     </>
   );
 };
