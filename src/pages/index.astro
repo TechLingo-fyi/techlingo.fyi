@@ -15,6 +15,8 @@ const lingos = (await getCollection("lingos")).map((lingo) => {
   description="TechLingo.fyi is a free resource for people who want to learn about the jargon and acronyms used in the tech industry."
   path="https://techlingo.fyi"
 >
+
+
   <MainComponent lingos={lingos} />
 
   <script type="module" is:inline>
@@ -24,25 +26,32 @@ const lingos = (await getCollection("lingos")).map((lingo) => {
     const index = client.initIndex('search_techlingo');
 
     const searchBox = document.getElementById('search');
+    const poweredBy = document.getElementById('poweredBy');
+    const noResults = document.getElementById('noResults');
 
     function search(query) {
-
-      index.search(query, {
-        hitsPerPage: 10,
-        attributesToRetrieve: ['slug'],
-      }).then(({ hits }) => {
-        const cards = document.getElementsByClassName('card');
-        const foundCards= new Set(
-          hits.map((hit) => `card-${hit.slug}`)
-        );
-        for (let i = 0; i < cards.length; i++) {
-          if (foundCards.has(cards[i].id)) {
-            cards[i].style.display = 'block';
-          } else {
-            cards[i].style.display = 'none';
+      if (query.length > 0) {
+        index.search(query, {
+          hitsPerPage: 10,
+          attributesToRetrieve: ['slug'],
+        }).then(({ hits }) => {
+          const cards = document.getElementsByClassName('card');
+          const foundCards= new Set(
+            hits.map((hit) => `card-${hit.slug}`)
+          );
+          for (let i = 0; i < cards.length; i++) {
+            if (foundCards.has(cards[i].id)) {
+              cards[i].style.display = 'block';
+            } else {
+              cards[i].style.display = 'none';
+            }
           }
-        }
-      });
+          poweredBy.style.display = 'block'
+          noResults.style.display = hits.length == 0 ? 'block' : 'none';
+        });
+      } else {
+        poweredBy.style.display = 'none'
+      }
     }
 
     searchBox.addEventListener('input', (event) => {

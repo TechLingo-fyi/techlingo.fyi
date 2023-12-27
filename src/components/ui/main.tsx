@@ -4,6 +4,7 @@
  */
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { PoweredBy } from "react-instantsearch";
 import { CardHeader, CardContent, Card } from "@/components/ui/card";
 import * as React from "react";
 import type { Lingo } from "@/TypeLingo";
@@ -45,6 +46,18 @@ const MainComponent = React.forwardRef<HTMLDivElement, MainComponentProps>(
             </ul>
           </aside>
           <main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 flex-grow overflow-auto">
+            <div
+              id="noResults"
+              className="hidden col-span-1 md:col-span-2 lg:col-span-3"
+            >
+              <h2 className="text-5xl font-semibold text-center py-8">
+                No results, why not{" "}
+                <a className="underline" href="/">
+                  browse all the lingos
+                </a>
+                ?
+              </h2>
+            </div>
             {Array.from(sortedGroupedLingos.entries()).map(
               ([letter, lingos]) => (
                 <>
@@ -78,6 +91,13 @@ const MainComponent = React.forwardRef<HTMLDivElement, MainComponentProps>(
                 </>
               ),
             )}
+
+            <div
+              id="poweredBy"
+              className="hidden col-span-1 md:col-span-2 lg:col-span-3 flex items-center justify-center"
+            >
+              <PoweredBy className="w-1/2 md:w-1/4 lg:w-1/5" />
+            </div>
           </main>
         </div>
       </section>
