@@ -61,5 +61,23 @@ const { title, description, path } = Astro.props;
       </div>
     </section>
     <slot />
+
+    <script type="module" is:inline>
+      async function copyToClipBoard(evt) {
+        const { slug, lang } = evt.currentTarget.dataset;
+        const text = "https://techlingo.fyi/" + slug + (lang !== undefined ? "/" + lang : "");
+        try {
+          await navigator.clipboard.writeText(text);
+          console.log(`Copied ${text} to the clipboard`)
+        } catch (err) {
+          console.log(err);
+        }
+      }
+
+      const button = document.getElementById('copyButton');
+      if (button !== null){
+        button.addEventListener('click', copyToClipBoard);
+      }
+  </script>
   </body>
 </html>
