@@ -5,7 +5,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://new.techlingo.fyi",
+  site: "https://techlingo.fyi",
   integrations: [
     react(),
     tailwind({
