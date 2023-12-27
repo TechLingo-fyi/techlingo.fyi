@@ -20,7 +20,7 @@ const OtherLanguageLinks = ({
   const links = languages.map((lang, idx) => {
     const leng = LangMap.get(lang);
     return (
-      <span>
+      <span key={`span-${lang}`}>
         <a key={lang} className="underline" href={`/${lingo.slug}/${lang}`}>
           {leng?.languageName}
         </a>
