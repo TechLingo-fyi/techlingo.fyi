@@ -16,7 +16,7 @@ const lingoDescription = data.definitions.filter((definition) => {
   return definition.language === viewingLanguage;
 })[0].definition;
 
-const path = `https://techlingo.fyi/${lingo}/${viewingLanguage}`;
+const path = `https://${Astro.site?.hostname}/${lingo}/${viewingLanguage}`;
 const shareableText = `${lingoDescription} ${path}`;
 const translations = useTranslations(viewingLanguage);
 ---

@@ -63,10 +63,12 @@ const { title, description, path } = Astro.props;
     </section>
     <slot />
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <input type="hidden" value={Astro.site?.hostname} id="hostname" />
     <script type="module" is:inline>
+      const hostname = document.getElementById('hostname').value.toString();
       async function copyToClipBoard(evt) {
         const { slug, lang } = evt.currentTarget.dataset;
-        const text = "https://techlingo.fyi/" + slug + (lang !== undefined ? "/" + lang : "");
+        const text = `https://${hostname}/${slug}/${lang}`;
         try {
           await navigator.clipboard.writeText(text);
 
