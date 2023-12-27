@@ -17,8 +17,6 @@ const cardStyle = [
   "border-gray-200",
   "rounded-lg",
   "shadow",
-  "dark:bg-dark1",
-  "dark:border-gray-700",
 ];
 
 const termStyle = [
@@ -27,7 +25,6 @@ const termStyle = [
   "font-bold",
   "tracking-tight",
   "text-gray-900",
-  "dark:text-white",
 ];
 
 const LanguageSpecificDefinition = ({
@@ -46,7 +43,7 @@ const LanguageSpecificDefinition = ({
   // same as the definition language
   if (currentLanguage) {
     textSize = "text-2xl";
-    textColor = "text-gray-900 dark:text-gray-200";
+    textColor = "text-gray-900";
   }
 
   const definitionClasses = [textSize, textColor];
@@ -57,7 +54,6 @@ const LanguageSpecificDefinition = ({
     "md:text-lg",
     "group-hover:md:text-xl",
     "group-hover:text-gray-500",
-    "group-hover:dark:text-gray-400",
   ];
 
   dtClasses.push("collapse hidden");
@@ -111,7 +107,7 @@ const LingoDetail = ({
         </small>
       </h3>
       <div>
-        <dl className="text-gray-900 dark:text-white dark:divide-gray-700">
+        <dl className="text-gray-900">
           <LanguageSpecificDefinition
             key={viewingLanguage}
             language={viewingLanguage}
@@ -119,7 +115,7 @@ const LingoDetail = ({
             currentLanguage={true}
           />
           <blockquote
-            className="mt-3 indent-10 px-6 font-serif text-xl italic text-gray-900 dark:text-white"
+            className="mt-3 indent-10 px-6 font-serif text-xl italic"
             dangerouslySetInnerHTML={{ __html: md.render(exampleUsage) }}
           />
         </dl>
