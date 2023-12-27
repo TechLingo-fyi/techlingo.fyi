@@ -2,9 +2,13 @@
 
 TechLingo.fyi is a free and open-source project aimed at making it easy for newcomers to understand all the buzzword and other code-related terms that we, as programmers tend to use with so much familiarity.
 
-## Tech behind
+## Tech
 
 This website is built using [Astro](https://astro.build/) with some help from Vercel's v0 and a lot of help from ChatGPT, so do not expect a wonderful codebase.
+
+## Lingos
+
+All the content of this webiste is stored as a series of _json_ files located in the [src/content/lingos](src/content/lingos) folder.
 
 ## Search
 
