@@ -2,6 +2,9 @@ import CopyButton from "../CopyButton";
 
 import { useTranslations } from "@/l18n/ui";
 
+const repository = "https://github.com/TechLingo-fyi/techlingo.fyi/";
+const path = "tree/main/src/content/lingos";
+
 const bottomLinkStyle = [
   "hover:underline",
   "mx-2",
@@ -36,7 +39,7 @@ const ContextLinks = ({
       </a>
       <a
         className={bottomLinkStyle.join(" ")}
-        href={`https://github.com/TechLingo-fyi/techlingo.fyi/blob/main/lingos/${slug}.json`}
+        href={`${repository}/${path}/${slug}.json`}
       >
         {t("lingo.suggestEdits")}
       </a>
