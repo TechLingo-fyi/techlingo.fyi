@@ -93,6 +93,53 @@ const { title, description, path } = Astro.props;
         button.addEventListener('click', copyToClipBoard);
       }
   </script>
+  <script is:inline>
+    function getTheme() {
+      if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
+        return localStorage.getItem("theme");
+      }
+      return null;
+    }
+
+    function setTheme(theme, save = true) {
+      if (theme === "light") {
+        document.documentElement.classList.remove("dark");
+      } else {
+        document.documentElement.classList.add("dark");
+      }
+      if (save) {
+        window.localStorage.setItem("theme", theme);
+      }
+    }
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',({ matches }) => {
+      let systemTheme = "light";
+      const userTheme = getTheme();
+      if (matches) {
+        systemTheme = "dark";
+      } else {
+        systemTheme = "light";
+      }
+      if (userTheme != null && userTheme !== systemTheme) {
+        console.log("user theme is different from system theme");
+      } else {
+        setTheme(systemTheme, false);
+      }
+    })
+
+    const themeSwitch = document.getElementById('switchTheme');
+    if (themeSwitch !== null) {
+      themeSwitch.addEventListener('click', (evt) => {
+        if (document.documentElement.classList.contains("dark")) {
+          setTheme("light");
+          console.log("remove dark mode!")
+        } else {
+          setTheme("dark");
+          console.log("add dark mode!")
+        }
+      });
+    }
+  </script>
   <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
   <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
   </body>
