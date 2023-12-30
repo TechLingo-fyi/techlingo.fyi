@@ -30,3 +30,13 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## Similar terms
+
+To calculate similar terms using OpenAI it is necessary to run the following scripts in order, remeber to set the environment variable `OPENAI_API_KEY`.
+
+```shell
+node utils/makeEmbeddings.cjs
+node utils/matchSimilarTerms.cjs
+npx prettier . --write
+```
