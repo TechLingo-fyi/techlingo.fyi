@@ -14,5 +14,6 @@
     }
   ],
   "term": "LGTM",
-  "slug": "lgtm"
+  "slug": "lgtm",
+  "related": ["wrt", "afaik", "iirc", "solid", "fyi"]
 }

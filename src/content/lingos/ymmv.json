@@ -14,5 +14,6 @@
     }
   ],
   "term": "YMMV",
-  "slug": "ymmv"
+  "slug": "ymmv",
+  "related": ["afaik", "imo", "fyi", "iirc", "imho"]
 }

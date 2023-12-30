@@ -14,5 +14,6 @@
     }
   ],
   "term": "FYI",
-  "slug": "fyi"
+  "slug": "fyi",
+  "related": ["afaik", "jk", "iirc", "imo", "wrt"]
 }

@@ -6,6 +6,11 @@ export async function getLingoPaths() {
     return lingo.data as Lingo;
   });
 
+  const slugToLingo = new Map<string, Lingo>();
+  lingos.forEach((lingo) => {
+    slugToLingo.set(lingo.slug, lingo);
+  });
+
   const list = lingos.map((lingo) => {
     const languages = new Array();
     lingo.definitions.forEach((element) => {
@@ -20,10 +25,9 @@ export async function getLingoPaths() {
         },
         props: {
           data: lingo,
-          relatedLingos: lingos
-            .filter((l) => l.term !== lingo.term)
-            .sort(() => 0.5 - Math.random())
-            .slice(0, 3),
+          relatedLingos: lingo.related
+            .slice(0, 3)
+            .map((slug) => slugToLingo.get(slug)),
         },
       };
     });

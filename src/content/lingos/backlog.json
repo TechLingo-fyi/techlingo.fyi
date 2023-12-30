@@ -12,5 +12,6 @@
     }
   ],
   "term": "Backlog",
-  "slug": "backlog"
+  "slug": "backlog",
+  "related": ["wip", "stack", "eod", "eta", "hackathon"]
 }

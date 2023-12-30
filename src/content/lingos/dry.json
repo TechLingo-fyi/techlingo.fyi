@@ -14,5 +14,6 @@
     }
   ],
   "term": "DRY",
-  "slug": "dry"
+  "slug": "dry",
+  "related": ["wet", "yagni", "kiss", "solid", "i18n"]
 }

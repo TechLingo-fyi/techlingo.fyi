@@ -7,12 +7,13 @@
       "term_usage_example": "Streaming high-definition video requires a network with high bandwidth."
     },
     {
-      "definition": "Ancho de banda se refiere a la tasa m\u00e1xima de transferencia de datos a trav\u00e9s de un camino dado en una red.",
+      "definition": "Ancho de banda se refiere a la tasa máxima de transferencia de datos a través de un camino dado en una red.",
       "expanded": "Ancho de Banda (red)",
       "language": "es",
-      "term_usage_example": "La transmisi\u00f3n de v\u00eddeo de alta definici\u00f3n requiere una red con alto ancho de banda."
+      "term_usage_example": "La transmisión de vídeo de alta definición requiere una red con alto ancho de banda."
     }
   ],
-  "slug": "bandwidth",
-  "term": "Bandwidth"
+  "slug": "bandwidth-network",
+  "term": "Bandwidth (network)",
+  "related": ["bandwidth", "curl", "ui", "wrt", "cdn"]
 }

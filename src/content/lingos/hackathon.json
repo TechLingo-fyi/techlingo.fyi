@@ -14,5 +14,6 @@
     }
   ],
   "term": "Hackathon",
-  "slug": "hackathon"
+  "slug": "hackathon",
+  "related": ["boyscouting", "tdd", "ide", "sdk", "stack"]
 }

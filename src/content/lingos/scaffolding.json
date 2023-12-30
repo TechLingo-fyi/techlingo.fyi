@@ -14,5 +14,6 @@
     }
   ],
   "term": "Scaffolding",
-  "slug": "scaffolding"
+  "slug": "scaffolding",
+  "related": ["i18n", "qa", "tdd", "batteries-included", "dry"]
 }

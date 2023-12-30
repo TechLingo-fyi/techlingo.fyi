@@ -7,12 +7,13 @@
       "term_usage_example": "I was stuck on a bug for hours, but after a session of rubber ducking, I figured out the issue."
     },
     {
-      "definition": "Un m\u00e9todo de depuraci\u00f3n de c\u00f3digo explicando tu problema o c\u00f3digo l\u00ednea por l\u00ednea a un objeto inanimado, como un patito de goma, como una forma de encontrar errores o soluciones.",
+      "definition": "Un método de depuración de código explicando tu problema o código línea por línea a un objeto inanimado, como un patito de goma, como una forma de encontrar errores o soluciones.",
       "expanded": "Ninguno",
       "language": "es",
-      "term_usage_example": "Estuve atascado con un error durante horas, pero despu\u00e9s de una sesi\u00f3n de rubber ducking, logr\u00e9 descubrir el problema."
+      "term_usage_example": "Estuve atascado con un error durante horas, pero después de una sesión de rubber ducking, logré descubrir el problema."
     }
   ],
   "slug": "rubber-ducking",
-  "term": "rubber ducking"
+  "term": "rubber ducking",
+  "related": ["boyscouting", "tdd", "bug", "orm", "wet"]
 }

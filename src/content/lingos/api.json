@@ -7,12 +7,13 @@
       "term_usage_example": "The Twitter API allows developers to access and interact with the data of Twitter users."
     },
     {
-      "definition": "Una API, o Interfaz de Programaci\u00f3n de Aplicaciones, es un conjunto de reglas y especificaciones que permite que una aplicaci\u00f3n de software interact\u00fae con otra.",
-      "expanded": "Interfaz de Programaci\u00f3n de Aplicaciones",
+      "definition": "Una API, o Interfaz de Programación de Aplicaciones, es un conjunto de reglas y especificaciones que permite que una aplicación de software interactúe con otra.",
+      "expanded": "Interfaz de Programación de Aplicaciones",
       "language": "es",
       "term_usage_example": "La API de Twitter permite a los desarrolladores acceder e interactuar con los datos de los usuarios de Twitter."
     }
   ],
   "slug": "api",
-  "term": "API"
+  "term": "API",
+  "related": ["ide", "sdk", "dsl", "i18n", "cms"]
 }

@@ -14,5 +14,6 @@
     }
   ],
   "term": "Lossy",
-  "slug": "lossy"
+  "slug": "lossy",
+  "related": ["tl-dr", "dry", "orm", "legacy-code", "wrt"]
 }

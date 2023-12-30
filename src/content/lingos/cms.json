@@ -14,5 +14,6 @@
     }
   ],
   "term": "CMS",
-  "slug": "cms"
+  "slug": "cms",
+  "related": ["sdk", "vcs", "ide", "api", "dsl"]
 }

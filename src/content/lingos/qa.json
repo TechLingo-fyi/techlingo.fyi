@@ -14,5 +14,6 @@
     }
   ],
   "term": "QA",
-  "slug": "qa"
+  "slug": "qa",
+  "related": ["tdd", "l10n", "scaffolding", "build-vs-buy", "dogfooding"]
 }

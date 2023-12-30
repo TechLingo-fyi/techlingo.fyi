@@ -14,5 +14,6 @@
     }
   ],
   "term": "FANG",
-  "slug": "fang"
+  "slug": "fang",
+  "related": ["wrt", "brb", "iirc", "solid", "afaik"]
 }

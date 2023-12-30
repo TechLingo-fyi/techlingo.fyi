@@ -14,5 +14,6 @@
     }
   ],
   "term": "CEO",
-  "slug": "ceo"
+  "slug": "ceo",
+  "related": ["cya", "vcs", "bau", "cms", "ooto"]
 }

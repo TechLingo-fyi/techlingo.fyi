@@ -14,5 +14,6 @@
     }
   ],
   "term": "BRB",
-  "slug": "brb"
+  "slug": "brb",
+  "related": ["afk", "ooto", "wrt", "imho", "jk"]
 }

@@ -14,5 +14,6 @@
     }
   ],
   "term": "CDN",
-  "slug": "cdn"
+  "slug": "cdn",
+  "related": ["iaas", "rest", "bandwidth-network", "bandwidth", "wget"]
 }

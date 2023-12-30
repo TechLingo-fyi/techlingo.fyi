@@ -14,5 +14,6 @@
     }
   ],
   "term": "WYSIWYG",
-  "slug": "wysiwyg"
+  "slug": "wysiwyg",
+  "related": ["ui", "i18n", "ootb", "scaffolding", "cms"]
 }

@@ -7,12 +7,13 @@
       "term_usage_example": "The company faced a 'build vs. buy' decision for their new customer relationship management system."
     },
     {
-      "definition": "Es un proceso de toma de decisiones donde una organizaci\u00f3n considera si crear una soluci\u00f3n de software internamente (construir) o comprar un producto preexistente de un proveedor externo (comprar).",
+      "definition": "Es un proceso de toma de decisiones donde una organización considera si crear una solución de software internamente (construir) o comprar un producto preexistente de un proveedor externo (comprar).",
       "expanded": "No Aplicable",
       "language": "es",
-      "term_usage_example": "La empresa enfrent\u00f3 una decisi\u00f3n de 'construir vs. comprar' para su nuevo sistema de gesti\u00f3n de relaciones con clientes."
+      "term_usage_example": "La empresa enfrentó una decisión de 'construir vs. comprar' para su nuevo sistema de gestión de relaciones con clientes."
     }
   ],
   "slug": "build-vs-buy",
-  "term": "Build vs. Buy"
+  "term": "Build vs. Buy",
+  "related": ["qa", "l10n", "scaffolding", "tdd", "hackathon"]
 }

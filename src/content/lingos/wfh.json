@@ -14,5 +14,6 @@
     }
   ],
   "term": "WFH",
-  "slug": "wfh"
+  "slug": "wfh",
+  "related": ["ooto", "pto", "brb", "afk", "fte"]
 }

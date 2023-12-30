@@ -14,5 +14,6 @@
     }
   ],
   "term": "POC",
-  "slug": "poc"
+  "slug": "poc",
+  "related": ["qa", "mvp", "tdd", "rubber-ducking", "api"]
 }

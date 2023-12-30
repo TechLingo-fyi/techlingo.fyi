@@ -14,5 +14,6 @@
     }
   ],
   "term": "AFK",
-  "slug": "afk"
+  "slug": "afk",
+  "related": ["brb", "ooto", "wrt", "wfh", "fyi"]
 }

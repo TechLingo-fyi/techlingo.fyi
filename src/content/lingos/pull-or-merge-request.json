@@ -7,12 +7,13 @@
       "term_usage_example": "After completing the new feature, the developer created a pull request to merge their changes into the master branch."
     },
     {
-      "definition": "Es un m\u00e9todo de contribuir a un proyecto solicitando a los mantenedores que incorporen los cambios de tu bifurcaci\u00f3n o rama al c\u00f3digo base principal.",
-      "expanded": "Solicitud de Extracci\u00f3n o Fusi\u00f3n",
+      "definition": "Es un método de contribuir a un proyecto solicitando a los mantenedores que incorporen los cambios de tu bifurcación o rama al código base principal.",
+      "expanded": "Solicitud de Extracción o Fusión",
       "language": "es",
-      "term_usage_example": "Tras completar la nueva caracter\u00edstica, el desarrollador cre\u00f3 una solicitud de extracci\u00f3n para fusionar sus cambios en la rama principal."
+      "term_usage_example": "Tras completar la nueva característica, el desarrollador creó una solicitud de extracción para fusionar sus cambios en la rama principal."
     }
   ],
   "slug": "pull-or-merge-request",
-  "term": "Pull or Merge Request"
+  "term": "Pull or Merge Request",
+  "related": ["boyscouting", "scaffolding", "hackathon", "qa", "rubber-ducking"]
 }
