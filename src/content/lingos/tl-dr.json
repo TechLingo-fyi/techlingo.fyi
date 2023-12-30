@@ -13,7 +13,7 @@
       "term_usage_example": "TL;DR: Este artículo resume las mejores prácticas para escribir código limpio."
     }
   ],
-  "slug": "tldr",
+  "slug": "tl-dr",
   "term": "TL;DR",
   "related": ["jk", "wrt", "fyi", "imo", "imho"]
 }
