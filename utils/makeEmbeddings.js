@@ -2,6 +2,7 @@ import OpenAI from "openai";
 import { createRequire } from "module";
 const require = createRequire(import.meta.url);
 const fs = require("fs");
+const crypto = require("crypto");
 
 const openai = new OpenAI();
 
@@ -18,10 +19,22 @@ for (let i = 0; i < jsonFiles.length; i++) {
   originalLingos.push(data);
 }
 
-async function embedLingo(lingo) {
-  const englishDefinition = lingo.definitions.filter(
+function hashString(string) {
+  return crypto.createHash("md5").update(string).digest("hex");
+}
+
+function getEnglishDefinition(lingo) {
+  return lingo.definitions.filter(
     (definition) => definition.language === "en",
   )[0].definition;
+}
+
+function saveJSON(file, data) {
+  fs.writeFileSync(file, JSON.stringify(data, null, 4));
+}
+
+async function embedLingo(lingo) {
+  const englishDefinition = getEnglishDefinition(lingo);
   const embed = await openai.embeddings.create({
     model: "text-embedding-ada-002",
     input: englishDefinition,
@@ -35,6 +48,7 @@ const metadataDir = "metadata";
 
 for (let i = 0; i < originalLingos.length; i++) {
   const lingo = originalLingos[i];
+  const newHash = hashString(getEnglishDefinition(lingo));
   const metadataFile = `${metadataDir}/${lingo.slug}.json`;
   let hasEmbedding = false;
   if (fs.existsSync(metadataFile)) {
@@ -42,32 +56,34 @@ for (let i = 0; i < originalLingos.length; i++) {
     hasEmbedding = metadata.embedding !== undefined;
     if (hasEmbedding) {
       console.log(`Already has embedding for ${lingo.slug}`);
+      const currentHash = metadata.embedding_hash;
+      if (currentHash !== newHash) {
+        console.log(`Hashes don't match!`);
+        console.log(`Current: ${currentHash}`);
+        console.log(`New: ${newHash}`);
+
+        const embedding = await embedLingo(lingo);
+        saveJSON(metadataFile, {
+          ...metadata,
+          embedding_hash: newHash,
+          embedding: embedding,
+        });
+      }
     } else {
+      console.log(`Does not have embedding for ${lingo.slug}`);
       const embedding = await embedLingo(lingo);
-      fs.writeFileSync(
-        metadataFile,
-        JSON.stringify(
-          {
-            ...metadata,
-            embedding: embedding,
-          },
-          null,
-          4,
-        ),
-      );
+      saveJSON(metadataFile, {
+        ...metadata,
+        embedding_hash: newHash,
+        embedding: embedding,
+      });
     }
   } else {
     const embedding = await embedLingo(lingo);
-    fs.writeFileSync(
-      metadataFile,
-      JSON.stringify(
-        {
-          slug: lingo.slug,
-          embedding: embedding,
-        },
-        null,
-        4,
-      ),
-    );
+    saveJSON(metadataFile, {
+      slug: lingo.slug,
+      embedding_hash: newHash,
+      embedding: embedding,
+    });
   }
 }
