@@ -14,5 +14,6 @@
     }
   ],
   "term": "OOTB",
-  "slug": "ootb"
+  "slug": "ootb",
+  "related": ["batteries-included", "i18n", "vanilla", "sdk", "wysiwyg"]
 }

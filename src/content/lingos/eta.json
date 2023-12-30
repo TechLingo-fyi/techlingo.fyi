@@ -14,5 +14,6 @@
     }
   ],
   "term": "ETA",
-  "slug": "eta"
+  "slug": "eta",
+  "related": ["wip", "eod", "sprint", "backlog", "qa"]
 }

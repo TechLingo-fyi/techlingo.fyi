@@ -14,5 +14,6 @@
     }
   ],
   "term": "REST",
-  "slug": "rest"
+  "slug": "rest",
+  "related": ["iaas", "i18n", "dry", "cdn", "mvc"]
 }

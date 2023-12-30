@@ -14,5 +14,6 @@
     }
   ],
   "term": "CLI",
-  "slug": "cli"
+  "slug": "cli",
+  "related": ["dsl", "ui", "ide", "api", "brb"]
 }

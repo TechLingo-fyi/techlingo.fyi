@@ -14,5 +14,6 @@
     }
   ],
   "term": "UX",
-  "slug": "ux"
+  "slug": "ux",
+  "related": ["ui", "qa", "l10n", "batteries-included", "i18n"]
 }

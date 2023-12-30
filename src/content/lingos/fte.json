@@ -14,5 +14,6 @@
     }
   ],
   "term": "FTE",
-  "slug": "fte"
+  "slug": "fte",
+  "related": ["pto", "wfh", "eod", "eta", "wrt"]
 }

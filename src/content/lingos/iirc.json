@@ -14,5 +14,6 @@
     }
   ],
   "term": "IIRC",
-  "slug": "iirc"
+  "slug": "iirc",
+  "related": ["afaik", "imho", "fyi", "imo", "brb"]
 }

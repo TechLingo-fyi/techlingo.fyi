@@ -14,5 +14,6 @@
     }
   ],
   "term": "OOTO",
-  "slug": "ooto"
+  "slug": "ooto",
+  "related": ["brb", "wfh", "afk", "jk", "fyi"]
 }

@@ -14,5 +14,6 @@
     }
   ],
   "term": "TDD",
-  "slug": "tdd"
+  "slug": "tdd",
+  "related": ["qa", "scaffolding", "hackathon", "boyscouting", "dry"]
 }

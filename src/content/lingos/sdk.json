@@ -14,5 +14,6 @@
     }
   ],
   "term": "SDK",
-  "slug": "sdk"
+  "slug": "sdk",
+  "related": ["batteries-included", "stack", "cms", "dsl", "ide"]
 }

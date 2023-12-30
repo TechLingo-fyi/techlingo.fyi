@@ -14,5 +14,6 @@
     }
   ],
   "term": "IMHO",
-  "slug": "imho"
+  "slug": "imho",
+  "related": ["imo", "iirc", "jk", "brb", "afaik"]
 }

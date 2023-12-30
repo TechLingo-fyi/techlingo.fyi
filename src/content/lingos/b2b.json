@@ -14,5 +14,6 @@
     }
   ],
   "term": "B2B",
-  "slug": "b2b"
+  "slug": "b2b",
+  "related": ["ip", "ui", "wfh", "l10n", "build-vs-buy"]
 }

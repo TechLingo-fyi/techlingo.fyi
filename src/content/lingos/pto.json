@@ -14,5 +14,6 @@
     }
   ],
   "term": "PTO",
-  "slug": "pto"
+  "slug": "pto",
+  "related": ["wfh", "ooto", "fte", "brb", "sprint"]
 }

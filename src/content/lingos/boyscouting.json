@@ -7,12 +7,13 @@
       "term_usage_example": "When fixing a bug, I did some boyscouting and also refactored the surrounding methods for better readability."
     },
     {
-      "definition": "Una pr\u00e1ctica de programaci\u00f3n donde los desarrolladores mejoran el c\u00f3digo mientras trabajan en \u00e9l, m\u00e1s all\u00e1 del alcance de la tarea inmediata.",
+      "definition": "Una práctica de programación donde los desarrolladores mejoran el código mientras trabajan en él, más allá del alcance de la tarea inmediata.",
       "expanded": "No Aplicable",
       "language": "es",
-      "term_usage_example": "Al corregir un error, hice algo de boyscouting y tambi\u00e9n refactoric\u00e9 los m\u00e9todos circundantes para mejorar la legibilidad."
+      "term_usage_example": "Al corregir un error, hice algo de boyscouting y también refactoricé los métodos circundantes para mejorar la legibilidad."
     }
   ],
   "slug": "boyscouting",
-  "term": "boyscouting"
+  "term": "boyscouting",
+  "related": ["hackathon", "tdd", "yagni", "i18n", "wip"]
 }

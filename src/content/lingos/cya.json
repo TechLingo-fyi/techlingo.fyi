@@ -14,5 +14,6 @@
     }
   ],
   "term": "CYA",
-  "slug": "cya"
+  "slug": "cya",
+  "related": ["fyi", "afaik", "jk", "imho", "scaffolding"]
 }

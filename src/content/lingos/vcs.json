@@ -14,5 +14,6 @@
     }
   ],
   "term": "VCS",
-  "slug": "vcs"
+  "slug": "vcs",
+  "related": ["cms", "stack", "mvc", "ide", "hackathon"]
 }

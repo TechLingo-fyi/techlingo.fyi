@@ -14,5 +14,6 @@
     }
   ],
   "term": "TAGRI",
-  "slug": "tagri"
+  "slug": "tagri",
+  "related": ["wrt", "tl-dr", "fyi", "afaik", "iirc"]
 }

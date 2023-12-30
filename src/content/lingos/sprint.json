@@ -14,5 +14,6 @@
     }
   ],
   "term": "Sprint",
-  "slug": "sprint"
+  "slug": "sprint",
+  "related": ["wip", "eta", "eod", "tdd", "hackathon"]
 }

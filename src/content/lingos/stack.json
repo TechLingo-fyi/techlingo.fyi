@@ -14,5 +14,6 @@
     }
   ],
   "term": "Stack",
-  "slug": "stack"
+  "slug": "stack",
+  "related": ["sdk", "backlog", "hackathon", "batteries-included", "i18n"]
 }

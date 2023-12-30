@@ -14,5 +14,6 @@
     }
   ],
   "term": "UI",
-  "slug": "ui"
+  "slug": "ui",
+  "related": ["ux", "ip", "cli", "wysiwyg", "l10n"]
 }

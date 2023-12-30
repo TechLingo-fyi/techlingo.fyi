@@ -7,12 +7,13 @@
       "term_usage_example": "Python is known for its 'batteries included' philosophy, as its standard library provides many modules and functions by default."
     },
     {
-      "definition": "Se refiere a una biblioteca o marco de trabajo que viene con una amplia gama de funciones y herramientas, de modo que todo lo que necesitas para comenzar est\u00e1 disponible de inmediato.",
+      "definition": "Se refiere a una biblioteca o marco de trabajo que viene con una amplia gama de funciones y herramientas, de modo que todo lo que necesitas para comenzar está disponible de inmediato.",
       "expanded": "No aplicable",
       "language": "es",
-      "term_usage_example": "Python es conocido por su filosof\u00eda de 'bater\u00edas incluidas', ya que su biblioteca est\u00e1ndar proporciona muchos m\u00f3dulos y funciones por defecto."
+      "term_usage_example": "Python es conocido por su filosofía de 'baterías incluidas', ya que su biblioteca estándar proporciona muchos módulos y funciones por defecto."
     }
   ],
   "slug": "batteries-included",
-  "term": "Batteries included"
+  "term": "Batteries included",
+  "related": ["sdk", "ootb", "i18n", "scaffolding", "stack"]
 }

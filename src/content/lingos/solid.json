@@ -14,5 +14,6 @@
     }
   ],
   "term": "SOLID",
-  "slug": "solid"
+  "slug": "solid",
+  "related": ["dry", "kiss", "i18n", "wrt", "lgtm"]
 }

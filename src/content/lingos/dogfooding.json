@@ -14,5 +14,6 @@
     }
   ],
   "term": "Dogfooding",
-  "slug": "dogfooding"
+  "slug": "dogfooding",
+  "related": ["qa", "tdd", "cya", "build-vs-buy", "l10n"]
 }

@@ -2,17 +2,18 @@
   "definitions": [
     {
       "definition": "A shorthand notation indicating that a piece of text is considered too long to read in its entirety, often preceding a summary of the content.",
-      "expanded": "Too long; didn\u2019t read",
+      "expanded": "Too long; didn’t read",
       "language": "en",
       "term_usage_example": "TL;DR: This article summarizes the best practices for writing clean code."
     },
     {
-      "definition": "Una notaci\u00f3n abreviada que indica que un texto se considera demasiado largo para leerlo en su totalidad, a menudo precediendo un resumen del contenido.",
-      "expanded": "Demasiado largo; no lo le\u00ed",
+      "definition": "Una notación abreviada que indica que un texto se considera demasiado largo para leerlo en su totalidad, a menudo precediendo un resumen del contenido.",
+      "expanded": "Demasiado largo; no lo leí",
       "language": "es",
-      "term_usage_example": "TL;DR: Este art\u00edculo resume las mejores pr\u00e1cticas para escribir c\u00f3digo limpio."
+      "term_usage_example": "TL;DR: Este artículo resume las mejores prácticas para escribir código limpio."
     }
   ],
-  "slug": "tl-dr",
-  "term": "TL;DR"
+  "slug": "tldr",
+  "term": "TL;DR",
+  "related": ["jk", "wrt", "fyi", "imo", "imho"]
 }

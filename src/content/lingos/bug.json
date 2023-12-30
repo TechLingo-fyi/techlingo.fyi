@@ -12,5 +12,6 @@
     }
   ],
   "term": "Bug",
-  "slug": "bug"
+  "slug": "bug",
+  "related": ["api", "rubber-ducking", "ide", "nit", "vcs"]
 }

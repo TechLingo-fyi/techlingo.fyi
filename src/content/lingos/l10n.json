@@ -14,5 +14,6 @@
     }
   ],
   "term": "l10n",
-  "slug": "l10n"
+  "slug": "l10n",
+  "related": ["i18n", "qa", "tdd", "scaffolding", "build-vs-buy"]
 }

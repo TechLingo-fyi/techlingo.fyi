@@ -14,5 +14,6 @@
     }
   ],
   "term": "IaaS",
-  "slug": "iaas"
+  "slug": "iaas",
+  "related": ["cdn", "rest", "ui", "wfh", "i18n"]
 }

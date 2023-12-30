@@ -7,12 +7,13 @@
       "term_usage_example": "The new developer struggled to add features to the legacy code because it was not well documented."
     },
     {
-      "definition": "Se refiere al c\u00f3digo que todav\u00eda est\u00e1 en uso pero fue creado utilizando tecnolog\u00edas o est\u00e1ndares de programaci\u00f3n antiguos. A menudo carece de documentaci\u00f3n adecuada y es dif\u00edcil de mantener.",
+      "definition": "Se refiere al código que todavía está en uso pero fue creado utilizando tecnologías o estándares de programación antiguos. A menudo carece de documentación adecuada y es difícil de mantener.",
       "expanded": "No aplicable",
       "language": "es",
-      "term_usage_example": "El nuevo desarrollador tuvo dificultades para a\u00f1adir funciones al c\u00f3digo heredado debido a que no estaba bien documentado."
+      "term_usage_example": "El nuevo desarrollador tuvo dificultades para añadir funciones al código heredado debido a que no estaba bien documentado."
     }
   ],
   "slug": "legacy-code",
-  "term": "Legacy Code"
+  "term": "Legacy Code",
+  "related": ["wet", "vanilla", "i18n", "boyscouting", "wip"]
 }

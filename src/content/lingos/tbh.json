@@ -10,9 +10,10 @@
       "definition": "TBH es la abreviatura de 'to be honest', una frase que se utiliza para introducir un comentario franco o sincero.",
       "expanded": "To be honest",
       "language": "es",
-      "term_usage_example": "TBH, creo que necesitamos mejorar la interfaz de usuario antes de lanzar la aplicaci\u00f3n."
+      "term_usage_example": "TBH, creo que necesitamos mejorar la interfaz de usuario antes de lanzar la aplicación."
     }
   ],
   "slug": "tbh",
-  "term": "tbh"
+  "term": "tbh",
+  "related": ["imho", "afaik", "wrt", "iirc", "imo"]
 }

@@ -14,5 +14,6 @@
     }
   ],
   "term": "i18n",
-  "slug": "i18n"
+  "slug": "i18n",
+  "related": ["l10n", "ootb", "dry", "scaffolding", "batteries-included"]
 }

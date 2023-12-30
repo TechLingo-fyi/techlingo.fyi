@@ -14,5 +14,6 @@
     }
   ],
   "term": "BAU",
-  "slug": "bau"
+  "slug": "bau",
+  "related": ["scaffolding", "qa", "sprint", "build-vs-buy", "cya"]
 }

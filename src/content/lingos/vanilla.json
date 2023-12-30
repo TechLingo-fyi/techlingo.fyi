@@ -14,5 +14,6 @@
     }
   ],
   "term": "Vanilla",
-  "slug": "vanilla"
+  "slug": "vanilla",
+  "related": ["ootb", "legacy-code", "batteries-included", "i18n", "yagni"]
 }

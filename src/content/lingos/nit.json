@@ -7,12 +7,13 @@
       "term_usage_example": "In the code review, the reviewer left a comment about a nit: suggesting to rename a variable for better clarity."
     },
     {
-      "definition": "En el contexto de la programaci\u00f3n, 'nit' se refiere a una peque\u00f1a sugerencia o cambio que un revisor puede proponer que no es cr\u00edtico pero que podr\u00eda mejorar el c\u00f3digo de alguna manera marginal.",
-      "expanded": "No es un acr\u00f3nimo",
+      "definition": "En el contexto de la programación, 'nit' se refiere a una pequeña sugerencia o cambio que un revisor puede proponer que no es crítico pero que podría mejorar el código de alguna manera marginal.",
+      "expanded": "No es un acrónimo",
       "language": "es",
-      "term_usage_example": "En la revisi\u00f3n del c\u00f3digo, el revisor dej\u00f3 un comentario sobre un nit: sugiriendo cambiar el nombre de una variable para mayor claridad."
+      "term_usage_example": "En la revisión del código, el revisor dejó un comentario sobre un nit: sugiriendo cambiar el nombre de una variable para mayor claridad."
     }
   ],
   "slug": "nit",
-  "term": "nit"
+  "term": "nit",
+  "related": ["boyscouting", "lgtm", "imho", "rubber-ducking", "wrt"]
 }

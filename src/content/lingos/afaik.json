@@ -7,12 +7,13 @@
       "term_usage_example": "AFAIK, the function should return a string value."
     },
     {
-      "definition": "Un acr\u00f3nimo utilizado para expresar que la informaci\u00f3n proporcionada es lo mejor que el hablante conoce, sin afirmar que es 100% precisa.",
-      "expanded": "Hasta Donde Yo S\u00e9",
+      "definition": "Un acrónimo utilizado para expresar que la información proporcionada es lo mejor que el hablante conoce, sin afirmar que es 100% precisa.",
+      "expanded": "Hasta Donde Yo Sé",
       "language": "es",
-      "term_usage_example": "AFAIK, la funci\u00f3n deber\u00eda devolver un valor de cadena."
+      "term_usage_example": "AFAIK, la función debería devolver un valor de cadena."
     }
   ],
   "slug": "afaik",
-  "term": "AFAIK"
+  "term": "AFAIK",
+  "related": ["iirc", "imo", "fyi", "imho", "wrt"]
 }

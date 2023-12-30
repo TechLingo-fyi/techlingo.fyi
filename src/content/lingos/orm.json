@@ -14,5 +14,6 @@
     }
   ],
   "term": "ORM",
-  "slug": "orm"
+  "slug": "orm",
+  "related": ["i18n", "dry", "wet", "legacy-code", "solid"]
 }
