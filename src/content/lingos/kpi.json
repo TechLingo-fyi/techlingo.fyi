@@ -1,0 +1,18 @@
+{
+  "term": "KPI",
+  "definitions": [
+    {
+      "language": "en",
+      "definition": "A measurable value that demonstrates how effectively a company is achieving key business objectives.",
+      "term_usage_example": "The company uses several **KPIs** to evaluate its success at reaching targets.",
+      "expanded": "Key Performance Indicator"
+    },
+    {
+      "language": "es",
+      "definition": "Un valor medible que demuestra qué tan efectivamente una empresa está alcanzando sus objetivos de negocio clave.",
+      "term_usage_example": "La empresa utiliza varios **KPIs** para evaluar su éxito en alcanzar las metas.",
+      "expanded": "Indicador Clave de Rendimiento"
+    }
+  ],
+  "slug": "kpi"
+}
