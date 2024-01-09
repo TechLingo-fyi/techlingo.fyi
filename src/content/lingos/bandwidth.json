@@ -1,19 +1,18 @@
 {
+  "term": "Bandwidth",
   "definitions": [
     {
-      "definition": "In computing, it refers to the data transfer capacity of a network. It is the maximum rate at which data can be transmitted over an internet connection in a given amount of time.",
-      "expanded": "Bandwidth",
       "language": "en",
-      "term_usage_example": "Streaming high-definition video requires a lot of bandwidth."
+      "definition": "It refers to the capacity to handle workload or amount of data that can be processed or transmitted.",
+      "term_usage_example": "Considering our current resources, we have the **bandwidth** to take on two more projects simultaneously.",
+      "expanded": "Capacity/Throughput"
     },
     {
-      "definition": "En informática, se refiere a la capacidad de transferencia de datos de una red. Es la tasa máxima a la que se pueden transmitir datos a través de una conexión a Internet en un tiempo determinado.",
-      "expanded": "Ancho de Banda",
       "language": "es",
-      "term_usage_example": "La transmisión de video de alta definición requiere mucho ancho de banda."
+      "definition": "Se refiere a la capacidad para manejar la carga de trabajo o la cantidad de datos que pueden ser procesados o transmitidos.",
+      "term_usage_example": "Considerando nuestros recursos actuales, tenemos el **ancho de banda** para asumir dos proyectos más simultáneamente.",
+      "expanded": "Capacidad/Throughput"
     }
   ],
-  "slug": "bandwidth",
-  "term": "Bandwidth",
-  "related": ["bandwidth-network", "curl", "ui", "wrt", "cdn"]
+  "slug": "bandwidth"
 }
