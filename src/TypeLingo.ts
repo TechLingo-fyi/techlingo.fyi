@@ -9,5 +9,5 @@ export interface Lingo {
   slug: string;
   term: string;
   definitions: Definition[];
-  related: string[];
+  related?: string[];
 }
