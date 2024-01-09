@@ -1,0 +1,18 @@
+{
+  "term": "OKR",
+  "definitions": [
+    {
+      "language": "en",
+      "definition": "A goal-setting framework used by teams and individuals to define measurable goals and track their outcomes.",
+      "term_usage_example": "Our team sets quarterly **OKRs** to stay focused on our most critical objectives.",
+      "expanded": "Objectives and Key Results"
+    },
+    {
+      "language": "es",
+      "definition": "Un marco de establecimiento de objetivos utilizado por equipos e individuos para definir metas medibles y seguir sus resultados.",
+      "term_usage_example": "Nuestro equipo establece **OKRs** trimestrales para mantenerse enfocado en nuestros objetivos más críticos.",
+      "expanded": "Objetivos y Resultados Clave"
+    }
+  ],
+  "slug": "okr"
+}

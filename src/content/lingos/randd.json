@@ -1,0 +1,18 @@
+{
+  "term": "R&D",
+  "definitions": [
+    {
+      "language": "en",
+      "definition": "It refers to innovative activities companies undertake to develop new products or services or to improve existing ones.",
+      "term_usage_example": "Our company is increasing investment in **R&D** to stay ahead in the market.",
+      "expanded": "Research and Development"
+    },
+    {
+      "language": "es",
+      "definition": "Se refiere a las actividades innovadoras que las empresas llevan a cabo para desarrollar nuevos productos o servicios o para mejorar los existentes.",
+      "term_usage_example": "Nuestra empresa está aumentando la inversión en **I+D** para mantenerse a la vanguardia en el mercado.",
+      "expanded": "Investigación y Desarrollo"
+    }
+  ],
+  "slug": "randd"
+}

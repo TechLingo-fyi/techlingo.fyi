@@ -1,19 +1,18 @@
 {
+  "term": "FTE",
   "definitions": [
     {
-      "definition": "A full-time equivalent (FTE) is a unit that indicates the workload of an employed person in a way that makes workloads comparable across various contexts.",
-      "expanded": "Full-Time Equivalent",
       "language": "en",
-      "term_usage_example": "The project budget accounts for 5 FTEs."
+      "definition": "Refers to a standard workweek employee, often equivalent to an individual working a full schedule of hours, which typically means 40 hours per week.",
+      "term_usage_example": "Our project needs 2 **FTEs** to complete the development on time.",
+      "expanded": "Full-time Employee"
     },
     {
-      "definition": "Un equivalente a tiempo completo (FTE) es una unidad que indica la carga de trabajo de una persona empleada de manera que hace comparables las cargas de trabajo en diversos contextos.",
-      "expanded": "Equivalente a Tiempo Completo",
       "language": "es",
-      "term_usage_example": "El presupuesto del proyecto contempla 5 FTEs."
+      "definition": "Hace referencia a un empleado que trabaja la jornada laboral completa, lo que generalmente equivale a 40 horas a la semana.",
+      "term_usage_example": "Me contrataron como FTE, así que trabajaré 40 horas a la semana con beneficios completos.",
+      "expanded": "Empleado a Tiempo Completo"
     }
   ],
-  "term": "FTE",
-  "slug": "fte",
-  "related": ["pto", "wfh", "eod", "eta", "wrt"]
+  "slug": "fte"
 }
