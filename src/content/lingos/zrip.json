@@ -1,0 +1,19 @@
+{
+  "definitions": [
+    {
+      "definition": "It is a phenomenon that occurs when the interest rate to borrow money is zero, allowing risky investments to be made without the need to pay interest on loans.",
+      "expanded": "Zero Interest Rate Phenomenon",
+      "language": "en",
+      "term_usage_example": "The over-inflated salaries in tech were a zero interest rate phenomenon."
+    },
+    {
+      "definition": "Es un fenómeno que ocurre cuando la tasa de interés para pedir dinero prestado es cero, lo que permite hacer inversiones arriesgadas sin necesidad de pagar intereses por los préstamos.",
+      "expanded": "Efecto de la Tasa de Interés Cero",
+      "language": "es",
+      "term_usage_example": "Los salarios sobreinflados en tecnología eran un efecto de la tasa de interés cero."
+    }
+  ],
+  "term": "ZRIP",
+  "slug": "zrip",
+  "related": ["wip", "tbh", "sprint", "iirc", "imho"]
+}
