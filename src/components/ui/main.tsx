@@ -32,12 +32,15 @@ const MainComponent = React.forwardRef<HTMLDivElement, MainComponentProps>(
     const sortedGroupedLingos = new Map(
       Array.from(groupedLingos.entries()).sort(),
     );
+
     const breakpointColumnsObj = {
       default: 3,
       1100: 3,
       700: 2,
       500: 1,
     };
+
+    let currentLetter = "";
 
     return (
       <section className="container mx-auto pt-0 pb-8 px-4 md:px-6">
@@ -71,33 +74,42 @@ const MainComponent = React.forwardRef<HTMLDivElement, MainComponentProps>(
               className="flex w-auto -ml-4"
               columnClassName="pl-4 bg-clip-padding"
             >
-              {lingos.map((lingo, idx) => (
-                <a
-                  id={`card-${lingo.slug}`}
-                  href={lingo.slug}
-                  className="p-6 mb-4"
-                >
-                  <Card
-                    className="cursor-pointer hover:bg-gray-50 hover:shadow-lg transition-all duration-200"
-                    id={lingo.term}
+              {lingos.map((lingo, idx) => {
+                const firstLetter = lingo.term[0].toUpperCase();
+                const letterChanged = firstLetter !== currentLetter;
+
+                if (letterChanged) {
+                  currentLetter = firstLetter;
+                }
+
+                return (
+                  <a
+                    id={`card-${lingo.slug}`}
+                    href={lingo.slug}
+                    className="p-6 mb-4"
                   >
-                    <CardHeader>
-                      {idx === 0 && <span></span>}
-                      <h2 className="text-lg font-semibold">
-                        {lingo.term}{" "}
-                        <small className="text-sm text-gray-400 font-normal">
-                          {lingo.definitions[0].expanded}
-                        </small>
-                      </h2>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-base text-gray-700">
-                        {lingo.definitions[0].definition}
-                      </p>
-                    </CardContent>
-                  </Card>
-                </a>
-              ))}
+                    <Card
+                      className="cursor-pointer hover:bg-gray-50 hover:shadow-lg transition-all duration-200"
+                      id={lingo.term}
+                    >
+                      <CardHeader>
+                        {letterChanged && <span id={currentLetter}></span>}
+                        <h2 className="text-lg font-semibold">
+                          {lingo.term}{" "}
+                          <small className="text-sm text-gray-400 font-normal">
+                            {lingo.definitions[0].expanded}
+                          </small>
+                        </h2>
+                      </CardHeader>
+                      <CardContent>
+                        <p className="text-base text-gray-700">
+                          {lingo.definitions[0].definition}
+                        </p>
+                      </CardContent>
+                    </Card>
+                  </a>
+                );
+              })}
             </Masonry>
 
             <div
