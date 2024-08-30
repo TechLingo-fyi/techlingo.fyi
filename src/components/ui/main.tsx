@@ -9,6 +9,8 @@ import { CardHeader, CardContent, Card } from "@/components/ui/card";
 import * as React from "react";
 import type { Lingo } from "@/TypeLingo";
 
+import Masonry from "react-masonry-css";
+
 export interface MainComponentProps
   extends React.ButtonHTMLAttributes<HTMLDivElement> {
   lingos: Lingo[];
@@ -30,6 +32,12 @@ const MainComponent = React.forwardRef<HTMLDivElement, MainComponentProps>(
     const sortedGroupedLingos = new Map(
       Array.from(groupedLingos.entries()).sort(),
     );
+    const breakpointColumnsObj = {
+      default: 3,
+      1100: 3,
+      700: 2,
+      500: 1,
+    };
 
     return (
       <section className="container mx-auto pt-0 pb-8 px-4 md:px-6">
@@ -45,7 +53,7 @@ const MainComponent = React.forwardRef<HTMLDivElement, MainComponentProps>(
               ))}
             </ul>
           </aside>
-          <main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 flex-grow overflow-auto">
+          <main>
             <div
               id="noResults"
               className="hidden col-span-1 md:col-span-2 lg:col-span-3"
@@ -58,39 +66,39 @@ const MainComponent = React.forwardRef<HTMLDivElement, MainComponentProps>(
                 ?
               </h2>
             </div>
-            {Array.from(sortedGroupedLingos.entries()).map(
-              ([letter, lingos]) => (
-                <>
-                  {lingos.map((lingo, idx) => (
-                    <a
-                      id={`card-${lingo.slug}`}
-                      href={lingo.slug}
-                      className={`card card-${lingo.slug}`}
-                    >
-                      <Card
-                        className="cursor-pointer hover:bg-gray-50 hover:shadow-lg transition-all duration-200"
-                        id={lingo.term}
-                      >
-                        <CardHeader>
-                          {idx === 0 && <span id={letter}></span>}
-                          <h2 className="text-lg font-semibold">
-                            {lingo.term}{" "}
-                            <small className="text-sm text-gray-400 font-normal">
-                              {lingo.definitions[0].expanded}
-                            </small>
-                          </h2>
-                        </CardHeader>
-                        <CardContent>
-                          <p className="text-base text-gray-700">
-                            {lingo.definitions[0].definition}
-                          </p>
-                        </CardContent>
-                      </Card>
-                    </a>
-                  ))}
-                </>
-              ),
-            )}
+            <Masonry
+              breakpointCols={breakpointColumnsObj}
+              className="flex w-auto -ml-4"
+              columnClassName="pl-4 bg-clip-padding"
+            >
+              {lingos.map((lingo, idx) => (
+                <a
+                  id={`card-${lingo.slug}`}
+                  href={lingo.slug}
+                  className="p-6 mb-4"
+                >
+                  <Card
+                    className="cursor-pointer hover:bg-gray-50 hover:shadow-lg transition-all duration-200"
+                    id={lingo.term}
+                  >
+                    <CardHeader>
+                      {idx === 0 && <span></span>}
+                      <h2 className="text-lg font-semibold">
+                        {lingo.term}{" "}
+                        <small className="text-sm text-gray-400 font-normal">
+                          {lingo.definitions[0].expanded}
+                        </small>
+                      </h2>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-base text-gray-700">
+                        {lingo.definitions[0].definition}
+                      </p>
+                    </CardContent>
+                  </Card>
+                </a>
+              ))}
+            </Masonry>
 
             <div
               id="poweredBy"
