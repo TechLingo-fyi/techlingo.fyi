@@ -1,0 +1,37 @@
+---
+import "@/styles/globals.css";
+import { MainComponent } from "@/components/ui/main";
+import { getCollection } from "astro:content";
+import type { Lingo } from "@/TypeLingo";
+import Layout from "../layouts/Layout.astro";
+
+const lingos = (await getCollection("lingos")).map((lingo) => {
+  return lingo.data as Lingo;
+});
+---
+
+
+<Layout
+  title="TechLingo.fyi"
+  description="TechLingo.fyi is a free resource for people who want to learn about the jargon and acronyms used in the tech industry."
+  path={Astro.site?.toString()}
+>
+    <section class="container mx-auto pt-0 pb-8 px-4 md:px-6">  
+        <div class="flex mt-12">
+            <iframe
+                id="JotFormIFrame-242436270405349"
+                title="New TechLingo submission"
+                onload="window.parent.scrollTo(0,0)"
+                allowtransparency="true"
+                allow="geolocation; microphone; camera; fullscreen"
+                src="https://form.jotform.com/242436270405349"
+                frameborder="0"
+                style="min-width:100%;max-width:100%;min-height:1239px;border:none;"
+                scrolling="no"
+            ></iframe>
+        </div>
+    </section>
+    <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
+    <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-242436270405349']", "https://form.jotform.com/")</script>
+
+</Layout>
