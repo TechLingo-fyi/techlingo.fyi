@@ -1,0 +1,19 @@
+
+{
+  "definitions": [
+    {
+      "definition": "The complete pay package offered to an employee, including base salary, bonuses, stock options, benefits, and other perks provided by the employer.",
+      "expanded": "Total Compensation",
+      "language": "en",
+      "term_usage_example": "When comparing job offers in the tech industry, it's important to consider the TC rather than just the base salary."
+    },
+    {
+      "definition": "El paquete de remuneración completo ofrecido a un empleado, que incluye el salario base, bonificaciones, opciones sobre acciones, beneficios y otras ventajas proporcionadas por el empleador.",
+      "expanded": "Compensación Total",
+      "language": "es",
+      "term_usage_example": "Al comparar ofertas de trabajo en la industria tecnológica, es importante considerar el paquete de compensación total en lugar de solo el salario base."
+    }
+  ],
+  "term": "TC",
+  "slug": "tc"
+}
