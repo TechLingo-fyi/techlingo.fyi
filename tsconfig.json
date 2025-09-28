@@ -1,7 +1,18 @@
 {
-  "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["DOM", "DOM.Iterable", "ES2022"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
     "strictNullChecks": true,
+    "forceConsistentCasingInFileNames": true,
     "allowJs": true,
     "jsx": "react-jsx",
     "jsxImportSource": "react",
@@ -9,5 +20,6 @@
     "paths": {
       "@/*": ["./src/*"]
     }
-  }
+  },
+  "exclude": ["./utils/**/*", "./dist/**/*", "./node_modules/**/*"]
 }

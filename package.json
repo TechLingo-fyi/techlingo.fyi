@@ -1,14 +1,19 @@
 {
-  "name": "",
+  "name": "techlingo-fyi",
   "type": "module",
   "version": "0.0.1",
+  "private": true,
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\""
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,astro}\"",
+    "type-check": "astro check",
+    "lint": "astro check",
+    "validate": "node scripts/validate.mjs",
+    "reindex": "node utils/algoliaIndexing.js"
   },
   "dependencies": {
     "@astrojs/check": "^0.3.3",

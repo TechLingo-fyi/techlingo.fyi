@@ -1,6 +1,4 @@
 ---
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
 import OpenGraphTags from "@/components/OpenGraphTags.astro";
 import { Navbar } from "@/components/ui/navbar";
 
@@ -65,7 +63,7 @@ const { title, description, path } = Astro.props;
             },
           }).showToast();
         } catch (err) {
-          console.log(err);
+          // Silent fail for clipboard operations
         }
       }
 
@@ -102,7 +100,7 @@ const { title, description, path } = Astro.props;
         systemTheme = "light";
       }
       if (userTheme != null && userTheme !== systemTheme) {
-        console.log("user theme is different from system theme");
+        // User has explicitly set a theme different from system
       } else {
         setTheme(systemTheme, false);
       }
@@ -113,10 +111,8 @@ const { title, description, path } = Astro.props;
       themeSwitch.addEventListener('click', (evt) => {
         if (document.documentElement.classList.contains("dark")) {
           setTheme("light");
-          console.log("remove dark mode!")
         } else {
           setTheme("dark");
-          console.log("add dark mode!")
         }
       });
     }
