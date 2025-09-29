@@ -40,8 +40,20 @@ const { title, description, path } = Astro.props;
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
     />
-    <title>{title ? `${title} | ` : ""}TechLingo.fyi</title>
-    <OpenGraphTags title={title} description={description} path={path} />
+    <title>
+      {
+        title && title !== "TechLingo.fyi"
+          ? `${title} | TechLingo.fyi`
+          : "TechLingo.fyi"
+      }
+    </title>
+    <OpenGraphTags
+      title={title && title !== "TechLingo.fyi"
+        ? `${title} | TechLingo.fyi`
+        : "TechLingo.fyi"}
+      description={description}
+      path={path}
+    />
   </head>
   <body>
     <section class="container mx-auto pt-8 px-4 md:px-6">
