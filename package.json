@@ -14,7 +14,9 @@
     "type-check": "astro check",
     "lint": "astro check",
     "validate": "node scripts/validate.mjs",
-    "reindex": "node utils/algoliaIndexing.js"
+    "reindex": "node utils/algoliaIndexing.js",
+    "docker:build": "docker build --target exporter --output dist-docker .",
+    "docker:export": "docker build --target exporter --output dist-docker ."
   },
   "dependencies": {
     "@astrojs/check": "^0.3.3",
