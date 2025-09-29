@@ -30,6 +30,17 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
+| `npm run docker:build`    | Build site using Docker and export to `dist-docker/` |
+| `npm run netlify:deploy`  | Build with Docker and deploy to Netlify preview |
+| `npm run netlify:deploy:prod` | Build with Docker and deploy to Netlify production |
+
+## 🚀 Deployment
+
+This site is automatically deployed to Netlify using GitHub Actions:
+
+- **Pull Requests**: Create preview deployments with unique URLs
+- **Main branch**: Deploy to production
+- **Manual**: Can be triggered manually from GitHub Actions tab
 
 ## Similar terms
 

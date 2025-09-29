@@ -16,7 +16,10 @@
     "validate": "node scripts/validate.mjs",
     "reindex": "node utils/algoliaIndexing.js",
     "docker:build": "docker build --target exporter --output dist-docker .",
-    "docker:export": "docker build --target exporter --output dist-docker ."
+    "docker:export": "docker build --target exporter --output dist-docker .",
+    "netlify:dev": "netlify dev",
+    "netlify:deploy": "npm run docker:build && netlify deploy --dir=dist-docker",
+    "netlify:deploy:prod": "npm run docker:build && netlify deploy --dir=dist-docker --prod"
   },
   "dependencies": {
     "@astrojs/check": "^0.3.3",
