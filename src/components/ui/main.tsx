@@ -57,19 +57,26 @@ const MainComponent = React.forwardRef<HTMLDivElement, MainComponentProps>(
             </ul>
           </aside>
           <main>
-            <div
-              id="noResults"
-              className="hidden col-span-1 md:col-span-2 lg:col-span-3"
-            >
-              <h2 className="text-5xl font-semibold text-center py-8">
-                No results, why not{" "}
-                <a className="underline" href="/">
-                  browse all the lingos
-                </a>
-                ?
-              </h2>
+            {/* Search Results Container */}
+            <div id="search-results" className="w-full" style={{ display: 'none' }}>
+              {/* Search results will be dynamically inserted here */}
             </div>
-            <Masonry
+
+            {/* Browse Content */}
+            <div id="browse-content">
+              <div
+                id="noResults"
+                className="hidden col-span-1 md:col-span-2 lg:col-span-3"
+              >
+                <h2 className="text-5xl font-semibold text-center py-8">
+                  No results, why not{" "}
+                  <a className="underline" href="/">
+                    browse all the lingos
+                  </a>
+                  ?
+                </h2>
+              </div>
+              <Masonry
               breakpointCols={breakpointColumnsObj}
               className="flex w-auto -ml-4"
               columnClassName="pl-4 bg-clip-padding"
@@ -112,11 +119,15 @@ const MainComponent = React.forwardRef<HTMLDivElement, MainComponentProps>(
               })}
             </Masonry>
 
-            <div
-              id="poweredBy"
-              className="hidden col-span-1 md:col-span-2 lg:col-span-3 flex items-center justify-center"
-            >
-              <PoweredBy className="w-1/2 md:w-1/4 lg:w-1/5" />
+              <div
+                id="poweredBy"
+                className="hidden col-span-1 md:col-span-2 lg:col-span-3"
+                style={{ display: 'none' }}
+              >
+                <div className="flex items-center justify-center">
+                  <PoweredBy className="w-1/2 md:w-1/4 lg:w-1/5" />
+                </div>
+              </div>
             </div>
           </main>
         </div>

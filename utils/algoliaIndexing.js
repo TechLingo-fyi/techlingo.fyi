@@ -6,7 +6,7 @@ const algoliasearch = require("algoliasearch");
 const fs = require("fs");
 
 const adminKey = process.env.ALGOLIA_ADMIN_KEY;
-const client = algoliasearch("FN1CC8W5LZ", adminKey);
+const client = algoliasearch("ZPE6FU0N16", adminKey);
 const index = client.initIndex("search_techlingo");
 
 // read all the json files in the lingos directory

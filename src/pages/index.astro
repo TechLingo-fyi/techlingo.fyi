@@ -21,59 +21,204 @@ const lingos = (await getCollection("lingos")).map((lingo) => {
     import algoliasearch from "https://cdn.jsdelivr.net/npm/algoliasearch@4.22.0/dist/algoliasearch-lite.esm.browser.js";
 
     const client = algoliasearch(
-      "FN1CC8W5LZ",
-      "a70073c8f9e45cf2ebd1fb53dc614d31",
+      "ZPE6FU0N16",
+      "68e361cd804a40bba0980343a6b557e0",
     );
     const index = client.initIndex("search_techlingo");
 
     const searchBox = document.getElementById("search");
     const poweredBy = document.getElementById("poweredBy");
     const noResults = document.getElementById("noResults");
+    const searchResults = document.getElementById("search-results");
+    const browseContent = document.getElementById("browse-content");
+    
+    let isSearching = false;
+    let currentQuery = "";
+
+    function createSearchResultCard(hit) {
+      const definition = hit.definitions?.[0] || {};
+      const highlightedTerm = hit._highlightResult?.term?.value || hit.term;
+      const highlightedDefinition = hit._highlightResult?.definitions?.[0]?.definition?.value || definition.definition;
+      const highlightedExpanded = hit._highlightResult?.definitions?.[0]?.expanded?.value || definition.expanded;
+
+      return `
+        <a href="/${hit.slug}" class="block p-6 mb-4 rounded-lg border border-gray-200 hover:bg-gray-50 hover:shadow-lg transition-all duration-200 bg-white">
+          <div class="space-y-2">
+            <h2 class="text-lg font-semibold text-gray-900">
+              ${highlightedTerm}
+              ${highlightedExpanded ? `<small class="text-sm text-gray-400 font-normal ml-2">${highlightedExpanded}</small>` : ''}
+            </h2>
+            <p class="text-base text-gray-700 line-clamp-2">
+              ${highlightedDefinition || ''}
+            </p>
+            ${hit.related && hit.related.length > 0 ? `
+              <div class="flex flex-wrap gap-1 mt-2">
+                <span class="text-xs text-gray-500">Related:</span>
+                ${hit.related.slice(0, 3).map(term => `<span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">${term}</span>`).join('')}
+              </div>
+            ` : ''}
+          </div>
+        </a>
+      `;
+    }
+
+    function showSearchResults(hits, query) {
+      if (!searchResults) return;
+      
+      if (hits.length === 0) {
+        searchResults.innerHTML = `
+          <div class="text-center py-12">
+            <div class="text-gray-400 text-6xl mb-4">🔍</div>
+            <h3 class="text-xl font-semibold text-gray-700 mb-2">No results found</h3>
+            <p class="text-gray-500">No tech terms found for "${query}". Try searching for something else.</p>
+          </div>
+        `;
+      } else {
+        const resultsHTML = hits.map(hit => createSearchResultCard(hit)).join('');
+        const resultsCount = hits.length;
+        searchResults.innerHTML = `
+          <div class="mb-6">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-2">Search Results</h2>
+            <p class="text-gray-600">Found ${resultsCount} result${resultsCount !== 1 ? 's' : ''} for "${query}"</p>
+          </div>
+          <div class="grid gap-4">
+            ${resultsHTML}
+          </div>
+        `;
+      }
+      
+      // Show search results, hide browse content
+      searchResults.style.display = "block";
+      browseContent.style.display = "none";
+      poweredBy.style.display = "block";
+    }
+
+    function showBrowseView() {
+      if (searchResults) {
+        searchResults.style.display = "none";
+      }
+      if (browseContent) {
+        browseContent.style.display = "block";
+      }
+      poweredBy.style.display = "none";
+    }
 
     function search(query) {
-      if (query.length > 0) {
-        index
-          .search(query, {
-            hitsPerPage: 10,
-            attributesToRetrieve: ["slug"],
-          })
-          .then(({ hits }) => {
-            const cards = document.getElementsByClassName("card");
-            const foundCards = new Set(hits.map((hit) => `card-${hit.slug}`));
-            for (let i = 0; i < cards.length; i++) {
-              if (foundCards.has(cards[i].id)) {
-                cards[i].style.display = "block";
-              } else {
-                cards[i].style.display = "none";
-              }
-            }
-            poweredBy.style.display = "block";
-            noResults.style.display = hits.length == 0 ? "block" : "none";
-          });
-      } else {
-        poweredBy.style.display = "none";
-      }
-    }
-
-    searchBox.addEventListener("input", (event) => {
-      const query = event.target.value;
       if (query.length === 0) {
-        const cards = document.getElementsByClassName("card");
-        for (let i = 0; i < cards.length; i++) {
-          cards[i].style.display = "block";
-        }
+        showBrowseView();
         return;
       }
-      search(query);
-    });
 
-    // Get the query from the URL
-    const urlParams = new URLSearchParams(window.location.search);
+      if (query.length < 2) {
+        return; // Don't search for single characters
+      }
 
-    const query = urlParams.get("search");
-    if (query) {
-      searchBox.value = query;
-      search(query);
+      currentQuery = query;
+      isSearching = true;
+
+      // Show loading state
+      if (searchResults) {
+        searchResults.innerHTML = `
+          <div class="text-center py-12">
+            <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500 mx-auto mb-4"></div>
+            <p class="text-gray-500">Searching...</p>
+          </div>
+        `;
+        searchResults.style.display = "block";
+        browseContent.style.display = "none";
+      }
+
+      index
+        .search(query, {
+          hitsPerPage: 20,
+          attributesToRetrieve: ["slug", "term", "definitions", "related"],
+          attributesToHighlight: ["term", "definitions.definition", "definitions.expanded", "definitions.term_usage_example"],
+          highlightPreTag: '<mark class="bg-yellow-200">',
+          highlightPostTag: '</mark>',
+        })
+        .then(({ hits }) => {
+          // Only update if this is still the current query
+          if (query === currentQuery) {
+            isSearching = false;
+            showSearchResults(hits, query);
+          }
+        })
+        .catch((error) => {
+          console.error('Search error:', error);
+          if (query === currentQuery) {
+            isSearching = false;
+            if (searchResults) {
+              searchResults.innerHTML = `
+                <div class="text-center py-12">
+                  <div class="text-red-400 text-6xl mb-4">⚠️</div>
+                  <h3 class="text-xl font-semibold text-gray-700 mb-2">Search Error</h3>
+                  <p class="text-gray-500">Something went wrong. Please try again.</p>
+                </div>
+              `;
+            }
+          }
+        });
     }
+
+    // Debounce function to limit API calls
+    function debounce(func, wait) {
+      let timeout;
+      return function executedFunction(...args) {
+        const later = () => {
+          clearTimeout(timeout);
+          func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+      };
+    }
+
+    const debouncedSearch = debounce(search, 300);
+
+    if (searchBox) {
+      searchBox.addEventListener("input", (event) => {
+        const query = event.target.value.trim();
+        
+        if (query.length === 0) {
+          currentQuery = "";
+          showBrowseView();
+          
+          // Update URL without search parameter
+          const url = new URL(window.location);
+          url.searchParams.delete('search');
+          window.history.replaceState({}, '', url);
+          return;
+        }
+        
+        // Update URL with search parameter
+        const url = new URL(window.location);
+        url.searchParams.set('search', query);
+        window.history.replaceState({}, '', url);
+        
+        debouncedSearch(query);
+      });
+    }
+
+    // Handle initial search from URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const initialQuery = urlParams.get("search");
+    if (initialQuery && searchBox) {
+      searchBox.value = initialQuery;
+      search(initialQuery);
+    }
+
+    // Handle browser back/forward buttons
+    window.addEventListener('popstate', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const query = urlParams.get("search") || "";
+      if (searchBox) {
+        searchBox.value = query;
+      }
+      if (query) {
+        search(query);
+      } else {
+        showBrowseView();
+      }
+    });
   </script>
 </Layout>
