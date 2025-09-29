@@ -15,61 +15,62 @@ const lingos = (await getCollection("lingos")).map((lingo) => {
   description="TechLingo.fyi is a free resource for people who want to learn about the jargon and acronyms used in the tech industry."
   path={Astro.site?.toString()}
 >
-
   <MainComponent lingos={lingos} />
 
   <script type="module" is:inline>
-    import algoliasearch from 'https://cdn.jsdelivr.net/npm/algoliasearch@4.22.0/dist/algoliasearch-lite.esm.browser.js';
-  
-    const client = algoliasearch('FN1CC8W5LZ', 'a70073c8f9e45cf2ebd1fb53dc614d31');
-    const index = client.initIndex('search_techlingo');
+    import algoliasearch from "https://cdn.jsdelivr.net/npm/algoliasearch@4.22.0/dist/algoliasearch-lite.esm.browser.js";
 
-    const searchBox = document.getElementById('search');
-    const poweredBy = document.getElementById('poweredBy');
-    const noResults = document.getElementById('noResults');
+    const client = algoliasearch(
+      "FN1CC8W5LZ",
+      "a70073c8f9e45cf2ebd1fb53dc614d31",
+    );
+    const index = client.initIndex("search_techlingo");
+
+    const searchBox = document.getElementById("search");
+    const poweredBy = document.getElementById("poweredBy");
+    const noResults = document.getElementById("noResults");
 
     function search(query) {
       if (query.length > 0) {
-        index.search(query, {
-          hitsPerPage: 10,
-          attributesToRetrieve: ['slug'],
-        }).then(({ hits }) => {
-          const cards = document.getElementsByClassName('card');
-          const foundCards= new Set(
-            hits.map((hit) => `card-${hit.slug}`)
-          );
-          for (let i = 0; i < cards.length; i++) {
-            if (foundCards.has(cards[i].id)) {
-              cards[i].style.display = 'block';
-            } else {
-              cards[i].style.display = 'none';
+        index
+          .search(query, {
+            hitsPerPage: 10,
+            attributesToRetrieve: ["slug"],
+          })
+          .then(({ hits }) => {
+            const cards = document.getElementsByClassName("card");
+            const foundCards = new Set(hits.map((hit) => `card-${hit.slug}`));
+            for (let i = 0; i < cards.length; i++) {
+              if (foundCards.has(cards[i].id)) {
+                cards[i].style.display = "block";
+              } else {
+                cards[i].style.display = "none";
+              }
             }
-          }
-          poweredBy.style.display = 'block'
-          noResults.style.display = hits.length == 0 ? 'block' : 'none';
-        });
+            poweredBy.style.display = "block";
+            noResults.style.display = hits.length == 0 ? "block" : "none";
+          });
       } else {
-        poweredBy.style.display = 'none'
+        poweredBy.style.display = "none";
       }
     }
 
-    searchBox.addEventListener('input', (event) => {
+    searchBox.addEventListener("input", (event) => {
       const query = event.target.value;
       if (query.length === 0) {
-        const cards = document.getElementsByClassName('card');
+        const cards = document.getElementsByClassName("card");
         for (let i = 0; i < cards.length; i++) {
-          cards[i].style.display = 'block';
+          cards[i].style.display = "block";
         }
         return;
       }
       search(query);
     });
 
-
     // Get the query from the URL
     const urlParams = new URLSearchParams(window.location.search);
 
-    const query = urlParams.get('search');
+    const query = urlParams.get("search");
     if (query) {
       searchBox.value = query;
       search(query);

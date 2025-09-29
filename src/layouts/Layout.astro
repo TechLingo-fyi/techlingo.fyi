@@ -29,10 +29,17 @@ const { title, description, path } = Astro.props;
     />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
     <title>{title ? `${title} | ` : ""}TechLingo.fyi</title>
     <OpenGraphTags title={title} description={description} path={path} />
   </head>
@@ -41,10 +48,12 @@ const { title, description, path } = Astro.props;
       <Navbar />
     </section>
     <slot />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <input type="hidden" value={Astro.site?.hostname} id="hostname" />
     <script type="module" is:inline>
-      const hostname = document.getElementById('hostname').value.toString();
+      const hostname = document.getElementById("hostname").value.toString();
       async function copyToClipBoard(evt) {
         const { slug, lang } = evt.currentTarget.dataset;
         const text = `https://${hostname}/${slug}/${lang}`;
@@ -67,57 +76,69 @@ const { title, description, path } = Astro.props;
         }
       }
 
-      const button = document.getElementById('copyButton');
-      if (button !== null){
-        button.addEventListener('click', copyToClipBoard);
+      const button = document.getElementById("copyButton");
+      if (button !== null) {
+        button.addEventListener("click", copyToClipBoard);
       }
-  </script>
-  <script is:inline>
-    function getTheme() {
-      if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
-        return localStorage.getItem("theme");
-      }
-      return null;
-    }
-
-    function setTheme(theme, save = true) {
-      if (theme === "light") {
-        document.documentElement.classList.remove("dark");
-      } else {
-        document.documentElement.classList.add("dark");
-      }
-      if (save) {
-        window.localStorage.setItem("theme", theme);
-      }
-    }
-
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',({ matches }) => {
-      let systemTheme = "light";
-      const userTheme = getTheme();
-      if (matches) {
-        systemTheme = "dark";
-      } else {
-        systemTheme = "light";
-      }
-      if (userTheme != null && userTheme !== systemTheme) {
-        // User has explicitly set a theme different from system
-      } else {
-        setTheme(systemTheme, false);
-      }
-    })
-
-    const themeSwitch = document.getElementById('switchTheme');
-    if (themeSwitch !== null) {
-      themeSwitch.addEventListener('click', (evt) => {
-        if (document.documentElement.classList.contains("dark")) {
-          setTheme("light");
-        } else {
-          setTheme("dark");
+    </script>
+    <script is:inline>
+      function getTheme() {
+        if (
+          typeof localStorage !== "undefined" &&
+          localStorage.getItem("theme")
+        ) {
+          return localStorage.getItem("theme");
         }
-      });
-    }
-  </script>
-  <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-  <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+        return null;
+      }
+
+      function setTheme(theme, save = true) {
+        if (theme === "light") {
+          document.documentElement.classList.remove("dark");
+        } else {
+          document.documentElement.classList.add("dark");
+        }
+        if (save) {
+          window.localStorage.setItem("theme", theme);
+        }
+      }
+
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", ({ matches }) => {
+          let systemTheme = "light";
+          const userTheme = getTheme();
+          if (matches) {
+            systemTheme = "dark";
+          } else {
+            systemTheme = "light";
+          }
+          if (userTheme != null && userTheme !== systemTheme) {
+            // User has explicitly set a theme different from system
+          } else {
+            setTheme(systemTheme, false);
+          }
+        });
+
+      const themeSwitch = document.getElementById("switchTheme");
+      if (themeSwitch !== null) {
+        themeSwitch.addEventListener("click", (evt) => {
+          if (document.documentElement.classList.contains("dark")) {
+            setTheme("light");
+          } else {
+            setTheme("dark");
+          }
+        });
+      }
+    </script>
+    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"
+    ></script>
+    <noscript
+      ><img
+        src="https://queue.simpleanalyticscdn.com/noscript.gif"
+        alt=""
+        referrerpolicy="no-referrer-when-downgrade"
+      /></noscript
+    >
   </body>
 </html>

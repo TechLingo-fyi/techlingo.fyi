@@ -25,10 +25,10 @@ export async function getLingoPaths() {
         },
         props: {
           data: lingo,
-          relatedLingos: lingo.related === undefined ? [] :
-           lingo.related
-            .slice(0, 3)
-            .map((slug) => slugToLingo.get(slug)),
+          relatedLingos:
+            lingo.related === undefined
+              ? []
+              : lingo.related.slice(0, 3).map((slug) => slugToLingo.get(slug)),
         },
       };
     });

@@ -11,7 +11,7 @@ export async function getStaticPaths() {
 
 const { lingo, language } = Astro.params;
 const { data, relatedLingos } = Astro.props;
-const viewingLanguage = language ?? "en"
+const viewingLanguage = language ?? "en";
 const lingoDescription = data.definitions.filter((definition) => {
   return definition.language === viewingLanguage;
 })[0].definition;
@@ -21,29 +21,30 @@ const shareableText = `${lingoDescription} ${path}`;
 const translations = useTranslations(viewingLanguage);
 ---
 
-<Layout
-  title={data.term}
-  description={lingoDescription}
-  path={path}
->
+<Layout title={data.term} description={lingoDescription} path={path}>
   <div class="flex items-center justify-center">
-      <div class="grid grid-cols-3 gap-4 m-10 max-w-3xl min-w-3xl xl:min-w-3xl">
-        <LingoDetail
-          shareableText={shareableText}
-          data={data}
-          viewingLanguage={viewingLanguage}
-          slug={lingo}
-        />
-        <div class="col-span-3 p-4">
-          <h2 class="font-bold">{translations("lingo.relatedTerms")}</h2>
-        </div>
-        {relatedLingos.map((lingo) => (
-          <a href={`/${lingo.slug}/${viewingLanguage}`} class="col-span-1 p-4 rounded-lg shadow">
+    <div class="grid grid-cols-3 gap-4 m-10 max-w-3xl min-w-3xl xl:min-w-3xl">
+      <LingoDetail
+        shareableText={shareableText}
+        data={data}
+        viewingLanguage={viewingLanguage}
+        slug={lingo}
+      />
+      <div class="col-span-3 p-4">
+        <h2 class="font-bold">{translations("lingo.relatedTerms")}</h2>
+      </div>
+      {
+        relatedLingos.map((lingo) => (
+          <a
+            href={`/${lingo.slug}/${viewingLanguage}`}
+            class="col-span-1 p-4 rounded-lg shadow"
+          >
             <div>
               <h3 class="font-bold">{lingo.term}</h3>
             </div>
           </a>
-        ))}
+        ))
+      }
     </div>
   </div>
 </Layout>
