@@ -15,6 +15,22 @@ const lingos = (await getCollection("lingos")).map((lingo) => {
   description="TechLingo.fyi is a free resource for people who want to learn about the jargon and acronyms used in the tech industry."
   path={Astro.site?.toString()}
 >
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "TechLingo.fyi",
+    "url": Astro.site?.toString(),
+    "description": "TechLingo.fyi is a free resource for people who want to learn about the jargon and acronyms used in the tech industry.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": `${Astro.site?.toString()}/?search={search_term_string}`
+      },
+      "query-input": "required name=search_term_string"
+    }
+  })} />
+
   <MainComponent lingos={lingos} />
 
   <script type="module" is:inline>

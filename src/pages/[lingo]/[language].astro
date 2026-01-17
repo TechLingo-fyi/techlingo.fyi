@@ -19,9 +19,51 @@ const lingoDescription = data.definitions.filter((definition) => {
 const path = `https://${Astro.site?.hostname}/${lingo}/${viewingLanguage}`;
 const shareableText = `${lingoDescription} ${path}`;
 const translations = useTranslations(viewingLanguage);
+
+const currentDefinition = data.definitions.find((def) => def.language === viewingLanguage);
+const siteUrl = Astro.site?.toString() || "";
+const lingoUrl = `${siteUrl}/${lingo}`;
+const fullUrl = `${siteUrl}/${lingo}/${viewingLanguage}`;
+
+// DefinedTerm schema
+const definedTermSchema = {
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "name": data.term,
+  "description": lingoDescription,
+  "url": fullUrl,
+  ...(currentDefinition?.expanded && { "alternateName": currentDefinition.expanded }),
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "TechLingo.fyi",
+    "url": siteUrl
+  }
+};
+
+// BreadcrumbList schema
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": siteUrl
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": data.term,
+      "item": fullUrl
+    }
+  ]
+};
 ---
 
 <Layout title={data.term} description={lingoDescription} path={path}>
+  <script type="application/ld+json" set:html={JSON.stringify(definedTermSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   <div class="flex items-center justify-center">
     <div class="grid grid-cols-3 gap-4 m-10 max-w-3xl min-w-3xl xl:min-w-3xl">
       <LingoDetail
