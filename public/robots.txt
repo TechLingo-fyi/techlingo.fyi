@@ -1,0 +1,12 @@
+# robots.txt for TechLingo.fyi
+# https://techlingo.fyi/robots.txt
+
+# Allow all search engines to crawl the site
+User-agent: *
+Allow: /
+
+# Disallow crawling of search query parameters (if any)
+Disallow: /*?search=*
+
+# Sitemap location
+Sitemap: https://techlingo.fyi/sitemap.xml
