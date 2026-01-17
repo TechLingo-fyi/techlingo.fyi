@@ -14,12 +14,13 @@
     "type-check": "astro check",
     "lint": "astro check",
     "validate": "node scripts/validate.mjs",
+    "submit-sitemap": "node scripts/submit-sitemap.mjs",
     "reindex": "node utils/algoliaIndexing.js",
     "docker:build": "docker build --target exporter --output dist-docker .",
     "docker:export": "docker build --target exporter --output dist-docker .",
     "netlify:dev": "netlify dev",
     "netlify:deploy": "npm run docker:build && netlify deploy --dir=dist-docker",
-    "netlify:deploy:prod": "npm run docker:build && netlify deploy --dir=dist-docker --prod"
+    "netlify:deploy:prod": "npm run docker:build && netlify deploy --dir=dist-docker --prod && npm run submit-sitemap"
   },
   "dependencies": {
     "@astrojs/check": "^0.3.3",

@@ -18,6 +18,21 @@ The search is provided by Algolia, and it is necessary to index every time a new
 node utils/algoliaIndexing.js
 ```
 
+## Sitemap
+
+The sitemap is automatically generated at `/sitemap.xml` and includes:
+- Homepage and all static pages
+- All lingo pages with their language variants
+- Last modification dates based on file modification times
+
+To submit the sitemap to search engines, run:
+
+```shell
+npm run submit-sitemap
+```
+
+This will automatically ping Google Search Console and Bing Webmaster Tools. You can also manually submit the sitemap URL (`https://techlingo.fyi/sitemap.xml`) through their web interfaces.
+
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
