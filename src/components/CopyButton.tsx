@@ -20,6 +20,9 @@ const CopyButton = ({
         data-lang={lang}
         id="copyButton"
         className={className}
+        aria-label={`Copy permalink to clipboard for ${slug} in ${lang}`}
+        role="button"
+        tabIndex={0}
       >
         {text}
       </a>

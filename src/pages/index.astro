@@ -14,6 +14,7 @@ const lingos = (await getCollection("lingos")).map((lingo) => {
   title="TechLingo.fyi"
   description="TechLingo.fyi is a free resource for people who want to learn about the jargon and acronyms used in the tech industry."
   path={Astro.site?.toString()}
+  lang="en"
 >
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
@@ -31,7 +32,9 @@ const lingos = (await getCollection("lingos")).map((lingo) => {
     }
   })} />
 
-  <MainComponent lingos={lingos} />
+  <main id="main-content">
+    <MainComponent lingos={lingos} />
+  </main>
 
   <script type="module" is:inline>
     import algoliasearch from "https://cdn.jsdelivr.net/npm/algoliasearch@4.22.0/dist/algoliasearch-lite.esm.browser.js";
@@ -58,19 +61,19 @@ const lingos = (await getCollection("lingos")).map((lingo) => {
       const highlightedExpanded = hit._highlightResult?.definitions?.[0]?.expanded?.value || definition.expanded;
 
       return `
-        <a href="/${hit.slug}" class="block p-6 mb-4 rounded-lg border border-gray-200 hover:bg-gray-50 hover:shadow-lg transition-all duration-200 bg-white">
+        <a href="/${hit.slug}" class="block p-6 mb-4 rounded-lg border border-gray-200 hover:bg-gray-50 hover:shadow-lg transition-all duration-200 bg-white" role="listitem" aria-label="${hit.term}${hit.definitions?.[0]?.expanded ? ' (' + hit.definitions[0].expanded + ')' : ''}: ${(hit.definitions?.[0]?.definition || '').substring(0, 100)}">
           <div class="space-y-2">
             <h2 class="text-lg font-semibold text-gray-900">
               ${highlightedTerm}
-              ${highlightedExpanded ? `<small class="text-sm text-gray-400 font-normal ml-2">${highlightedExpanded}</small>` : ''}
+              ${highlightedExpanded ? `<small class="text-sm text-gray-600 font-normal ml-2">${highlightedExpanded}</small>` : ''}
             </h2>
             <p class="text-base text-gray-700 line-clamp-2">
               ${highlightedDefinition || ''}
             </p>
             ${hit.related && hit.related.length > 0 ? `
               <div class="flex flex-wrap gap-1 mt-2">
-                <span class="text-xs text-gray-500">Related:</span>
-                ${hit.related.slice(0, 3).map(term => `<span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">${term}</span>`).join('')}
+                <span class="text-xs text-gray-600 font-semibold">Related:</span>
+                ${hit.related.slice(0, 3).map(term => `<span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">${term}</span>`).join('')}
               </div>
             ` : ''}
           </div>
@@ -81,26 +84,34 @@ const lingos = (await getCollection("lingos")).map((lingo) => {
     function showSearchResults(hits, query) {
       if (!searchResults) return;
       
+      const announcement = document.getElementById("search-announcements");
+      
       if (hits.length === 0) {
         searchResults.innerHTML = `
           <div class="text-center py-12">
-            <div class="text-gray-400 text-6xl mb-4">🔍</div>
-            <h3 class="text-xl font-semibold text-gray-700 mb-2">No results found</h3>
-            <p class="text-gray-500">No tech terms found for "${query}". Try searching for something else.</p>
+            <div class="text-gray-500 text-6xl mb-4" role="img" aria-label="Magnifying glass icon">🔍</div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">No results found</h3>
+            <p class="text-gray-600">No tech terms found for "${query}". Try searching for something else.</p>
           </div>
         `;
+        if (announcement) {
+          announcement.textContent = `No results found for "${query}"`;
+        }
       } else {
         const resultsHTML = hits.map(hit => createSearchResultCard(hit)).join('');
         const resultsCount = hits.length;
         searchResults.innerHTML = `
           <div class="mb-6">
             <h2 class="text-2xl font-semibold text-gray-900 mb-2">Search Results</h2>
-            <p class="text-gray-600">Found ${resultsCount} result${resultsCount !== 1 ? 's' : ''} for "${query}"</p>
+            <p class="text-gray-700">Found ${resultsCount} result${resultsCount !== 1 ? 's' : ''} for "${query}"</p>
           </div>
-          <div class="grid gap-4">
+          <div class="grid gap-4" role="list">
             ${resultsHTML}
           </div>
         `;
+        if (announcement) {
+          announcement.textContent = `Found ${resultsCount} result${resultsCount !== 1 ? 's' : ''} for "${query}"`;
+        }
       }
       
       // Show search results, hide browse content
@@ -136,12 +147,16 @@ const lingos = (await getCollection("lingos")).map((lingo) => {
       if (searchResults) {
         searchResults.innerHTML = `
           <div class="text-center py-12">
-            <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500 mx-auto mb-4"></div>
-            <p class="text-gray-500">Searching...</p>
+            <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500 mx-auto mb-4" role="status" aria-label="Searching"></div>
+            <p class="text-gray-600">Searching...</p>
           </div>
         `;
         searchResults.style.display = "block";
         browseContent.style.display = "none";
+        const announcement = document.getElementById("search-announcements");
+        if (announcement) {
+          announcement.textContent = "Searching...";
+        }
       }
 
       index
@@ -166,11 +181,15 @@ const lingos = (await getCollection("lingos")).map((lingo) => {
             if (searchResults) {
               searchResults.innerHTML = `
                 <div class="text-center py-12">
-                  <div class="text-red-400 text-6xl mb-4">⚠️</div>
-                  <h3 class="text-xl font-semibold text-gray-700 mb-2">Search Error</h3>
-                  <p class="text-gray-500">Something went wrong. Please try again.</p>
+                  <div class="text-red-600 text-6xl mb-4" role="img" aria-label="Warning icon">⚠️</div>
+                  <h3 class="text-xl font-semibold text-gray-800 mb-2">Search Error</h3>
+                  <p class="text-gray-600">Something went wrong. Please try again.</p>
                 </div>
               `;
+              const announcement = document.getElementById("search-announcements");
+              if (announcement) {
+                announcement.textContent = "Search error occurred. Please try again.";
+              }
             }
           }
         });

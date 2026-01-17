@@ -25,6 +25,9 @@ const siteUrl = Astro.site?.toString() || "";
 const lingoUrl = `${siteUrl}/${lingo}`;
 const fullUrl = `${siteUrl}/${lingo}/${viewingLanguage}`;
 
+// Get all available languages for hreflang tags
+const availableLanguages = data.definitions.map((def) => def.language);
+
 // DefinedTerm schema
 const definedTermSchema = {
   "@context": "https://schema.org",
@@ -61,10 +64,16 @@ const breadcrumbSchema = {
 };
 ---
 
-<Layout title={data.term} description={lingoDescription} path={path}>
+<Layout title={data.term} description={lingoDescription} path={path} lang={viewingLanguage}>
+  {/* Hreflang tags for alternate language versions */}
+  {availableLanguages.map((lang) => (
+    <link rel="alternate" hreflang={lang} href={`${siteUrl}/${lingo}/${lang}`} />
+  ))}
+  <link rel="alternate" hreflang="x-default" href={`${siteUrl}/${lingo}/en`} />
   <script type="application/ld+json" set:html={JSON.stringify(definedTermSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
-  <div class="flex items-center justify-center">
+  <main id="main-content">
+    <div class="flex items-center justify-center">
     <div class="grid grid-cols-3 gap-4 m-10 max-w-3xl min-w-3xl xl:min-w-3xl">
       <LingoDetail
         shareableText={shareableText}
@@ -80,6 +89,7 @@ const breadcrumbSchema = {
           <a
             href={`/${lingo.slug}/${viewingLanguage}`}
             class="col-span-1 p-4 rounded-lg shadow"
+            aria-label={`View related term: ${lingo.term}`}
           >
             <div>
               <h3 class="font-bold">{lingo.term}</h3>
@@ -88,5 +98,6 @@ const breadcrumbSchema = {
         ))
       }
     </div>
-  </div>
+    </div>
+  </main>
 </Layout>

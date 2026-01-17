@@ -33,13 +33,18 @@ const ContextLinks = ({
       <a
         className={bottomLinkStyle.join(" ")}
         target="_blank"
+        rel="noopener noreferrer"
         href={`https://twitter.com/intent/tweet?text=${shareableText}`}
+        aria-label="Share on Twitter"
       >
         {t("lingo.twitterShare")}
       </a>
       <a
         className={bottomLinkStyle.join(" ")}
         href={`${repository}/${path}/${slug}.json`}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Suggest edits on GitHub"
       >
         {t("lingo.suggestEdits")}
       </a>

@@ -45,20 +45,36 @@ const MainComponent = React.forwardRef<HTMLDivElement, MainComponentProps>(
     return (
       <section className="container mx-auto pt-0 pb-8 px-4 md:px-6">
         <div className="flex mt-12">
-          <aside className="mr-8 mt-2">
-            <ul className="sticky top-2 space-y-1">
-              {Array.from(sortedGroupedLingos.keys()).map((letter) => (
-                <li>
-                  <a className="text-sm" href={`#${letter}`}>
-                    {letter}
-                  </a>
-                </li>
-              ))}
-            </ul>
+            <aside className="mr-8 mt-2">
+            <nav aria-label="Alphabetical navigation">
+              <ul className="sticky top-2 space-y-1">
+                {Array.from(sortedGroupedLingos.keys()).map((letter) => (
+                  <li key={letter}>
+                    <a className="text-sm" href={`#${letter}`} aria-label={`Jump to terms starting with ${letter}`}>
+                      {letter}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
           </aside>
           <main>
+            {/* ARIA live region for search announcements */}
+            <div
+              id="search-announcements"
+              role="status"
+              aria-live="polite"
+              aria-atomic="true"
+              className="sr-only"
+            ></div>
             {/* Search Results Container */}
-            <div id="search-results" className="w-full" style={{ display: 'none' }}>
+            <div
+              id="search-results"
+              className="w-full"
+              style={{ display: 'none' }}
+              role="region"
+              aria-label="Search results"
+            >
               {/* Search results will be dynamically inserted here */}
             </div>
 
@@ -94,13 +110,14 @@ const MainComponent = React.forwardRef<HTMLDivElement, MainComponentProps>(
                     id={`card-${lingo.slug}`}
                     href={lingo.slug}
                     className="p-6 mb-4"
+                    aria-label={`View definition for ${lingo.term}${lingo.definitions[0].expanded ? ` (${lingo.definitions[0].expanded})` : ''}`}
                   >
                     <Card
                       className="cursor-pointer hover:bg-gray-50 hover:shadow-lg transition-all duration-200"
                       id={lingo.term}
                     >
                       <CardHeader>
-                        {letterChanged && <span id={currentLetter}></span>}
+                        {letterChanged && <span id={currentLetter} aria-label={`Section: Terms starting with ${currentLetter}`}></span>}
                         <h2 className="text-lg font-semibold">
                           {lingo.term}{" "}
                           <small className="text-sm text-gray-400 font-normal">

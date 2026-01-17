@@ -14,8 +14,10 @@ const lingos = (await getCollection("lingos")).map((lingo) => {
   title="TechLingo.fyi"
   description="TechLingo.fyi is a free resource for people who want to learn about the jargon and acronyms used in the tech industry."
   path={Astro.site?.toString()}
+  lang="en"
 >
-  <section class="container mx-auto pt-0 pb-8 px-4 md:px-6">
+  <main id="main-content">
+    <section class="container mx-auto pt-0 pb-8 px-4 md:px-6">
     <div class="flex mt-12">
       <iframe
         id="JotFormIFrame-242436270405349"
@@ -37,4 +39,5 @@ const lingos = (await getCollection("lingos")).map((lingo) => {
       "https://form.jotform.com/",
     );
   </script>
+  </main>
 </Layout>

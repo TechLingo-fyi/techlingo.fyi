@@ -21,7 +21,13 @@ const OtherLanguageLinks = ({
     const leng = LangMap.get(lang);
     return (
       <span key={`span-${lang}`}>
-        <a key={lang} className="underline" href={`/${lingo.slug}/${lang}`}>
+        <a
+          key={lang}
+          className="underline"
+          href={`/${lingo.slug}/${lang}`}
+          aria-label={`View ${lingo.term} in ${leng?.englishLanguageName || lang}`}
+          hreflang={lang}
+        >
           {leng?.languageName}
         </a>
         {idx < languages.length - 1 && ", "}

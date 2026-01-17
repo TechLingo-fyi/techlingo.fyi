@@ -117,6 +117,7 @@ const LingoDetail = ({
           <blockquote
             className="mt-3 indent-10 px-6 font-serif text-xl italic"
             dangerouslySetInnerHTML={{ __html: md.render(exampleUsage) }}
+            aria-label="Example usage"
           />
         </dl>
         <div className="mt-6 text-gray-600">
