@@ -102,7 +102,7 @@ const LingoDetail = ({
     <div className={cardStyle.join(" ")}>
       <h3 className={termStyle.join(" ")}>
         {data.term}{" "}
-        <small className="text-2xl text-gray-400 font-normal">
+        <small className="text-2xl text-gray-600 font-normal">
           {currentLanguageDefinition?.expanded}
         </small>
       </h3>

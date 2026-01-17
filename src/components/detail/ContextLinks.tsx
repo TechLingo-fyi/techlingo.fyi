@@ -10,7 +10,7 @@ const bottomLinkStyle = [
   "mx-2",
   "cursor-pointer",
   "font-bold",
-  "text-gray-500",
+  "text-gray-600",
 ];
 const ContextLinks = ({
   shareableText,

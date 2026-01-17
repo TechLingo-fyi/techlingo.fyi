@@ -120,7 +120,7 @@ const MainComponent = React.forwardRef<HTMLDivElement, MainComponentProps>(
                         {letterChanged && <span id={currentLetter} aria-label={`Section: Terms starting with ${currentLetter}`}></span>}
                         <h2 className="text-lg font-semibold">
                           {lingo.term}{" "}
-                          <small className="text-sm text-gray-400 font-normal">
+                          <small className="text-sm text-gray-600 font-normal">
                             {lingo.definitions[0].expanded}
                           </small>
                         </h2>
